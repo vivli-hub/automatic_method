@@ -2,6 +2,9 @@
 # automatic_method
 An automatic method for the identification of cycles in Covid-19 time series data
 
+# Authors
+Miaotian Li, Ciprian Doru Giurcaneanu, Jiamou Liu
+
 ## Data
 In our experiments, we use the daily counts of COVID-19 cases that are publicly available on the website of WHO: [Data](https://covid19.who.int/data). 
 
