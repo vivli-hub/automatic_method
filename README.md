@@ -14,10 +14,10 @@ In our experiments, we use the daily counts of COVID-19 cases that are publicly 
 
 ## automatic_method
 - [read_countries_WHO](#read_countries_WHO)
-- [run_filt_WHO](#run-filt-in-WHO-region)
-- [run_filt_fullsearch](#run-filt-fullsearch)
-- [read_countries_latitude](#read-countries-latitude)
-- [run_filt_latitude](#run-filt-in-WHO-latitude)
+- [run_filt_WHO](#run_filt_WHO)
+- [run_filt_fullsearch](#run_filt_fullsearch)
+- [read_countries_latitude](#read_countries_latitude)
+- [run_filt_latitude](#run_filt_latitude)
 
 ### read_countries_WHO
 
