@@ -2,15 +2,8 @@
 # automatic_method
 An automatic method for the identification of cycles in Covid-19 time series data
 
-## Background
-In May 2023, the World Health Organization (WHO) declared the end of the global health emergency related to COVID-19. Since January 2020, when WHO classified Covid-19 as a public health emergency of international concern, a substantial amount of epidemiological data has been gathered. Throughout this timeframe, numerous attempts have been made to analyze the data. However, many of these investigations were constrained due to a lack of sufficient measurements available at the time of analysis. There are various aspects that warrant exploration, with one of them focusing on identifying "waves" in the pandemic. This involves uncovering cycles in the collected data for each country/territory/area (CTA). Given the absence of a comprehensive study for all 236 CTAs with available time series data, we undertake this analysis in the current study.
-
-### Abstract
-All previous methods for the identification of cycles in Covid-19 daily and weekly data involve a subjective interpretation of the results. This poses difficulties for researchers interested in conducting a comprehensive study which analyzes the presence of the cycles for each CTA. We have designed an algorithm that detects automatically the fundamental period T0 and the harmonics T0/2,...,T0/5, where T0=7 days for daily data and T0=52 weeks for weekly data. We have tested the new algorithm by applying it to the time series from 236 CTA's, where WHO collected the Covid-19 data. The detection results we have obtained confirm the findings previously reported by other researchers.
-In this talk, we will present all the details of our algorithm and comment on the results obtained in experiments with Covid-19 time series data. We will also discuss a proposal for evaluating the dissimilarity between the time series collected for two different CTA’s.
-
 ## Data
-In our experiments, we use the daily counts of COVID-19 cases that are publicly available on the website of WHO: [Data](https://covid19.who.int/data). More precisely, we consider $x_1,\ldots,x_n$ to be the time series that represents the number of daily cases from 3 January 2020 to 3 May 2023, for a particular CTA. 
+In our experiments, we use the daily counts of COVID-19 cases that are publicly available on the website of WHO: [Data](https://covid19.who.int/data). 
 
 ## automatic_method
 - [read_countries_WHO](#read_countries_WHO)
