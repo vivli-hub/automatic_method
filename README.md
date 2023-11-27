@@ -28,17 +28,29 @@ Data can be downloaded from: [Data](https://covid19.who.int/WHO-COVID-19-global-
 Once you have these Mat files, you can run the main function run_filt_WHO.m. You need to give as input a flag which indicates how the data are transformed (have a look at the comments in the function to understand how to select this flag)
 For example, you can call the function like this:
 run_filt(wreg, flag_transf, flag_plot, sp, ftype, fdomain)
+
 %Input:
+
 %wreg:          WHO region for which the data is analysed    
+
 %flag_transf:   flag for data transformation
+
 %               0=no transf. is applied to the data
+
 %               1=transf. from GP Nason, Scientific Reports, 2020
+
 %               2=transf. which is usually applied to daily stock markets indices at closing time
+
 %               3=first order differences (computed in time domain)
+
 %flag_plot:     0=no plots, 1=plots for each country
+
 %sp             'day'=daily data, 'week'=weekly data
+
 %ftype          'stop'=stop band filter, 'high'=high pass filter
+
 %fdomain        'time'=filtering in time domain, 'freq'=filtering in freq. domain
+
 run_filt_WHO(wreg, flag_transf, flag_plot, sp, ftype, fdomain)
 Note that the WHO region is now an input parameter (wreg).
 
@@ -54,15 +66,23 @@ t_after: Most of the content in this also has the same meaning as "t_before." Th
 Once you have these Mat files, you can run the main function run_filt_fullsearch.m. You need to give as input a flag which indicates how the data are transformed (have a look at the comments in the function to understand how to select this flag)
 
 %Input:
+
 %wreg:          WHO region for which the data is analysed    
+
 %flag_transf:   flag for data transformation
+
 %               0=no transf. is applied to the data
+
 %               1=transf. from GP Nason, Scientific Reports, 2020
+
 %               2=transf. which is usually applied to daily stock markets indices at closing time
+
 %               3=first order differences (computed in time domain)
-%
+
 %sp             'day'=daily data, 'week'=weekly data
+
 %ftype          'stop'=stop band filter, 'high'=high pass filter
+
 %fdomain        'time'=filtering in time domain, 'freq'=filtering in freq. domain
 
 
@@ -80,19 +100,27 @@ Once you have these Mat files, you can run the main function run_filt_latitude.m
 For example, you can call the function like this:
 run_filt(latitude, flag_transf, flag_plot, sp, ftype, fdomain)
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %Input:
-%latitude:          Latitude group for which the data is analysed    
+
+%latitude:          Latitude group for which the data is analysed  
+
 %flag_transf:   flag for data transformation
+
 %               0=no transf. is applied to the data
+
 %               1=transf. from GP Nason, Scientific Reports, 2020
+
 %               2=transf. which is usually applied to daily stock markets indices at closing time
+
 %               3=first order differences (computed in time domain)
+
 %flag_plot:     0=no plots, 1=plots for each country
+
 %sp             'day'=daily data, 'week'=weekly data
+
 %ftype          'stop'=stop band filter, 'high'=high pass filter
+
 %fdomain        'time'=filtering in time domain, 'freq'=filtering in freq. domain
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 run_filt_latitude produces two different files. Both of them have the same name, which is given by fina = strcat('Results_', wreg, '_tr', num2str(flag_transf), '_', sp,
 '_', ftype, '_', fdomain);
