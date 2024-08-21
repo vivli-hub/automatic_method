@@ -1,0 +1,35 @@
+American Samoa 	 WPRO 	 No periodicities
+Australia 	 WPRO	 52*1/3[BS]	 52*1/4[BS]
+Brunei Darussalam 	 WPRO	 52*1/3[BS]
+Cambodia 	 WPRO	 52*1/3[S]
+China 	 WPRO 	 No periodicities
+Cook Islands 	 WPRO 	 No periodicities
+Fiji 	 WPRO	 52*1/2[S]
+French Polynesia 	 WPRO 	 No periodicities
+Guam 	 WPRO	 52*1/2[S]
+Japan 	 WPRO	 52*1/3[BS]	 52*1/4[BS]
+Kiribati 	 WPRO 	 No periodicities
+Lao Peoples Democratic Republic 	 WPRO	 52*1/3[BS]
+Malaysia 	 WPRO
+Marshall Islands 	 WPRO 	 No periodicities
+Micronesia (Federated States of) 	 WPRO 	 No periodicities
+Mongolia 	 WPRO 	 No periodicities
+Nauru 	 WPRO 	 No periodicities
+New Caledonia 	 WPRO	 52*1/3[BS]
+New Zealand 	 WPRO 	 No periodicities
+Niue 	 WPRO 	 No periodicities
+Northern Mariana Islands (Commonwealth of the) 	 WPRO 	 No periodicities
+Palau 	 WPRO 	 No periodicities
+Papua New Guinea 	 WPRO	 52*1/2[S]
+Philippines 	 WPRO	 52*1/3[S]
+Pitcairn Islands 	 WPRO 	 No periodicities
+Republic of Korea 	 WPRO	 52*1/3[BS]
+Samoa 	 WPRO 	 No periodicities
+Singapore 	 WPRO	 52*1/3[BS]
+Solomon Islands 	 WPRO 	 No periodicities
+Tokelau 	 WPRO 	 No periodicities
+Tonga 	 WPRO 	 No periodicities
+Tuvalu 	 WPRO 	 No periodicities
+Vanuatu 	 WPRO 	 No periodicities
+Viet Nam 	 WPRO
+Wallis and Futuna 	 WPRO 	 No periodicities

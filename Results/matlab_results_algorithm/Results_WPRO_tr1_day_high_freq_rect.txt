@@ -1,0 +1,47 @@
+American Samoa 	 WPRO	 7*1/2[BS]
+Australia 	 WPRO	 7*1[BS]	 7*1/2[BS]	 7*1/3[B]
+Australia 	 WPRO	 7*1/2[BS]	 7*1/3[BS]
+Brunei Darussalam 	 WPRO	 7*1/2[B]	 7*1/3[BS]
+Cambodia 	 WPRO	 7*1/2[S]
+China 	 WPRO	 7*1[BS]	 7*1/2[BS]
+China 	 WPRO	 7*1/2[BS]	 7*1/3[BS]
+Cook Islands 	 WPRO 	 No periodicities
+Fiji 	 WPRO	 7*1/2[BS]	 7*1/3[BS]
+French Polynesia 	 WPRO	 7*1/3[BS]
+Guam 	 WPRO	 7*1/3[S]
+Japan 	 WPRO	 7*1[BS]	 7*1/2[BS]
+Japan 	 WPRO	 7*1/2[BS]	 7*1/3[B]
+Kiribati 	 WPRO 	 No periodicities
+Lao Peoples Democratic Republic 	 WPRO	 7*1[BS]	 7*1/2[BS]
+Lao Peoples Democratic Republic 	 WPRO	 7*1/2[BS]
+Malaysia 	 WPRO	 7*1[BS]	 7*1/2[BS]
+Malaysia 	 WPRO	 7*1/2[BS]
+Marshall Islands 	 WPRO 	 No periodicities
+Micronesia (Federated States of) 	 WPRO 	 No periodicities
+Mongolia 	 WPRO	 7*1[S]
+Mongolia 	 WPRO	 7*1/2[BS]
+Nauru 	 WPRO 	 No periodicities
+New Caledonia 	 WPRO	 7*1[BS]	 7*1/2[BS]	 7*1/3[BS]
+New Caledonia 	 WPRO	 7*1/2[BS]	 7*1/3[BS]
+New Zealand 	 WPRO	 7*1[BS]
+New Zealand 	 WPRO	 7*1/2[S]
+Niue 	 WPRO 	 No periodicities
+Northern Mariana Islands (Commonwealth of the) 	 WPRO 	 No periodicities
+Palau 	 WPRO 	 No periodicities
+Papua New Guinea 	 WPRO	 7*1[BS]
+Papua New Guinea 	 WPRO
+Philippines 	 WPRO	 7*1[BS]	 7*1/2[BS]	 7*1/3[BS]
+Philippines 	 WPRO	 7*1/2[BS]	 7*1/3[BS]
+Pitcairn Islands 	 WPRO 	 No periodicities
+Republic of Korea 	 WPRO	 7*1[S]	 7*1/2[BS]	 7*1/3[BS]
+Republic of Korea 	 WPRO	 7*1/2[BS]	 7*1/3[BS]
+Samoa 	 WPRO 	 No periodicities
+Singapore 	 WPRO	 7*1[BS]	 7*1/2[BS]	 7*1/3[BS]
+Singapore 	 WPRO	 7*1/2[B]	 7*1/3[BS]
+Solomon Islands 	 WPRO 	 No periodicities
+Tokelau 	 WPRO 	 No periodicities
+Tonga 	 WPRO 	 No periodicities
+Tuvalu 	 WPRO 	 No periodicities
+Vanuatu 	 WPRO	 7*1/2[B]
+Viet Nam 	 WPRO 	 No periodicities
+Wallis and Futuna 	 WPRO 	 No periodicities
