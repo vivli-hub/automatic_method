@@ -1,0 +1,13 @@
+Bangladesh 	 SEARO	 52*1/2[BS]	 52*1/3[BS]
+Bhutan 	 SEARO 	 No periodicities
+Democratic Peoples Republic of Korea 	 SEARO 	 No data
+India 	 SEARO	 52*1[BS]	 52*1/3[BS]	 52*1/4[S]
+India 	 SEARO	 52*1/3[BS]	 52*1/4[BS]
+Indonesia 	 SEARO	 52*1/2[BS]	 52*1/3[BS]
+Maldives 	 SEARO 	 No periodicities
+Myanmar 	 SEARO	 52*1[S]
+Myanmar 	 SEARO
+Nepal 	 SEARO
+Sri Lanka 	 SEARO	 52*1/4[BS]
+Thailand 	 SEARO
+Timor-Leste 	 SEARO 	 No periodicities

@@ -1,0 +1,17 @@
+Bangladesh 	 SEARO	 52*1[BS]	 52*1/2[BS]	 52*1/3[BS]	 52*1/4[BS]	 52*1/5[B]
+Bangladesh 	 SEARO	 52*1/2[BS]	 52*1/3[BS]	 52*1/4[BS]
+Bhutan 	 SEARO
+Democratic Peoples Republic of Korea 	 SEARO 	 No data
+India 	 SEARO	 52*1[BS]	 52*1/2[BS]	 52*1/3[BS]	 52*1/4[BS]	 52*1/5[BS]
+India 	 SEARO	 52*1/2[BS]	 52*1/3[BS]	 52*1/4[B]	 52*1/5[BS]
+Indonesia 	 SEARO	 52*1/2[BS]	 52*1/3[BS]	 52*1/4[BS]	 52*1/5[BS]
+Maldives 	 SEARO	 52*1/3[BS]
+Myanmar 	 SEARO	 52*1[BS]	 52*1/2[BS]	 52*1/3[BS]	 52*1/4[BS]	 52*1/5[BS]
+Myanmar 	 SEARO	 52*1[BS]	 52*1/2[BS]	 52*1/3[BS]	 52*1/4[BS]	 52*1/5[BS]
+Nepal 	 SEARO	 52*1/2[BS]
+Sri Lanka 	 SEARO	 52*1[BS]	 52*1/2[BS]	 52*1/3[BS]	 52*1/4[BS]	 52*1/5[BS]
+Sri Lanka 	 SEARO	 52*1/2[BS]	 52*1/3[BS]	 52*1/4[BS]	 52*1/5[BS]
+Thailand 	 SEARO	 52*1[BS]	 52*1/2[BS]	 52*1/3[BS]	 52*1/4[BS]	 52*1/5[BS]
+Thailand 	 SEARO	 52*1[BS]	 52*1/2[BS]	 52*1/3[BS]	 52*1/4[BS]	 52*1/5[BS]
+Timor-Leste 	 SEARO	 52*1[BS]	 52*1/2[B]	 52*1/3[B]	 52*1/4[B]	 52*1/5[B]
+Timor-Leste 	 SEARO	 52*1/4[S]
