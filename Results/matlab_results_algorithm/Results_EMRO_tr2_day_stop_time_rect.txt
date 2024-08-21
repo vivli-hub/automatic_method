@@ -1,0 +1,28 @@
+Afghanistan 	 EMRO 	 No periodicities
+Bahrain 	 EMRO 	 No periodicities
+Djibouti 	 EMRO 	 No periodicities
+Egypt 	 EMRO	 7*1/2[BS]	 7*1/3[BS]
+Iran (Islamic Republic of) 	 EMRO	 7*1[S]
+Iran (Islamic Republic of) 	 EMRO
+Iraq 	 EMRO	 7*1/3[S]
+Jordan 	 EMRO	 7*1[B]	 7*1/2[BS]	 7*1/3[B]
+Jordan 	 EMRO	 7*1/2[BS]	 7*1/3[B]
+Kuwait 	 EMRO	 7*1/2[S]
+Lebanon 	 EMRO 	 No periodicities
+Libya 	 EMRO	 7*1[BS]	 7*1/2[BS]	 7*1/3[B]
+Libya 	 EMRO	 7*1/2[BS]	 7*1/3[B]
+Morocco 	 EMRO	 7*1[BS]	 7*1/2[BS]	 7*1/3[S]
+Morocco 	 EMRO	 7*1/2[BS]	 7*1/3[S]
+occupied Palestinian territory including east Jerusalem 	 EMRO 	 No periodicities
+Oman 	 EMRO	 7*1[BS]	 7*1/2[BS]	 7*1/3[BS]
+Oman 	 EMRO	 7*1/2[BS]	 7*1/3[BS]
+Pakistan 	 EMRO 	 No periodicities
+Qatar 	 EMRO 	 No periodicities
+Saudi Arabia 	 EMRO 	 No periodicities
+Somalia 	 EMRO	 7*1/3[S]
+Sudan 	 EMRO 	 No periodicities
+Syrian Arab Republic 	 EMRO 	 No periodicities
+Tunisia 	 EMRO	 7*1[BS]	 7*1/2[BS]	 7*1/3[BS]
+Tunisia 	 EMRO	 7*1/2[S]	 7*1/3[BS]
+United Arab Emirates 	 EMRO 	 No periodicities
+Yemen 	 EMRO 	 No periodicities

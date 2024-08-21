@@ -1,0 +1,23 @@
+Afghanistan 	 EMRO
+Bahrain 	 EMRO 	 No periodicities
+Djibouti 	 EMRO 	 No periodicities
+Egypt 	 EMRO 	 No periodicities
+Iran (Islamic Republic of) 	 EMRO	 52*1/4[BS]
+Iraq 	 EMRO 	 No periodicities
+Jordan 	 EMRO 	 No periodicities
+Kuwait 	 EMRO 	 No periodicities
+Lebanon 	 EMRO 	 No periodicities
+Libya 	 EMRO 	 No periodicities
+Morocco 	 EMRO	 52*1/2[BS]	 52*1/3[BS]
+occupied Palestinian territory including east Jerusalem 	 EMRO 	 No periodicities
+Oman 	 EMRO 	 No periodicities
+Pakistan 	 EMRO 	 No periodicities
+Qatar 	 EMRO 	 No periodicities
+Saudi Arabia 	 EMRO	 52*1[BS]
+Saudi Arabia 	 EMRO	 52*1/3[S]
+Somalia 	 EMRO 	 No periodicities
+Sudan 	 EMRO 	 No periodicities
+Syrian Arab Republic 	 EMRO 	 No periodicities
+Tunisia 	 EMRO 	 No periodicities
+United Arab Emirates 	 EMRO 	 No periodicities
+Yemen 	 EMRO 	 No periodicities
