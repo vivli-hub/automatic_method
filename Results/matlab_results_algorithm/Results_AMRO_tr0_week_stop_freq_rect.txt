@@ -1,0 +1,70 @@
+Anguilla 	 AMRO
+Antigua and Barbuda 	 AMRO	 52*1/2[BS]	 52*1/3[BS]	 52*1/4[BS]
+Argentina 	 AMRO	 52*1/2[S]
+Aruba 	 AMRO	 52*1/2[S]
+Bahamas 	 AMRO	 52*1/2[BS]
+Barbados 	 AMRO	 52*1/2[BS]	 52*1/3[BS]	 52*1/4[BS]	 52*1/5[BS]
+Belize 	 AMRO
+Bermuda 	 AMRO	 52*1/2[S]	 52*1/3[S]
+Bolivia (Plurinational State of) 	 AMRO	 52*1/2[BS]	 52*1/3[S]	 52*1/4[BS]	 52*1/5[BS]
+Bonaire 	 AMRO
+Brazil 	 AMRO	 52*1[BS]	 52*1/2[BS]	 52*1/3[BS]	 52*1/4[BS]	 52*1/5[BS]
+Brazil 	 AMRO	 52*1/2[BS]	 52*1/3[BS]	 52*1/4[BS]	 52*1/5[BS]
+British Virgin Islands 	 AMRO
+Canada 	 AMRO	 52*1[BS]	 52*1/2[B]	 52*1/3[B]	 52*1/4[B]
+Canada 	 AMRO	 52*1/2[B]	 52*1/3[B]	 52*1/4[B]
+Cayman Islands 	 AMRO
+Chile 	 AMRO	 52*1[BS]	 52*1/2[BS]	 52*1/3[BS]	 52*1/4[BS]
+Chile 	 AMRO	 52*1/2[BS]	 52*1/3[BS]	 52*1/4[BS]	 52*1/5[BS]
+Colombia 	 AMRO	 52*1[B]	 52*1/2[BS]	 52*1/3[B]	 52*1/4[B]	 52*1/5[B]
+Colombia 	 AMRO	 52*1/2[BS]	 52*1/3[BS]	 52*1/4[BS]	 52*1/5[BS]
+Costa Rica 	 AMRO	 52*1[BS]	 52*1/2[BS]	 52*1/3[BS]	 52*1/5[BS]
+Costa Rica 	 AMRO	 52*1/2[BS]	 52*1/3[BS]	 52*1/5[BS]
+Cuba 	 AMRO	 52*1[BS]	 52*1/2[BS]	 52*1/3[BS]	 52*1/5[BS]
+Cuba 	 AMRO	 52*1/2[BS]	 52*1/3[BS]	 52*1/5[B]
+Curaao 	 AMRO
+Dominica 	 AMRO	 52*1/3[BS]
+Dominican Republic 	 AMRO	 52*1/2[BS]
+Ecuador 	 AMRO	 52*1/2[S]	 52*1/3[BS]
+El Salvador 	 AMRO
+Falkland Islands (Malvinas) 	 AMRO 	 No periodicities
+French Guiana 	 AMRO 	 No periodicities
+Grenada 	 AMRO	 52*1/2[B]	 52*1/3[BS]	 52*1/4[BS]	 52*1/5[B]
+Guadeloupe 	 AMRO	 52*1/2[BS]
+Guatemala 	 AMRO	 52*1[BS]	 52*1/2[BS]	 52*1/3[BS]	 52*1/5[BS]
+Guatemala 	 AMRO	 52*1[BS]	 52*1/2[BS]	 52*1/3[BS]	 52*1/5[BS]
+Guyana 	 AMRO
+Haiti 	 AMRO	 52*1[BS]	 52*1/2[BS]	 52*1/3[BS]	 52*1/4[BS]	 52*1/5[BS]
+Haiti 	 AMRO	 52*1/2[BS]	 52*1/3[BS]	 52*1/4[BS]	 52*1/5[BS]
+Honduras 	 AMRO	 52*1[BS]	 52*1/2[BS]	 52*1/3[BS]	 52*1/4[BS]
+Honduras 	 AMRO	 52*1/2[BS]	 52*1/3[BS]	 52*1/4[BS]
+Jamaica 	 AMRO	 52*1/2[BS]	 52*1/3[BS]
+Martinique 	 AMRO	 52*1/2[BS]	 52*1/3[BS]
+Mexico 	 AMRO	 52*1/2[BS]	 52*1/3[BS]	 52*1/4[BS]	 52*1/5[BS]
+Montserrat 	 AMRO 	 No periodicities
+Nicaragua 	 AMRO	 52*1[BS]	 52*1/2[BS]	 52*1/3[BS]
+Nicaragua 	 AMRO	 52*1/2[BS]	 52*1/3[BS]
+Panama 	 AMRO	 52*1/2[BS]	 52*1/3[BS]	 52*1/4[BS]
+Paraguay 	 AMRO	 52*1[BS]	 52*1/2[BS]	 52*1/3[BS]	 52*1/4[BS]	 52*1/5[BS]
+Paraguay 	 AMRO	 52*1/2[BS]	 52*1/3[BS]	 52*1/4[BS]	 52*1/5[BS]
+Peru 	 AMRO	 52*1/2[BS]
+Puerto Rico 	 AMRO	 52*1/2[BS]	 52*1/3[BS]	 52*1/4[B]
+Saba 	 AMRO
+Saint Barthlemy 	 AMRO
+Saint Kitts and Nevis 	 AMRO
+Saint Lucia 	 AMRO	 52*1/2[BS]	 52*1/3[BS]	 52*1/4[BS]	 52*1/5[BS]
+Saint Martin 	 AMRO 	 No periodicities
+Saint Pierre and Miquelon 	 AMRO
+Saint Vincent and the Grenadines 	 AMRO	 52*1/3[BS]
+Sint Eustatius 	 AMRO
+Sint Maarten 	 AMRO 	 No periodicities
+Suriname 	 AMRO	 52*1/3[BS]	 52*1/4[BS]
+Trinidad and Tobago 	 AMRO	 52*1/2[BS]	 52*1/3[BS]	 52*1/4[BS]
+Turks and Caicos Islands 	 AMRO 	 No periodicities
+United States of America 	 AMRO	 52*1[BS]	 52*1/2[BS]	 52*1/3[BS]
+United States of America 	 AMRO	 52*1/2[BS]	 52*1/3[BS]
+United States Virgin Islands 	 AMRO	 52*1/3[BS]
+Uruguay 	 AMRO	 52*1[BS]	 52*1/2[BS]	 52*1/3[BS]	 52*1/4[BS]	 52*1/5[BS]
+Uruguay 	 AMRO	 52*1/2[BS]	 52*1/3[BS]	 52*1/4[BS]	 52*1/5[BS]
+Venezuela (Bolivarian Republic of) 	 AMRO	 52*1[BS]	 52*1/2[B]	 52*1/3[B]	 52*1/4[B]	 52*1/5[B]
+Venezuela (Bolivarian Republic of) 	 AMRO	 52*1/2[BS]	 52*1/3[BS]	 52*1/4[B]	 52*1/5[B]

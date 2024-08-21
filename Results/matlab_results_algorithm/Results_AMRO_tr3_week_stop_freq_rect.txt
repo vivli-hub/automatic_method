@@ -1,0 +1,56 @@
+Anguilla 	 AMRO 	 No periodicities
+Antigua and Barbuda 	 AMRO 	 No periodicities
+Argentina 	 AMRO 	 No periodicities
+Aruba 	 AMRO 	 No periodicities
+Bahamas 	 AMRO 	 No periodicities
+Barbados 	 AMRO	 52*1/4[S]
+Belize 	 AMRO 	 No periodicities
+Bermuda 	 AMRO 	 No periodicities
+Bolivia (Plurinational State of) 	 AMRO 	 No periodicities
+Bonaire 	 AMRO 	 No periodicities
+Brazil 	 AMRO	 52*1/5[S]
+British Virgin Islands 	 AMRO 	 No periodicities
+Canada 	 AMRO 	 No periodicities
+Cayman Islands 	 AMRO 	 No periodicities
+Chile 	 AMRO 	 No periodicities
+Colombia 	 AMRO 	 No periodicities
+Costa Rica 	 AMRO 	 No periodicities
+Cuba 	 AMRO 	 No periodicities
+Curaao 	 AMRO 	 No periodicities
+Dominica 	 AMRO 	 No periodicities
+Dominican Republic 	 AMRO 	 No periodicities
+Ecuador 	 AMRO 	 No periodicities
+El Salvador 	 AMRO 	 No periodicities
+Falkland Islands (Malvinas) 	 AMRO 	 No periodicities
+French Guiana 	 AMRO 	 No periodicities
+Grenada 	 AMRO 	 No periodicities
+Guadeloupe 	 AMRO 	 No periodicities
+Guatemala 	 AMRO	 52*1/3[S]
+Guyana 	 AMRO 	 No periodicities
+Haiti 	 AMRO 	 No periodicities
+Honduras 	 AMRO 	 No periodicities
+Jamaica 	 AMRO 	 No periodicities
+Martinique 	 AMRO 	 No periodicities
+Mexico 	 AMRO 	 No periodicities
+Montserrat 	 AMRO 	 No periodicities
+Nicaragua 	 AMRO 	 No periodicities
+Panama 	 AMRO 	 No periodicities
+Paraguay 	 AMRO 	 No periodicities
+Peru 	 AMRO 	 No periodicities
+Puerto Rico 	 AMRO 	 No periodicities
+Saba 	 AMRO 	 No periodicities
+Saint Barthlemy 	 AMRO 	 No periodicities
+Saint Kitts and Nevis 	 AMRO 	 No periodicities
+Saint Lucia 	 AMRO 	 No periodicities
+Saint Martin 	 AMRO 	 No periodicities
+Saint Pierre and Miquelon 	 AMRO 	 No periodicities
+Saint Vincent and the Grenadines 	 AMRO 	 No periodicities
+Sint Eustatius 	 AMRO 	 No periodicities
+Sint Maarten 	 AMRO 	 No periodicities
+Suriname 	 AMRO 	 No periodicities
+Trinidad and Tobago 	 AMRO 	 No periodicities
+Turks and Caicos Islands 	 AMRO 	 No periodicities
+United States of America 	 AMRO 	 No periodicities
+United States Virgin Islands 	 AMRO 	 No periodicities
+Uruguay 	 AMRO 	 No periodicities
+Venezuela (Bolivarian Republic of) 	 AMRO 	 No periodicities

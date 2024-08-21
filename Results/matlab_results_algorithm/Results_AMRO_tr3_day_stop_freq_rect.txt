@@ -1,0 +1,72 @@
+Anguilla 	 AMRO 	 No periodicities
+Antigua and Barbuda 	 AMRO 	 No periodicities
+Argentina 	 AMRO	 7*1[BS]	 7*1/2[BS]	 7*1/3[BS]
+Argentina 	 AMRO	 7*1/2[BS]	 7*1/3[BS]
+Aruba 	 AMRO	 7*1/2[BS]	 7*1/3[BS]
+Bahamas 	 AMRO 	 No periodicities
+Barbados 	 AMRO 	 No periodicities
+Belize 	 AMRO	 7*1[BS]	 7*1/2[B]
+Belize 	 AMRO	 7*1/2[BS]	 7*1/3[BS]
+Bermuda 	 AMRO	 7*1/2[BS]	 7*1/3[BS]
+Bolivia (Plurinational State of) 	 AMRO 	 No periodicities
+Bonaire 	 AMRO	 7*1/2[BS]
+Brazil 	 AMRO	 7*1[BS]	 7*1/2[BS]
+Brazil 	 AMRO	 7*1/2[BS]
+British Virgin Islands 	 AMRO 	 No periodicities
+Canada 	 AMRO	 7*1[B]	 7*1/2[BS]	 7*1/3[BS]
+Canada 	 AMRO	 7*1/2[BS]	 7*1/3[B]
+Cayman Islands 	 AMRO 	 No periodicities
+Chile 	 AMRO	 7*1[S]	 7*1/2[BS]
+Chile 	 AMRO	 7*1/2[BS]
+Colombia 	 AMRO	 7*1[BS]	 7*1/2[BS]	 7*1/3[BS]
+Colombia 	 AMRO	 7*1/2[BS]	 7*1/3[BS]
+Costa Rica 	 AMRO	 7*1/2[BS]
+Cuba 	 AMRO 	 No periodicities
+Curaao 	 AMRO	 7*1/2[BS]
+Dominica 	 AMRO	 7*1/3[S]
+Dominican Republic 	 AMRO	 7*1/3[S]
+Ecuador 	 AMRO	 7*1[BS]	 7*1/2[BS]
+Ecuador 	 AMRO	 7*1/2[BS]
+El Salvador 	 AMRO 	 No periodicities
+Falkland Islands (Malvinas) 	 AMRO 	 No periodicities
+French Guiana 	 AMRO	 7*1/2[BS]
+Grenada 	 AMRO 	 No periodicities
+Guadeloupe 	 AMRO	 7*1/2[BS]	 7*1/3[BS]
+Guatemala 	 AMRO	 7*1[BS]	 7*1/2[B]
+Guatemala 	 AMRO	 7*1/2[BS]
+Guyana 	 AMRO 	 No periodicities
+Haiti 	 AMRO 	 No periodicities
+Honduras 	 AMRO	 7*1/2[BS]
+Jamaica 	 AMRO 	 No periodicities
+Martinique 	 AMRO	 7*1/2[S]
+Mexico 	 AMRO	 7*1[BS]	 7*1/2[BS]	 7*1/3[BS]
+Mexico 	 AMRO	 7*1/2[BS]	 7*1/3[B]
+Montserrat 	 AMRO	 7*1/3[S]
+Nicaragua 	 AMRO	 7*1[BS]	 7*1/2[B]	 7*1/3[BS]
+Nicaragua 	 AMRO	 7*1/2[BS]	 7*1/3[BS]
+Panama 	 AMRO	 7*1/2[BS]	 7*1/3[B]
+Paraguay 	 AMRO	 7*1/3[S]
+Peru 	 AMRO	 7*1[BS]	 7*1/2[BS]	 7*1/3[BS]
+Peru 	 AMRO	 7*1/2[BS]	 7*1/3[BS]
+Puerto Rico 	 AMRO	 7*1[BS]	 7*1/2[BS]	 7*1/3[S]
+Puerto Rico 	 AMRO	 7*1/2[B]	 7*1/3[BS]
+Saba 	 AMRO	 7*1/3[BS]
+Saint Barthlemy 	 AMRO	 7*1/2[BS]	 7*1/3[S]
+Saint Kitts and Nevis 	 AMRO 	 No periodicities
+Saint Lucia 	 AMRO	 7*1/3[S]
+Saint Martin 	 AMRO	 7*1/3[BS]
+Saint Pierre and Miquelon 	 AMRO 	 No periodicities
+Saint Vincent and the Grenadines 	 AMRO	 7*1/3[S]
+Sint Eustatius 	 AMRO	 7*1/3[S]
+Sint Maarten 	 AMRO	 7*1/2[S]
+Suriname 	 AMRO 	 No periodicities
+Trinidad and Tobago 	 AMRO	 7*1[S]
+Trinidad and Tobago 	 AMRO
+Turks and Caicos Islands 	 AMRO 	 No periodicities
+United States of America 	 AMRO	 7*1[BS]	 7*1/2[BS]	 7*1/3[B]
+United States of America 	 AMRO	 7*1/2[BS]	 7*1/3[B]
+United States Virgin Islands 	 AMRO	 7*1[S]
+United States Virgin Islands 	 AMRO
+Uruguay 	 AMRO	 7*1[B]	 7*1/2[BS]	 7*1/3[B]
+Uruguay 	 AMRO	 7*1/2[BS]	 7*1/3[B]
+Venezuela (Bolivarian Republic of) 	 AMRO 	 No periodicities

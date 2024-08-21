@@ -1,0 +1,57 @@
+Anguilla 	 AMRO 	 No periodicities
+Antigua and Barbuda 	 AMRO 	 No periodicities
+Argentina 	 AMRO	 52*1/2[S]
+Aruba 	 AMRO	 52*1/2[S]
+Bahamas 	 AMRO 	 No periodicities
+Barbados 	 AMRO 	 No periodicities
+Belize 	 AMRO 	 No periodicities
+Bermuda 	 AMRO 	 No periodicities
+Bolivia (Plurinational State of) 	 AMRO	 52*1/2[BS]
+Bonaire 	 AMRO 	 No periodicities
+Brazil 	 AMRO	 52*1/2[S]
+British Virgin Islands 	 AMRO 	 No periodicities
+Canada 	 AMRO	 52*1[S]	 52*1/3[BS]
+Canada 	 AMRO	 52*1/3[BS]
+Cayman Islands 	 AMRO 	 No periodicities
+Chile 	 AMRO	 52*1/3[BS]	 52*1/4[BS]	 52*1/5[BS]
+Colombia 	 AMRO	 52*1/2[BS]
+Costa Rica 	 AMRO	 52*1/3[BS]
+Cuba 	 AMRO 	 No periodicities
+Curaao 	 AMRO 	 No periodicities
+Dominica 	 AMRO 	 No periodicities
+Dominican Republic 	 AMRO	 52*1/2[BS]
+Ecuador 	 AMRO 	 No periodicities
+El Salvador 	 AMRO 	 No periodicities
+Falkland Islands (Malvinas) 	 AMRO 	 No periodicities
+French Guiana 	 AMRO 	 No periodicities
+Grenada 	 AMRO 	 No periodicities
+Guadeloupe 	 AMRO	 52*1/2[S]
+Guatemala 	 AMRO 	 No periodicities
+Guyana 	 AMRO 	 No periodicities
+Haiti 	 AMRO 	 No periodicities
+Honduras 	 AMRO 	 No periodicities
+Jamaica 	 AMRO	 52*1/2[S]
+Martinique 	 AMRO	 52*1/3[BS]
+Mexico 	 AMRO	 52*1/2[BS]	 52*1/3[S]
+Montserrat 	 AMRO 	 No periodicities
+Nicaragua 	 AMRO 	 No periodicities
+Panama 	 AMRO	 52*1/2[BS]
+Paraguay 	 AMRO
+Peru 	 AMRO
+Puerto Rico 	 AMRO	 52*1/3[BS]
+Saba 	 AMRO 	 No periodicities
+Saint Barthlemy 	 AMRO 	 No periodicities
+Saint Kitts and Nevis 	 AMRO 	 No periodicities
+Saint Lucia 	 AMRO	 52*1/3[S]
+Saint Martin 	 AMRO 	 No periodicities
+Saint Pierre and Miquelon 	 AMRO 	 No periodicities
+Saint Vincent and the Grenadines 	 AMRO 	 No periodicities
+Sint Eustatius 	 AMRO 	 No periodicities
+Sint Maarten 	 AMRO 	 No periodicities
+Suriname 	 AMRO	 52*1/3[BS]
+Trinidad and Tobago 	 AMRO 	 No periodicities
+Turks and Caicos Islands 	 AMRO 	 No periodicities
+United States of America 	 AMRO	 52*1/3[BS]
+United States Virgin Islands 	 AMRO	 52*1/3[S]
+Uruguay 	 AMRO 	 No periodicities
+Venezuela (Bolivarian Republic of) 	 AMRO 	 No periodicities
