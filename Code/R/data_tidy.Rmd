@@ -1,0 +1,1139 @@
+---
+title: "tidy_data"
+output: html_document
+date: "2024-07-14"
+---
+
+```{r}
+## Extract the data related to 'before filtering' from the TXT file and convert it into wide format. If this CTA corresponds to the relevant fundamental period or harmonics, mark it as 1; otherwise, mark it as 0. This function applies only to daily data.
+process_lines_daily <- function(lines){
+  library(dplyr)
+  library(tidyr)
+data_list <- list()
+
+# Iterate through each line and split the variables
+for (line in lines) {
+  split_line <- strsplit(line, "\t")[[1]]
+  data_list <- append(data_list, list(split_line))
+}
+
+# Convert list to data frame
+max_length <- max(sapply(data_list, length))
+data_frame <- do.call(rbind, lapply(data_list, function(x) {
+  length(x) <- max_length
+  x
+}))
+current_cols <- ncol(data_frame)
+if (current_cols < 7) {
+    # create missing data
+    missing_cols <- 7 - current_cols
+    missing_data <- matrix(NA, nrow = nrow(data_frame), ncol = missing_cols)
+    colnames(missing_data) <- paste0("V", (current_cols + 1):7)
+    # add missing data into data frame
+    data_frame <- cbind(data_frame, missing_data)
+  }
+colnames(data_frame) <- c("Country", "WHO_region", "T0", "T0/2", "T0/3", "T0/4", "T0/5")
+full_data <- as.data.frame(data_frame)
+## first line -- before filter
+before_filter <- full_data %>%
+  group_by(Country) %>%
+  slice(1) %>%
+  ungroup()
+
+##BIC Results
+BIC_before_filter <- data.frame(Country = before_filter$Country, WHO_region = before_filter$WHO_region)
+# check and input
+BIC_before_filter[[3]] <- ifelse(rowSums(sapply(before_filter[3:7], grepl, pattern = "7\\*1\\[B")) > 0, 1, 0)
+for (i in 2:5) {
+  pattern <- paste0("7\\*1/", i, "\\[B")
+  BIC_before_filter[[i + 2]] <- ifelse(rowSums(sapply(before_filter[3:7], grepl, pattern = pattern)) > 0, 1, 0)
+}
+colnames(BIC_before_filter) <- c("Country", "WHO_region", "T0", "T0/2", "T0/3", "T0/4", "T0/5")
+BIC_before_filter$Criterion <- "BIC"
+
+##SC Results
+SC_before_filter <- data.frame(Country = before_filter$Country, WHO_region = before_filter$WHO_region)
+# check and input
+SC_before_filter[[3]] <- ifelse(rowSums(sapply(before_filter[3:7], grepl, pattern = "7\\*1\\[(S|BS)")) > 0, 1, 0)
+for (i in 2:5) {
+  pattern <- paste0("7\\*1/", i, "\\[(S|BS)")
+  SC_before_filter[[i + 2]] <- ifelse(rowSums(sapply(before_filter[3:7], grepl, pattern = pattern)) > 0, 1, 0)
+}
+colnames(SC_before_filter) <- c("Country", "WHO_region", "T0", "T0/2", "T0/3", "T0/4", "T0/5")
+SC_before_filter$Criterion <- "SC"
+
+before_filter_results <- rbind(BIC_before_filter, SC_before_filter)
+
+return(before_filter_results)
+}
+```
+
+```{R}
+
+## This function is as same as the function `process_lines_daily`. The only difference is that this function is for weekly data.
+process_lines_weekly <- function(lines){
+  library(dplyr)
+  library(tidyr)
+data_list <- list()
+
+# Iterate through each line and split the variables
+for (line in lines) {
+  split_line <- strsplit(line, "\t")[[1]]
+  data_list <- append(data_list, list(split_line))
+}
+
+# Convert list to data frame
+max_length <- max(sapply(data_list, length))
+data_frame <- do.call(rbind, lapply(data_list, function(x) {
+  length(x) <- max_length
+  x
+}))
+current_cols <- ncol(data_frame)
+if (current_cols < 7) {
+    # create missing data
+    missing_cols <- 7 - current_cols
+    missing_data <- matrix(NA, nrow = nrow(data_frame), ncol = missing_cols)
+    colnames(missing_data) <- paste0("V", (current_cols + 1):7)
+    # add missing data into data frame
+    data_frame <- cbind(data_frame, missing_data)
+  }
+colnames(data_frame) <- c("Country", "WHO_region", "T0", "T0/2", "T0/3", "T0/4", "T0/5")
+full_data <- as.data.frame(data_frame)
+## first line -- before filter
+before_filter <- full_data %>%
+  group_by(Country) %>%
+  slice(1) %>%
+  ungroup()
+
+##BIC Results
+BIC_before_filter <- data.frame(Country = before_filter$Country, WHO_region = before_filter$WHO_region)
+# check and input
+BIC_before_filter[[3]] <- ifelse(rowSums(sapply(before_filter[3:7], grepl, pattern = "52\\*1\\[B")) > 0, 1, 0)
+for (i in 2:5) {
+  pattern <- paste0("52\\*1/", i, "\\[B")
+  BIC_before_filter[[i + 2]] <- ifelse(rowSums(sapply(before_filter[3:7], grepl, pattern = pattern)) > 0, 1, 0)
+}
+colnames(BIC_before_filter) <- c("Country", "WHO_region", "T0", "T0/2", "T0/3", "T0/4", "T0/5")
+BIC_before_filter$Criterion <- "BIC"
+
+##SC Results
+SC_before_filter <- data.frame(Country = before_filter$Country, WHO_region = before_filter$WHO_region)
+# check and input
+SC_before_filter[[3]] <- ifelse(rowSums(sapply(before_filter[3:7], grepl, pattern = "52\\*1\\[(S|BS)")) > 0, 1, 0)
+for (i in 2:5) {
+  pattern <- paste0("52\\*1/", i, "\\[(S|BS)")
+  SC_before_filter[[i + 2]] <- ifelse(rowSums(sapply(before_filter[3:7], grepl, pattern = pattern)) > 0, 1, 0)
+}
+colnames(SC_before_filter) <- c("Country", "WHO_region", "T0", "T0/2", "T0/3", "T0/4", "T0/5")
+SC_before_filter$Criterion <- "SC"
+
+before_filter_results <- rbind(BIC_before_filter, SC_before_filter)
+
+return(before_filter_results)
+}
+```
+
+```{r}
+## This function is as same as the function `process_lines_daily`. The only difference is that this function analyzes the results after filtering.
+process_lines_daily_after <- function(lines){
+  library(dplyr)
+  library(tidyr)
+  library(readxl)
+data_list <- list()
+
+# Iterate through each line and split the variables
+for (line in lines) {
+  split_line <- strsplit(line, "\t")[[1]]
+  data_list <- append(data_list, list(split_line))
+}
+
+# Convert list to data frame
+max_length <- max(sapply(data_list, length))
+data_frame <- do.call(rbind, lapply(data_list, function(x) {
+  length(x) <- max_length
+  x
+}))
+current_cols <- ncol(data_frame)
+if (current_cols < 7) {
+    # create missing data
+    missing_cols <- 7 - current_cols
+    missing_data <- matrix(NA, nrow = nrow(data_frame), ncol = missing_cols)
+    colnames(missing_data) <- paste0("V", (current_cols + 1):7)
+    # add missing data into data frame
+    data_frame <- cbind(data_frame, missing_data)
+  }
+colnames(data_frame) <- c("Country", "WHO_region", "T0", "T0/2", "T0/3", "T0/4", "T0/5")
+full_data <- as.data.frame(data_frame)
+## second line -- after filter
+after_filter <- full_data %>%
+  group_by(Country) %>%
+  filter(n() > 1) %>%
+  slice(2)
+label = gsub(" ", "",full_data$WHO_region[1])
+if (nrow(after_filter) == 0) {
+  library(readxl)
+  country_label <- read_excel("country_label.xlsx") %>%
+    filter(WHO_region == label)
+  BIC_after_filter <- country_label %>%
+    mutate(`T0` = 0, `T0/2` = 0, `T0/3` = 0, `T0/4` = 0, `T0/5` = 0, Criterion = "BIC")
+  SC_after_filter <- country_label %>%
+    mutate(`T0` = 0, `T0/2` = 0, `T0/3` = 0, `T0/4` = 0, `T0/5` = 0, Criterion = "SC")
+  after_filter_results <- rbind(BIC_after_filter, SC_after_filter)
+  after_filter_results$Country <- sub("\\s+$", "", after_filter_results$Country)
+
+} else {
+##BIC Results
+BIC_after_filter <- data.frame(Country = after_filter$Country, WHO_region = after_filter$WHO_region)
+# check and input
+if (nrow(after_filter) > 1){
+BIC_after_filter[[3]] <- ifelse(rowSums(sapply(after_filter[3:7], grepl, pattern = "7\\*1\\[B")) > 0, 1, 0)
+for (i in 2:5) {
+  pattern <- paste0("7\\*1/", i, "\\[B")
+  BIC_after_filter[[i + 2]] <- ifelse(rowSums(sapply(after_filter[3:7], grepl, pattern = pattern)) > 0, 1, 0)}}
+else{
+    BIC_after_filter[[3]] <- ifelse(any(sapply(after_filter[3:7], grepl, pattern = "7\\*1\\[B")), 1, 0)
+  for (i in 2:5) {
+  pattern <- paste0("7\\*1/", i, "\\[B")
+  BIC_after_filter[[i + 2]] <- ifelse(any(sapply(after_filter[3:7], grepl, pattern = pattern)), 1, 0)
+}}
+colnames(BIC_after_filter) <- c("Country", "WHO_region", "T0", "T0/2", "T0/3", "T0/4", "T0/5")
+BIC_after_filter$Criterion <- "BIC"
+BIC_after_filter$Country <- sub("\\s+$", "", BIC_after_filter$Country)
+
+country_label <- read_excel("country_label.xlsx")
+BIC_after_filter <- left_join(country_label, BIC_after_filter, by = c("Country")) %>%
+  filter(WHO_region.x == label) %>%
+  select(-"WHO_region.y")
+BIC_after_filter <- BIC_after_filter %>%
+  rename(
+    "WHO_region" = "WHO_region.x") %>%
+  mutate(across(c(`T0`, `T0/2`, `T0/3`, `T0/4`, `T0/5`), ~replace_na(., 0))) %>%
+  mutate(Criterion = replace_na(Criterion, "BIC"))
+##SC Results
+SC_after_filter <- data.frame(Country = after_filter$Country, WHO_region = after_filter$WHO_region)
+# check and input
+if (nrow(after_filter) > 1){
+SC_after_filter[[3]] <- ifelse(rowSums(sapply(after_filter[3:7], grepl, pattern = "7\\*1\\[(S|BS)")) > 0, 1, 0)
+for (i in 2:5) {
+  pattern <- paste0("7\\*1/", i, "\\[(S|BS)")
+  SC_after_filter[[i + 2]] <- ifelse(rowSums(sapply(after_filter[3:7], grepl, pattern = pattern)) > 0, 1, 0)}}
+else{
+   SC_after_filter[[3]] <- ifelse(any(sapply(after_filter[3:7], grepl, pattern = "7\\*1\\[(S|BS)")), 1, 0)
+  for (i in 2:5) {
+  pattern <- paste0("7\\*1/", i, "\\[(S|BS)")
+  SC_after_filter[[i + 2]] <- ifelse(any(sapply(after_filter[3:7], grepl, pattern = pattern)), 1, 0)
+}}
+colnames(SC_after_filter) <- c("Country", "WHO_region", "T0", "T0/2", "T0/3", "T0/4", "T0/5")
+SC_after_filter$Criterion <- "SC"
+SC_after_filter$Country <- sub("\\s+$", "", SC_after_filter$Country)
+
+SC_after_filter <- left_join(country_label, SC_after_filter, by = c("Country")) %>%
+  select(- "WHO_region.y") %>%
+  filter(WHO_region.x  == label)
+SC_after_filter <- SC_after_filter %>%
+  rename(
+    "WHO_region" = "WHO_region.x") %>%
+  mutate(across(c(T0, `T0/2`, `T0/3`, `T0/4`, `T0/5`), ~replace_na(., 0))) %>%
+  mutate(Criterion = replace_na(Criterion, "SC"))
+after_filter_results <- rbind(BIC_after_filter, SC_after_filter)}
+return(after_filter_results)
+}
+```
+
+```{r}
+## This function is as same as the function `process_lines_daily_after`. The only difference is that this function is for weekly data.
+process_lines_week_after <- function(lines){
+  library(dplyr)
+  library(tidyr)
+  library(readxl)
+data_list <- list()
+
+# Iterate through each line and split the variables
+for (line in lines) {
+  split_line <- strsplit(line, "\t")[[1]]
+  data_list <- append(data_list, list(split_line))
+}
+
+# Convert list to data frame
+max_length <- max(sapply(data_list, length))
+data_frame <- do.call(rbind, lapply(data_list, function(x) {
+  length(x) <- max_length
+  x
+}))
+current_cols <- ncol(data_frame)
+if (current_cols < 7) {
+    # create missing data
+    missing_cols <- 7 - current_cols
+    missing_data <- matrix(NA, nrow = nrow(data_frame), ncol = missing_cols)
+    colnames(missing_data) <- paste0("V", (current_cols + 1):7)
+    # add missing data into data frame
+    data_frame <- cbind(data_frame, missing_data)
+  }
+colnames(data_frame) <- c("Country", "WHO_region", "T0", "T0/2", "T0/3", "T0/4", "T0/5")
+full_data <- as.data.frame(data_frame)
+## second line -- after filter
+after_filter <- full_data %>%
+  group_by(Country) %>%
+  filter(n() > 1) %>%
+  slice(2)
+label = gsub(" ", "",full_data$WHO_region[1])
+if (nrow(after_filter) == 0) {
+  library(readxl)
+  country_label <- read_excel("country_label.xlsx") %>%
+    filter(WHO_region == label)
+  BIC_after_filter <- country_label %>%
+    mutate(T0 = 0, `T0/2` = 0, `T0/3` = 0, `T0/4` = 0, `T0/5` = 0, Criterion = "BIC")
+  SC_after_filter <- country_label %>%
+    mutate(T0 = 0, `T0/2` = 0, `T0/3` = 0, `T0/4` = 0, `T0/5` = 0, Criterion = "SC")
+  after_filter_results <- rbind(BIC_after_filter, SC_after_filter)
+  after_filter_results$Country <- sub("\\s+$", "", after_filter_results$Country)
+
+} else {
+##BIC Results
+BIC_after_filter <- data.frame(Country = after_filter$Country, WHO_region = after_filter$WHO_region)
+# check and input
+if (nrow(after_filter) > 1){
+BIC_after_filter[[3]] <- ifelse(rowSums(sapply(after_filter[3:7], grepl, pattern = "52\\*1\\[B")) > 0, 1, 0)
+for (i in 2:5) {
+  pattern <- paste0("52\\*1/", i, "\\[B")
+  BIC_after_filter[[i + 2]] <- ifelse(rowSums(sapply(after_filter[3:7], grepl, pattern = pattern)) > 0, 1, 0)}}
+else{
+  BIC_after_filter[[3]] <- ifelse(any(sapply(after_filter[3:7], grepl, pattern = "52\\*1\\[B")), 1, 0)
+  for (i in 2:5) {
+  pattern <- paste0("52\\*1/", i, "\\[B")
+  BIC_after_filter[[i + 2]] <- ifelse(any(sapply(after_filter[3:7], grepl, pattern = pattern)), 1, 0)
+}
+}
+colnames(BIC_after_filter) <- c("Country", "WHO_region", "T0", "T0/2", "T0/3", "T0/4", "T0/5")
+BIC_after_filter$Criterion <- "BIC"
+BIC_after_filter$Country <- sub("\\s+$", "", BIC_after_filter$Country)
+
+country_label <- read_excel("country_label.xlsx")
+BIC_after_filter <- left_join(country_label, BIC_after_filter, by = c("Country")) %>%
+  filter(WHO_region.x == label) %>%
+  select(-"WHO_region.y")
+BIC_after_filter <- BIC_after_filter %>%
+  rename(
+    "WHO_region" = "WHO_region.x") %>%
+  mutate(across(c(T0, `T0/2`, `T0/3`, `T0/4`, `T0/5`), ~replace_na(., 0))) %>%
+  mutate(Criterion = replace_na(Criterion, "BIC"))
+##SC Results
+SC_after_filter <- data.frame(Country = after_filter$Country, WHO_region = after_filter$WHO_region)
+# check and input
+if (nrow(after_filter) > 1){
+SC_after_filter[[3]] <- ifelse(rowSums(sapply(after_filter[3:7], grepl, pattern = "52\\*1\\[(S|BS)")) > 0, 1, 0)
+for (i in 2:5) {
+  pattern <- paste0("52\\*1/", i, "\\[(S|BS)")
+  SC_after_filter[[i + 2]] <- ifelse(rowSums(sapply(after_filter[3:7], grepl, pattern = pattern)) > 0, 1, 0)}}
+else{
+  SC_after_filter[[3]] <- ifelse(any(sapply(after_filter[3:7], grepl, pattern = "52\\*1\\[(S|BS)")), 1, 0)
+  for (i in 2:5) {
+  pattern <- paste0("52\\*1/", i, "\\[(S|BS)")
+  SC_after_filter[[i + 2]] <- ifelse(any(sapply(after_filter[3:7], grepl, pattern = pattern)), 1, 0)
+}}
+colnames(SC_after_filter) <- c("Country", "WHO_region", "T0", "T0/2", "T0/3", "T0/4", "T0/5")
+SC_after_filter$Criterion <- "SC"
+SC_after_filter$Country <- sub("\\s+$", "", SC_after_filter$Country)
+
+SC_after_filter <- left_join(country_label, SC_after_filter, by = c("Country")) %>%
+  select(- "WHO_region.y") %>%
+  filter(WHO_region.x  == label)
+SC_after_filter <- SC_after_filter %>%
+  rename(
+    "WHO_region" = "WHO_region.x") %>%
+  mutate(across(c(T0, `T0/2`, `T0/3`, `T0/4`, `T0/5`), ~replace_na(., 0))) %>%
+  mutate(Criterion = replace_na(Criterion, "SC"))
+after_filter_results <- rbind(BIC_after_filter, SC_after_filter)}
+return(after_filter_results)
+}
+
+```
+
+
+
+```{r}
+## daily data & before filtering
+library(dplyr)
+## Read txt
+# Set the folder path
+folder_path <- "/Volumes/Newsmy 1/phd/Data Science and Management/automatic_method-main/WHO"  
+# transform = 0
+file_pattern <- "_tr0_day_high_freq_rect.txt"
+# Get all matching files
+file_list <- list.files(folder_path, pattern = file_pattern, full.names = TRUE)
+all_results <- list()
+# Process each file individually
+for (file in file_list) {
+  lines <- readLines(file)
+  result <- process_lines_daily(lines)
+  all_results[[file]] <- result
+}
+
+# merge all data and mutate two new variables
+final_results <- do.call(rbind, all_results)
+before_filter_tr0 <- final_results %>%
+  mutate(transform = 0, filter = "none", domain = "none")
+
+# tranform = 1
+file_pattern <- "_tr1_day_high_freq_rect.txt"
+# Get all matching files
+file_list <- list.files(folder_path, pattern = file_pattern, full.names = TRUE)
+all_results <- list()
+# Process each file individually
+for (file in file_list) {
+  lines <- readLines(file)
+  result <- process_lines_daily(lines)
+  all_results[[file]] <- result
+}
+
+# merge all data and mutate two new variables
+final_results <- do.call(rbind, all_results)
+before_filter_tr1 <- final_results %>%
+  mutate(transform = 1, filter = "none", domain = "none")
+
+# transform = 2
+
+file_pattern <- "_tr2_day_high_freq_rect.txt"
+# Get all matching files
+file_list <- list.files(folder_path, pattern = file_pattern, full.names = TRUE)
+all_results <- list()
+# Process each file individually
+for (file in file_list) {
+  lines <- readLines(file)
+  result <- process_lines_daily(lines)
+  all_results[[file]] <- result
+}
+
+# merge all data
+final_results <- do.call(rbind, all_results)
+before_filter_tr2 <- final_results %>%
+  mutate(transform = 2, filter = "none", domain = "none")
+
+# transform = 3
+
+file_pattern <- "_tr3_day_high_freq_rect.txt"
+# Get all matching files
+file_list <- list.files(folder_path, pattern = file_pattern, full.names = TRUE)
+all_results <- list()
+# Process each file individually
+for (file in file_list) {
+  lines <- readLines(file)
+  result <- process_lines_daily(lines)
+  all_results[[file]] <- result
+}
+
+# merge all data and mutate two new variables
+final_results <- do.call(rbind, all_results)
+before_filter_tr3 <- final_results %>%
+  mutate(transform = 3, filter = "none", domain = "none")
+
+before_filter <- rbind(before_filter_tr0, before_filter_tr1, before_filter_tr2, before_filter_tr3)
+write.csv(before_filter, "before_filter_daily.csv")
+
+```
+
+```{R}
+##week data
+# Set the folder path
+# transform = 0
+file_pattern <- "_tr0_week_high_freq_rect.txt"
+
+# Get all matching files
+file_list <- list.files(folder_path, pattern = file_pattern, full.names = TRUE)
+
+all_results <- list()
+
+# Process each file individually
+for (file in file_list) {
+  lines <- readLines(file)
+  result <- process_lines_weekly(lines)
+  all_results[[file]] <- result
+}
+
+# merge all data and mutate two new variables
+final_results <- do.call(rbind, all_results)
+
+before_filter_tr0 <- final_results %>%
+  mutate(transform = 0, filter = "none", domain = "none")
+
+# transform = 1
+file_pattern <- "_tr1_week_high_freq_rect.txt"
+
+# Get all matching files
+file_list <- list.files(folder_path, pattern = file_pattern, full.names = TRUE)
+
+all_results <- list()
+
+# Process each file individually
+for (file in file_list) {
+  lines <- readLines(file)
+  result <- process_lines_weekly(lines)
+  all_results[[file]] <- result
+}
+
+# merge all data and mutate two new variables
+final_results <- do.call(rbind, all_results)
+
+before_filter_tr1 <- final_results %>%
+  mutate(transform = 1, filter = "none", domain = "none")
+
+# tranform = 2
+file_pattern <- "_tr2_week_high_freq_rect.txt"
+
+# Get all matching files
+file_list <- list.files(folder_path, pattern = file_pattern, full.names = TRUE)
+
+all_results <- list()
+
+# Process each file individually
+for (file in file_list) {
+  lines <- readLines(file)
+  result <- process_lines_weekly(lines)
+  all_results[[file]] <- result
+}
+
+# merge all data and mutate two new variables
+final_results <- do.call(rbind, all_results)
+
+before_filter_tr2 <- final_results %>%
+  mutate(transform = 2, filter = "none", domain = "none")
+
+# tranform = 3
+file_pattern <- "_tr3_week_high_freq_rect.txt"
+
+# Get all matching files
+file_list <- list.files(folder_path, pattern = file_pattern, full.names = TRUE)
+
+all_results <- list()
+
+# Process each file individually
+for (file in file_list) {
+  lines <- readLines(file)
+  result <- process_lines_weekly(lines)
+  all_results[[file]] <- result
+}
+
+# merge all data and mutate two new variables
+final_results <- do.call(rbind, all_results)
+
+before_filter_tr3 <- final_results %>%
+  mutate(transform = 3, filter = "none", domain = "none")
+
+before_filter <- rbind(before_filter_tr0, before_filter_tr1, before_filter_tr2, before_filter_tr3)
+
+```
+
+
+```{r}
+## Add the latitude label in the weekly data results
+library(readxl)
+# We have recorded the latitude of the capital for each CTA in the file Latitude_label.xlsx.
+Latitude_label <- read_excel("/Volumes/Newsmy 1/phd/Data Science and Management/automatic_method-main/WHO/Latitude_label.xlsx")
+before_filter$Country <- sub("\\s+$", "", before_filter$Country)
+# Merge these two datasets and identify the latitude group corresponding to each CTA.
+before_filter <- left_join(before_filter, Latitude_label, by = "Country") %>%
+  select(-WHO_region) %>%
+  rename("WHO_region" = "latitude_region")
+write.csv(before_filter, "before_filter_week.csv")
+```
+
+
+
+
+```{r}
+folder_path <- "/Volumes/Newsmy 1/phd/Data Science and Management/automatic_method-main/WHO"  
+# High-pass frequency domain
+# transform = 0
+file_pattern <- "_tr0_day_high_freq_rect.txt"
+# Get all matching files
+file_list <- list.files(folder_path, pattern = file_pattern, full.names = TRUE)
+all_results <- list()
+# Process each file individually
+for (file in file_list) {
+  lines <- readLines(file)
+  result <- process_lines_daily_after(lines)
+  all_results[[file]] <- result
+}
+
+# merge all data
+final_results <- do.call(rbind, all_results)
+after_filter_tr0 <- final_results %>%
+  mutate(transform = 0, filter = "high-pass", domain = "frequency")
+
+# transform = 1
+file_pattern <- "_tr1_day_high_freq_rect.txt"
+# Get all matching files
+file_list <- list.files(folder_path, pattern = file_pattern, full.names = TRUE)
+all_results <- list()
+# Process each file individually
+for (file in file_list) {
+  lines <- readLines(file)
+  result <- process_lines_daily_after(lines)
+  all_results[[file]] <- result
+}
+
+# merge all data
+final_results <- do.call(rbind, all_results)
+after_filter_tr1 <- final_results %>%
+  mutate(transform = 1, filter = "high-pass", domain = "frequency")
+
+file_pattern <- "_tr2_day_high_freq_rect.txt"
+# Get all matching files
+file_list <- list.files(folder_path, pattern = file_pattern, full.names = TRUE)
+all_results <- list()
+# Process each file individually
+for (file in file_list) {
+  lines <- readLines(file)
+  result <- process_lines_daily_after(lines)
+  all_results[[file]] <- result
+}
+
+# merge all data
+final_results <- do.call(rbind, all_results)
+after_filter_tr2 <- final_results %>%
+  mutate(transform = 2, filter = "high-pass", domain = "frequency")
+
+## transform = 3
+file_pattern <- "_tr3_day_high_freq_rect.txt"
+# Get all matching files
+file_list <- list.files(folder_path, pattern = file_pattern, full.names = TRUE)
+all_results <- list()
+# Process each file individually
+for (file in file_list) {
+  lines <- readLines(file)
+  result <- process_lines_daily_after(lines)
+  all_results[[file]] <- result
+}
+
+# merge all data
+final_results <- do.call(rbind, all_results)
+after_filter_tr3 <- final_results %>%
+  mutate(transform = 3, filter = "high-pass", domain = "frequency")
+
+high_freq_after <- rbind(after_filter_tr0, after_filter_tr1, after_filter_tr2, after_filter_tr3)
+```
+
+```{r}
+folder_path <- "/Volumes/Newsmy 1/phd/Data Science and Management/automatic_method-main/WHO"  
+# High-pass frequency domain
+# transform = 0
+file_pattern <- "_tr0_day_high_time_rect.txt"
+# Get all matching files
+file_list <- list.files(folder_path, pattern = file_pattern, full.names = TRUE)
+all_results <- list()
+# Process each file individually
+for (file in file_list) {
+  lines <- readLines(file)
+  result <- process_lines_daily_after(lines)
+  all_results[[file]] <- result
+}
+
+# merge all data
+final_results <- do.call(rbind, all_results)
+after_filter_tr0 <- final_results %>%
+  mutate(transform = 0, filter = "high-pass", domain = "time")
+
+# transform = 1
+file_pattern <- "_tr1_day_high_time_rect.txt"
+# Get all matching files
+file_list <- list.files(folder_path, pattern = file_pattern, full.names = TRUE)
+all_results <- list()
+# Process each file individually
+for (file in file_list) {
+  lines <- readLines(file)
+  result <- process_lines_daily_after(lines)
+  all_results[[file]] <- result
+}
+
+# merge all data
+final_results <- do.call(rbind, all_results)
+after_filter_tr1 <- final_results %>%
+  mutate(transform = 1, filter = "high-pass", domain = "time")
+
+file_pattern <- "_tr2_day_high_time_rect.txt"
+# Get all matching files
+file_list <- list.files(folder_path, pattern = file_pattern, full.names = TRUE)
+all_results <- list()
+# Process each file individually
+for (file in file_list) {
+  lines <- readLines(file)
+  result <- process_lines_daily_after(lines)
+  all_results[[file]] <- result
+}
+
+# merge all data
+final_results <- do.call(rbind, all_results)
+after_filter_tr2 <- final_results %>%
+  mutate(transform = 2, filter = "high-pass", domain = "time")
+
+## transform = 3
+file_pattern <- "_tr3_day_high_time_rect.txt"
+# Get all matching files
+file_list <- list.files(folder_path, pattern = file_pattern, full.names = TRUE)
+all_results <- list()
+# Process each file individually
+for (file in file_list) {
+  lines <- readLines(file)
+  result <- process_lines_daily_after(lines)
+  all_results[[file]] <- result
+}
+
+# merge all data
+final_results <- do.call(rbind, all_results)
+after_filter_tr3 <- final_results %>%
+  mutate(transform = 3, filter = "high-pass", domain = "time")
+
+high_time_after <- rbind(after_filter_tr0, after_filter_tr1, after_filter_tr2, after_filter_tr3)
+```
+
+```{r}
+folder_path <- "/Volumes/Newsmy 1/phd/Data Science and Management/automatic_method-main/WHO"  
+# High-pass frequency domain
+# transform = 0
+file_pattern <- "_tr0_day_stop_time_rect.txt"
+# Get all matching files
+file_list <- list.files(folder_path, pattern = file_pattern, full.names = TRUE)
+all_results <- list()
+# Process each file individually
+for (file in file_list) {
+  lines <- readLines(file)
+  result <- process_lines_daily_after(lines)
+  all_results[[file]] <- result
+}
+
+# merge all data
+final_results <- do.call(rbind, all_results)
+after_filter_tr0 <- final_results %>%
+  mutate(transform = 0, filter = "stop-band", domain = "time")
+
+# transform = 1
+file_pattern <- "_tr1_day_stop_time_rect.txt"
+# Get all matching files
+file_list <- list.files(folder_path, pattern = file_pattern, full.names = TRUE)
+all_results <- list()
+# Process each file individually
+for (file in file_list) {
+  lines <- readLines(file)
+  result <- process_lines_daily_after(lines)
+  all_results[[file]] <- result
+}
+
+# merge all data
+final_results <- do.call(rbind, all_results)
+after_filter_tr1 <- final_results %>%
+  mutate(transform = 1, filter = "stop-band", domain = "time")
+
+file_pattern <- "_tr2_day_stop_time_rect.txt"
+# Get all matching files
+file_list <- list.files(folder_path, pattern = file_pattern, full.names = TRUE)
+all_results <- list()
+# Process each file individually
+for (file in file_list) {
+  lines <- readLines(file)
+  result <- process_lines_daily_after(lines)
+  all_results[[file]] <- result
+}
+
+# merge all data
+final_results <- do.call(rbind, all_results)
+after_filter_tr2 <- final_results %>%
+  mutate(transform = 2, filter = "stop-band", domain = "time")
+
+## transform = 3
+file_pattern <- "_tr3_day_stop_time_rect.txt"
+# Get all matching files
+file_list <- list.files(folder_path, pattern = file_pattern, full.names = TRUE)
+all_results <- list()
+# Process each file individually
+for (file in file_list) {
+  lines <- readLines(file)
+  result <- process_lines_daily_after(lines)
+  all_results[[file]] <- result
+}
+
+# merge all data
+final_results <- do.call(rbind, all_results)
+after_filter_tr3 <- final_results %>%
+  mutate(transform = 3, filter = "stop-band", domain = "time")
+
+stop_time_after <- rbind(after_filter_tr0, after_filter_tr1, after_filter_tr2, after_filter_tr3)
+```
+
+```{r}
+folder_path <- "/Volumes/Newsmy 1/phd/Data Science and Management/automatic_method-main/WHO"  
+# High-pass frequency domain
+# transform = 0
+file_pattern <- "_tr0_day_stop_freq_rect.txt"
+# Get all matching files
+file_list <- list.files(folder_path, pattern = file_pattern, full.names = TRUE)
+all_results <- list()
+# Process each file individually
+for (file in file_list) {
+  lines <- readLines(file)
+  result <- process_lines_daily_after(lines)
+  all_results[[file]] <- result
+}
+
+# merge all data
+final_results <- do.call(rbind, all_results)
+after_filter_tr0 <- final_results %>%
+  mutate(transform = 0, filter = "stop-band", domain = "frequency")
+
+# transform = 1
+file_pattern <- "_tr1_day_stop_freq_rect.txt"
+# Get all matching files
+file_list <- list.files(folder_path, pattern = file_pattern, full.names = TRUE)
+all_results <- list()
+# Process each file individually
+for (file in file_list) {
+  lines <- readLines(file)
+  result <- process_lines_daily_after(lines)
+  all_results[[file]] <- result
+}
+
+# merge all data
+final_results <- do.call(rbind, all_results)
+after_filter_tr1 <- final_results %>%
+  mutate(transform = 1, filter = "stop-band", domain = "frequency")
+
+file_pattern <- "_tr2_day_stop_freq_rect.txt"
+# Get all matching files
+file_list <- list.files(folder_path, pattern = file_pattern, full.names = TRUE)
+all_results <- list()
+# Process each file individually
+for (file in file_list) {
+  lines <- readLines(file)
+  result <- process_lines_daily_after(lines)
+  all_results[[file]] <- result
+}
+
+# merge all data
+final_results <- do.call(rbind, all_results)
+after_filter_tr2 <- final_results %>%
+  mutate(transform = 2, filter = "stop-band", domain = "frequency")
+
+## transform = 3
+file_pattern <- "_tr3_day_stop_freq_rect.txt"
+# Get all matching files
+file_list <- list.files(folder_path, pattern = file_pattern, full.names = TRUE)
+all_results <- list()
+# Process each file individually
+for (file in file_list) {
+  lines <- readLines(file)
+  result <- process_lines_daily_after(lines)
+  all_results[[file]] <- result
+}
+
+# merge all data
+final_results <- do.call(rbind, all_results)
+after_filter_tr3 <- final_results %>%
+  mutate(transform = 3, filter = "stop-band", domain = "frequency")
+
+stop_freq_after <- rbind(after_filter_tr0, after_filter_tr1, after_filter_tr2, after_filter_tr3)
+```
+
+```{r}
+# merge these four datasets into one csv file
+after_filter <- rbind(high_freq_after, high_time_after, stop_time_after, stop_freq_after)
+write.csv(after_filter, "after_filter_daily.csv")
+```
+
+```{r}
+folder_path <- "/Volumes/Newsmy 1/phd/Data Science and Management/automatic_method-main/WHO"  
+# High-pass frequency domain
+# transform = 0
+file_pattern <- "_tr0_week_high_freq_rect.txt"
+# Get all matching files
+file_list <- list.files(folder_path, pattern = file_pattern, full.names = TRUE)
+all_results <- list()
+# Process each file individually
+for (file in file_list) {
+  lines <- readLines(file)
+  result <- process_lines_week_after(lines)
+  all_results[[file]] <- result
+}
+
+# merge all data
+final_results <- do.call(rbind, all_results)
+after_filter_tr0 <- final_results %>%
+  mutate(transform = 0, filter = "high-pass", domain = "frequency")
+
+# transform = 1
+file_pattern <- "_tr1_week_high_freq_rect.txt"
+# Get all matching files
+file_list <- list.files(folder_path, pattern = file_pattern, full.names = TRUE)
+all_results <- list()
+# Process each file individually
+for (file in file_list) {
+  lines <- readLines(file)
+  result <- process_lines_week_after(lines)
+  all_results[[file]] <- result
+}
+
+# merge all data
+final_results <- do.call(rbind, all_results)
+after_filter_tr1 <- final_results %>%
+  mutate(transform = 1, filter = "high-pass", domain = "frequency")
+
+file_pattern <- "_tr2_week_high_freq_rect.txt"
+# Get all matching files
+file_list <- list.files(folder_path, pattern = file_pattern, full.names = TRUE)
+all_results <- list()
+# Process each file individually
+for (file in file_list) {
+  lines <- readLines(file)
+  result <- process_lines_week_after(lines)
+  all_results[[file]] <- result
+}
+
+# merge all data
+final_results <- do.call(rbind, all_results)
+after_filter_tr2 <- final_results %>%
+  mutate(transform = 2, filter = "high-pass", domain = "frequency")
+
+## transform = 3
+file_pattern <- "_tr3_week_high_freq_rect.txt"
+# Get all matching files
+file_list <- list.files(folder_path, pattern = file_pattern, full.names = TRUE)
+all_results <- list()
+# Process each file individually
+for (file in file_list) {
+  lines <- readLines(file)
+  result <- process_lines_week_after(lines)
+  all_results[[file]] <- result
+}
+
+# merge all data
+final_results <- do.call(rbind, all_results)
+after_filter_tr3 <- final_results %>%
+  mutate(transform = 3, filter = "high-pass", domain = "frequency")
+
+high_freq_after <- rbind(after_filter_tr0, after_filter_tr1, after_filter_tr2, after_filter_tr3)
+```
+
+```{r}
+folder_path <- "/Volumes/Newsmy 1/phd/Data Science and Management/automatic_method-main/WHO"  
+# High-pass frequency domain
+# transform = 0
+file_pattern <- "_tr0_week_high_time_rect.txt"
+# Get all matching files
+file_list <- list.files(folder_path, pattern = file_pattern, full.names = TRUE)
+all_results <- list()
+# Process each file individually
+for (file in file_list) {
+  lines <- readLines(file)
+  result <- process_lines_week_after(lines)
+  all_results[[file]] <- result
+}
+
+# merge all data
+final_results <- do.call(rbind, all_results)
+after_filter_tr0 <- final_results %>%
+  mutate(transform = 0, filter = "high-pass", domain = "time")
+
+# transform = 1
+file_pattern <- "_tr1_week_high_time_rect.txt"
+# Get all matching files
+file_list <- list.files(folder_path, pattern = file_pattern, full.names = TRUE)
+all_results <- list()
+# Process each file individually
+for (file in file_list) {
+  lines <- readLines(file)
+  result <- process_lines_week_after(lines)
+  all_results[[file]] <- result
+}
+
+# merge all data
+final_results <- do.call(rbind, all_results)
+after_filter_tr1 <- final_results %>%
+  mutate(transform = 1, filter = "high-pass", domain = "time")
+
+file_pattern <- "_tr2_week_high_time_rect.txt"
+# Get all matching files
+file_list <- list.files(folder_path, pattern = file_pattern, full.names = TRUE)
+all_results <- list()
+# Process each file individually
+for (file in file_list) {
+  lines <- readLines(file)
+  result <- process_lines_week_after(lines)
+  all_results[[file]] <- result
+}
+
+# merge all data
+final_results <- do.call(rbind, all_results)
+after_filter_tr2 <- final_results %>%
+  mutate(transform = 2, filter = "high-pass", domain = "time")
+
+## transform = 3
+file_pattern <- "_tr3_week_high_time_rect.txt"
+# Get all matching files
+file_list <- list.files(folder_path, pattern = file_pattern, full.names = TRUE)
+all_results <- list()
+# Process each file individually
+for (file in file_list) {
+  lines <- readLines(file)
+  result <- process_lines_week_after(lines)
+  all_results[[file]] <- result
+}
+
+# merge all data
+final_results <- do.call(rbind, all_results)
+after_filter_tr3 <- final_results %>%
+  mutate(transform = 3, filter = "high-pass", domain = "time")
+
+high_time_after <- rbind(after_filter_tr0, after_filter_tr1, after_filter_tr2, after_filter_tr3)
+```
+
+```{r}
+folder_path <- "/Volumes/Newsmy 1/phd/Data Science and Management/automatic_method-main/WHO"  
+# High-pass frequency domain
+# transform = 0
+file_pattern <- "_tr0_week_stop_time_rect.txt"
+# Get all matching files
+file_list <- list.files(folder_path, pattern = file_pattern, full.names = TRUE)
+all_results <- list()
+# Process each file individually
+for (file in file_list) {
+  lines <- readLines(file)
+  result <- process_lines_week_after(lines)
+  all_results[[file]] <- result
+}
+
+# merge all data
+final_results <- do.call(rbind, all_results)
+after_filter_tr0 <- final_results %>%
+  mutate(transform = 0, filter = "stop-band", domain = "time")
+
+# transform = 1
+file_pattern <- "_tr1_week_stop_time_rect.txt"
+# Get all matching files
+file_list <- list.files(folder_path, pattern = file_pattern, full.names = TRUE)
+all_results <- list()
+# Process each file individually
+for (file in file_list) {
+  lines <- readLines(file)
+  result <- process_lines_week_after(lines)
+  all_results[[file]] <- result
+}
+
+# merge all data
+final_results <- do.call(rbind, all_results)
+after_filter_tr1 <- final_results %>%
+  mutate(transform = 1, filter = "stop-band", domain = "time")
+
+file_pattern <- "_tr2_week_stop_time_rect.txt"
+# Get all matching files
+file_list <- list.files(folder_path, pattern = file_pattern, full.names = TRUE)
+all_results <- list()
+# Process each file individually
+for (file in file_list) {
+  lines <- readLines(file)
+  result <- process_lines_week_after(lines)
+  all_results[[file]] <- result
+}
+
+# merge all data
+final_results <- do.call(rbind, all_results)
+after_filter_tr2 <- final_results %>%
+  mutate(transform = 2, filter = "stop-band", domain = "time")
+
+## transform = 3
+file_pattern <- "_tr3_week_stop_time_rect.txt"
+# Get all matching files
+file_list <- list.files(folder_path, pattern = file_pattern, full.names = TRUE)
+all_results <- list()
+# Process each file individually
+for (file in file_list) {
+  lines <- readLines(file)
+  result <- process_lines_week_after(lines)
+  all_results[[file]] <- result
+}
+
+# merge all data
+final_results <- do.call(rbind, all_results)
+after_filter_tr3 <- final_results %>%
+  mutate(transform = 3, filter = "stop-band", domain = "time")
+
+stop_time_after <- rbind(after_filter_tr0, after_filter_tr1, after_filter_tr2, after_filter_tr3)
+```
+
+```{r}
+folder_path <- "/Volumes/Newsmy 1/phd/Data Science and Management/automatic_method-main/WHO"  
+# High-pass frequency domain
+# transform = 0
+file_pattern <- "_tr0_week_stop_freq_rect.txt"
+# Get all matching files
+file_list <- list.files(folder_path, pattern = file_pattern, full.names = TRUE)
+all_results <- list()
+# Process each file individually
+for (file in file_list) {
+  lines <- readLines(file)
+  result <- process_lines_week_after(lines)
+  all_results[[file]] <- result
+}
+
+# merge all data
+final_results <- do.call(rbind, all_results)
+after_filter_tr0 <- final_results %>%
+  mutate(transform = 0, filter = "stop-band", domain = "frequency")
+
+# transform = 1
+file_pattern <- "_tr1_week_stop_freq_rect.txt"
+# Get all matching files
+file_list <- list.files(folder_path, pattern = file_pattern, full.names = TRUE)
+all_results <- list()
+# Process each file individually
+for (file in file_list) {
+  lines <- readLines(file)
+  result <- process_lines_week_after(lines)
+  all_results[[file]] <- result
+}
+
+# merge all data
+final_results <- do.call(rbind, all_results)
+after_filter_tr1 <- final_results %>%
+  mutate(transform = 1, filter = "stop-band", domain = "frequency")
+
+file_pattern <- "_tr2_week_stop_freq_rect.txt"
+# Get all matching files
+file_list <- list.files(folder_path, pattern = file_pattern, full.names = TRUE)
+all_results <- list()
+# Process each file individually
+for (file in file_list) {
+  lines <- readLines(file)
+  result <- process_lines_week_after(lines)
+  all_results[[file]] <- result
+}
+
+# merge all data
+final_results <- do.call(rbind, all_results)
+after_filter_tr2 <- final_results %>%
+  mutate(transform = 2, filter = "stop-band", domain = "frequency")
+
+## transform = 3
+file_pattern <- "_tr3_week_stop_freq_rect.txt"
+# Get all matching files
+file_list <- list.files(folder_path, pattern = file_pattern, full.names = TRUE)
+all_results <- list()
+# Process each file individually
+for (file in file_list) {
+  lines <- readLines(file)
+  result <- process_lines_week_after(lines)
+  all_results[[file]] <- result
+}
+
+# merge all data
+final_results <- do.call(rbind, all_results)
+after_filter_tr3 <- final_results %>%
+  mutate(transform = 3, filter = "stop-band", domain = "frequency")
+
+stop_freq_after <- rbind(after_filter_tr0, after_filter_tr1, after_filter_tr2, after_filter_tr3)
+```
+
+```{r}
+# Merge the weekly data and match it with the corresponding latitude group.
+after_filter <- rbind(high_freq_after, high_time_after, stop_time_after, stop_freq_after)
+after_filter <- after_filter %>%
+  left_join(Latitude_label, by = c("Country"))
+write.csv(after_filter, "after_filter_week.csv")
+```

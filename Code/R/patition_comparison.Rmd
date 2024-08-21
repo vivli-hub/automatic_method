@@ -1,0 +1,32 @@
+---
+title: "prtition comparison"
+output: html_document
+---
+```{r}
+library(partitionComparison)
+library(dplyr)
+library(readxl)
+country_label <- read_excel("country_label.xlsx")
+Latitude_label <- read_excel("Latitude_label.xlsx")
+# Read the 'country_label.xlsx' and 'Latitude_label.xlsx' files into R as data frames
+
+par <- country_label %>%
+  left_join(Latitude_label, by = c("Country")) %>%
+  select(-"Country")
+# Merge 'country_label' with 'Latitude_label' based on the "Country" column
+# Remove the "Country" column from the resulting data frame
+
+##calculate similar coefficient
+latitude <- par$latitude_region
+WHO <-par$WHO_region
+# Extract the 'latitude_region' and 'WHO_region' columns from the merged data frame and store them as vectors
+
+data <- compareAll(new("Partition", latitude), new("Partition", WHO)) %>%
+  filter(measure == "adjustedRandIndex" | measure == "folwkesMallowsIndex" | measure == "jaccardCoefficient" |measure ==  "randIndex")
+# Calculate similarity coefficients between the latitude and WHO region partitions using the 'compareAll' function
+# Filter the results to retain only specific similarity measures: adjusted Rand Index, Fowlkes-Mallows Index, Jaccard Coefficient, and Rand Index
+
+print(data)
+```
+
+
