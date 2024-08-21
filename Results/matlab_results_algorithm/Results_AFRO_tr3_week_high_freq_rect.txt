@@ -1,0 +1,50 @@
+Algeria 	 AFRO 	 No periodicities
+Angola 	 AFRO 	 No periodicities
+Benin 	 AFRO 	 No periodicities
+Botswana 	 AFRO 	 No periodicities
+Burkina Faso 	 AFRO 	 No periodicities
+Burundi 	 AFRO 	 No periodicities
+Cabo Verde 	 AFRO 	 No periodicities
+Cameroon 	 AFRO 	 No periodicities
+Central African Republic 	 AFRO 	 No periodicities
+Chad 	 AFRO 	 No periodicities
+Comoros 	 AFRO 	 No periodicities
+Congo 	 AFRO 	 No periodicities
+Ctedvoire 	 AFRO 	 No periodicities
+Democratic Republic of the Congo 	 AFRO 	 No periodicities
+Equatorial Guinea 	 AFRO 	 No periodicities
+Eritrea 	 AFRO 	 No periodicities
+Eswatini 	 AFRO 	 No periodicities
+Ethiopia 	 AFRO 	 No periodicities
+Gabon 	 AFRO 	 No periodicities
+Gambia 	 AFRO 	 No periodicities
+Ghana 	 AFRO 	 No periodicities
+Guinea 	 AFRO 	 No periodicities
+Guinea-Bissau 	 AFRO 	 No periodicities
+Kenya 	 AFRO 	 No periodicities
+Lesotho 	 AFRO 	 No periodicities
+Liberia 	 AFRO 	 No periodicities
+Madagascar 	 AFRO 	 No periodicities
+Malawi 	 AFRO 	 No periodicities
+Mali 	 AFRO 	 No periodicities
+Mauritania 	 AFRO 	 No periodicities
+Mauritius 	 AFRO 	 No periodicities
+Mayotte 	 AFRO 	 No periodicities
+Mozambique 	 AFRO 	 No periodicities
+Namibia 	 AFRO 	 No periodicities
+Niger 	 AFRO 	 No periodicities
+Nigeria 	 AFRO 	 No periodicities
+Runion 	 AFRO 	 No periodicities
+Rwanda 	 AFRO 	 No periodicities
+Saint Helena Ascension and Tristan da Cunha 	 AFRO 	 No periodicities
+Sao Tome and Principe 	 AFRO 	 No periodicities
+Senegal 	 AFRO 	 No periodicities
+Seychelles 	 AFRO 	 No periodicities
+Sierra Leone 	 AFRO 	 No periodicities
+South Africa 	 AFRO	 52*1/4[S]
+South Sudan 	 AFRO 	 No periodicities
+Togo 	 AFRO 	 No periodicities
+Uganda 	 AFRO 	 No periodicities
+United Republic of Tanzania 	 AFRO 	 No periodicities
+Zambia 	 AFRO 	 No periodicities
+Zimbabwe 	 AFRO 	 No periodicities

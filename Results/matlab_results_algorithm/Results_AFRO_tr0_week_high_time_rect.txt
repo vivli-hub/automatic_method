@@ -1,0 +1,60 @@
+Algeria 	 AFRO	 52*1/2[BS]
+Angola 	 AFRO
+Benin 	 AFRO
+Botswana 	 AFRO
+Burkina Faso 	 AFRO	 52*1[BS]	 52*1/2[BS]	 52*1/3[BS]	 52*1/4[B]
+Burkina Faso 	 AFRO	 52*1/2[BS]	 52*1/3[BS]	 52*1/4[BS]
+Burundi 	 AFRO
+Cabo Verde 	 AFRO
+Cameroon 	 AFRO	 52*1/2[BS]	 52*1/3[BS]
+Central African Republic 	 AFRO	 52*1[BS]	 52*1/2[S]	 52*1/3[BS]
+Central African Republic 	 AFRO	 52*1/2[S]	 52*1/3[BS]
+Chad 	 AFRO	 52*1[BS]
+Chad 	 AFRO	 52*1/3[S]
+Comoros 	 AFRO
+Congo 	 AFRO
+Ctedvoire 	 AFRO
+Democratic Republic of the Congo 	 AFRO	 52*1/2[BS]
+Equatorial Guinea 	 AFRO	 52*1/3[S]
+Eritrea 	 AFRO	 52*1/2[BS]
+Eswatini 	 AFRO	 52*1/2[S]	 52*1/3[S]
+Ethiopia 	 AFRO	 52*1/2[BS]	 52*1/3[BS]
+Gabon 	 AFRO	 52*1/4[BS]
+Gambia 	 AFRO	 52*1/2[BS]
+Ghana 	 AFRO	 52*1/2[BS]	 52*1/3[BS]	 52*1/4[BS]
+Guinea 	 AFRO	 52*1/2[BS]	 52*1/3[BS]
+Guinea-Bissau 	 AFRO	 52*1/2[BS]	 52*1/3[BS]
+Kenya 	 AFRO	 52*1/3[BS]
+Lesotho 	 AFRO
+Liberia 	 AFRO	 52*1/2[BS]
+Madagascar 	 AFRO	 52*1[BS]	 52*1/3[BS]	 52*1/4[BS]
+Madagascar 	 AFRO	 52*1/3[BS]	 52*1/4[BS]
+Malawi 	 AFRO	 52*1/2[BS]	 52*1/3[BS]	 52*1/4[BS]	 52*1/5[BS]
+Mali 	 AFRO
+Mauritania 	 AFRO	 52*1/2[S]
+Mauritius 	 AFRO	 52*1[BS]	 52*1/2[BS]	 52*1/3[BS]	 52*1/4[BS]
+Mauritius 	 AFRO	 52*1/2[BS]	 52*1/3[BS]	 52*1/4[BS]	 52*1/5[BS]
+Mayotte 	 AFRO
+Mozambique 	 AFRO	 52*1/2[BS]	 52*1/3[BS]	 52*1/4[BS]	 52*1/5[BS]
+Namibia 	 AFRO	 52*1[BS]	 52*1/2[BS]	 52*1/3[BS]	 52*1/4[BS]	 52*1/5[BS]
+Namibia 	 AFRO	 52*1/2[BS]	 52*1/3[BS]	 52*1/4[BS]	 52*1/5[BS]
+Niger 	 AFRO	 52*1[BS]	 52*1/2[BS]	 52*1/3[BS]
+Niger 	 AFRO	 52*1/2[BS]	 52*1/3[BS]
+Nigeria 	 AFRO	 52*1[BS]	 52*1/2[BS]	 52*1/3[BS]	 52*1/4[BS]	 52*1/5[B]
+Nigeria 	 AFRO	 52*1/2[BS]	 52*1/3[BS]	 52*1/4[BS]
+Runion 	 AFRO
+Rwanda 	 AFRO	 52*1[BS]	 52*1/2[BS]	 52*1/3[BS]	 52*1/4[BS]	 52*1/5[BS]
+Rwanda 	 AFRO	 52*1/2[BS]	 52*1/3[BS]	 52*1/4[BS]	 52*1/5[B]
+Saint Helena Ascension and Tristan da Cunha 	 AFRO 	 No periodicities
+Sao Tome and Principe 	 AFRO 	 No periodicities
+Senegal 	 AFRO	 52*1/2[BS]	 52*1/3[BS]	 52*1/4[B]	 52*1/5[BS]
+Seychelles 	 AFRO
+Sierra Leone 	 AFRO	 52*1/2[BS]
+South Africa 	 AFRO	 52*1[BS]	 52*1/2[BS]	 52*1/3[BS]	 52*1/4[BS]	 52*1/5[BS]
+South Africa 	 AFRO	 52*1/2[BS]	 52*1/3[BS]	 52*1/4[BS]	 52*1/5[BS]
+South Sudan 	 AFRO	 52*1/3[BS]
+Togo 	 AFRO	 52*1/2[BS]	 52*1/3[BS]
+Uganda 	 AFRO
+United Republic of Tanzania 	 AFRO 	 No periodicities
+Zambia 	 AFRO	 52*1/2[BS]	 52*1/3[B]
+Zimbabwe 	 AFRO	 52*1/2[BS]	 52*1/3[S]

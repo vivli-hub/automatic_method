@@ -1,0 +1,59 @@
+Algeria 	 AFRO 	 No periodicities
+Angola 	 AFRO 	 No periodicities
+Benin 	 AFRO 	 No periodicities
+Botswana 	 AFRO	 7*1/2[BS]
+Burkina Faso 	 AFRO 	 No periodicities
+Burundi 	 AFRO 	 No periodicities
+Cabo Verde 	 AFRO	 7*1[BS]
+Cabo Verde 	 AFRO
+Cameroon 	 AFRO	 7*1/2[BS]	 7*1/3[B]
+Central African Republic 	 AFRO 	 No periodicities
+Chad 	 AFRO 	 No periodicities
+Comoros 	 AFRO	 7*1/3[B]
+Congo 	 AFRO	 7*1/2[BS]	 7*1/3[BS]
+Ctedvoire 	 AFRO 	 No periodicities
+Democratic Republic of the Congo 	 AFRO	 7*1/2[S]
+Equatorial Guinea 	 AFRO	 7*1/3[S]
+Eritrea 	 AFRO 	 No periodicities
+Eswatini 	 AFRO	 7*1[S]
+Eswatini 	 AFRO
+Ethiopia 	 AFRO	 7*1[S]
+Ethiopia 	 AFRO
+Gabon 	 AFRO	 7*1/3[BS]
+Gambia 	 AFRO 	 No periodicities
+Ghana 	 AFRO	 7*1/3[S]
+Guinea 	 AFRO	 7*1/3[S]
+Guinea-Bissau 	 AFRO	 7*1/3[B]
+Kenya 	 AFRO	 7*1[BS]	 7*1/2[BS]
+Kenya 	 AFRO	 7*1/2[B]
+Lesotho 	 AFRO 	 No periodicities
+Liberia 	 AFRO 	 No periodicities
+Madagascar 	 AFRO	 7*1/2[BS]	 7*1/3[BS]
+Malawi 	 AFRO	 7*1[BS]
+Malawi 	 AFRO	 7*1/2[BS]
+Mali 	 AFRO 	 No periodicities
+Mauritania 	 AFRO 	 No periodicities
+Mauritius 	 AFRO	 7*1/2[BS]	 7*1/3[S]
+Mayotte 	 AFRO 	 No periodicities
+Mozambique 	 AFRO 	 No periodicities
+Namibia 	 AFRO 	 No periodicities
+Niger 	 AFRO 	 No periodicities
+Nigeria 	 AFRO	 7*1/3[S]
+Runion 	 AFRO 	 No periodicities
+Rwanda 	 AFRO 	 No periodicities
+Saint Helena Ascension and Tristan da Cunha 	 AFRO 	 No periodicities
+Sao Tome and Principe 	 AFRO 	 No periodicities
+Senegal 	 AFRO 	 No periodicities
+Seychelles 	 AFRO	 7*1/3[BS]
+Sierra Leone 	 AFRO 	 No periodicities
+South Africa 	 AFRO	 7*1[BS]	 7*1/2[BS]
+South Africa 	 AFRO	 7*1/2[BS]
+South Sudan 	 AFRO 	 No periodicities
+Togo 	 AFRO	 7*1[BS]	 7*1/2[BS]	 7*1/3[BS]
+Togo 	 AFRO	 7*1/2[BS]	 7*1/3[BS]
+Uganda 	 AFRO 	 No periodicities
+United Republic of Tanzania 	 AFRO 	 No periodicities
+Zambia 	 AFRO	 7*1[BS]
+Zambia 	 AFRO	 7*1/2[BS]
+Zimbabwe 	 AFRO	 7*1[S]
+Zimbabwe 	 AFRO

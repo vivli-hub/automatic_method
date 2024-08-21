@@ -1,0 +1,60 @@
+Algeria 	 AFRO 	 No periodicities
+Angola 	 AFRO	 7*1/3[S]
+Benin 	 AFRO	 7*1[B]	 7*1/2[BS]	 7*1/3[B]
+Benin 	 AFRO	 7*1/2[BS]	 7*1/3[BS]
+Botswana 	 AFRO	 7*1/2[BS]	 7*1/3[BS]
+Burkina Faso 	 AFRO	 7*1/3[BS]
+Burundi 	 AFRO 	 No periodicities
+Cabo Verde 	 AFRO	 7*1/3[S]
+Cameroon 	 AFRO	 7*1[BS]	 7*1/2[BS]	 7*1/3[BS]
+Cameroon 	 AFRO	 7*1/2[BS]	 7*1/3[B]
+Central African Republic 	 AFRO	 7*1/3[BS]
+Chad 	 AFRO	 7*1/3[BS]
+Comoros 	 AFRO	 7*1/3[BS]
+Congo 	 AFRO	 7*1/2[BS]	 7*1/3[BS]
+Ctedvoire 	 AFRO 	 No periodicities
+Democratic Republic of the Congo 	 AFRO	 7*1/2[BS]	 7*1/3[BS]
+Equatorial Guinea 	 AFRO	 7*1/3[BS]
+Eritrea 	 AFRO	 7*1/2[BS]
+Eswatini 	 AFRO	 7*1[B]	 7*1/2[BS]	 7*1/3[BS]
+Eswatini 	 AFRO	 7*1/2[BS]	 7*1/3[BS]
+Ethiopia 	 AFRO	 7*1[S]
+Ethiopia 	 AFRO
+Gabon 	 AFRO	 7*1/2[BS]	 7*1/3[BS]
+Gambia 	 AFRO	 7*1/3[BS]
+Ghana 	 AFRO	 7*1/3[S]
+Guinea 	 AFRO	 7*1[B]	 7*1/2[BS]	 7*1/3[BS]
+Guinea 	 AFRO	 7*1/2[BS]	 7*1/3[BS]
+Guinea-Bissau 	 AFRO	 7*1/3[BS]
+Kenya 	 AFRO	 7*1[BS]	 7*1/2[BS]
+Kenya 	 AFRO	 7*1/2[BS]	 7*1/3[B]
+Lesotho 	 AFRO 	 No periodicities
+Liberia 	 AFRO 	 No periodicities
+Madagascar 	 AFRO	 7*1[BS]	 7*1/2[B]	 7*1/3[BS]
+Madagascar 	 AFRO	 7*1/2[B]	 7*1/3[B]
+Malawi 	 AFRO	 7*1/3[B]
+Mali 	 AFRO	 7*1/2[S]
+Mauritania 	 AFRO	 7*1/3[S]
+Mauritius 	 AFRO 	 No periodicities
+Mayotte 	 AFRO	 7*1/2[BS]	 7*1/3[S]
+Mozambique 	 AFRO	 7*1/2[BS]	 7*1/3[BS]
+Namibia 	 AFRO	 7*1/3[B]
+Niger 	 AFRO 	 No periodicities
+Nigeria 	 AFRO	 7*1/2[BS]	 7*1/3[BS]
+Runion 	 AFRO	 7*1[B]	 7*1/2[BS]	 7*1/3[BS]
+Runion 	 AFRO	 7*1/2[BS]	 7*1/3[B]
+Rwanda 	 AFRO	 7*1/3[BS]
+Saint Helena Ascension and Tristan da Cunha 	 AFRO 	 No periodicities
+Sao Tome and Principe 	 AFRO	 7*1/2[BS]	 7*1/3[BS]
+Senegal 	 AFRO	 7*1/3[BS]
+Seychelles 	 AFRO	 7*1/3[BS]
+Sierra Leone 	 AFRO	 7*1/3[S]
+South Africa 	 AFRO 	 No periodicities
+South Sudan 	 AFRO 	 No periodicities
+Togo 	 AFRO	 7*1[B]	 7*1/2[BS]	 7*1/3[BS]
+Togo 	 AFRO	 7*1/2[BS]	 7*1/3[B]
+Uganda 	 AFRO	 7*1/3[BS]
+United Republic of Tanzania 	 AFRO	 7*1[BS]	 7*1/2[BS]	 7*1/3[BS]
+United Republic of Tanzania 	 AFRO	 7*1/2[BS]	 7*1/3[BS]
+Zambia 	 AFRO	 7*1/2[S]
+Zimbabwe 	 AFRO 	 No periodicities
