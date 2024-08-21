@@ -1,0 +1,16 @@
+Bangladesh 	 SEARO	 7*1[BS]
+Bangladesh 	 SEARO	 7*1/2[BS]
+Bhutan 	 SEARO 	 No periodicities
+Democratic Peoples Republic of Korea 	 SEARO 	 No data
+India 	 SEARO	 7*1[BS]	 7*1/2[BS]
+India 	 SEARO	 7*1/2[BS]
+Indonesia 	 SEARO	 7*1[BS]
+Indonesia 	 SEARO	 7*1/2[BS]
+Maldives 	 SEARO 	 No periodicities
+Myanmar 	 SEARO 	 No periodicities
+Nepal 	 SEARO	 7*1[B]
+Nepal 	 SEARO
+Sri Lanka 	 SEARO 	 No periodicities
+Thailand 	 SEARO	 7*1[BS]
+Thailand 	 SEARO
+Timor-Leste 	 SEARO 	 No periodicities

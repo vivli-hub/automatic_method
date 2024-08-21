@@ -1,0 +1,96 @@
+Albania 	 EURO 	 No periodicities
+Andorra 	 EURO	 7*1/3[B]
+Armenia 	 EURO	 7*1[BS]
+Armenia 	 EURO
+Austria 	 EURO	 7*1[BS]	 7*1/2[BS]
+Austria 	 EURO	 7*1/2[BS]
+Azerbaijan 	 EURO 	 No periodicities
+Belarus 	 EURO	 7*1[BS]
+Belarus 	 EURO	 7*1[S]
+Belgium 	 EURO	 7*1/2[BS]	 7*1/3[BS]
+Bosnia and Herzegovina 	 EURO	 7*1[BS]
+Bosnia and Herzegovina 	 EURO	 7*1/2[BS]
+Bulgaria 	 EURO	 7*1[B]	 7*1/2[BS]
+Bulgaria 	 EURO	 7*1/2[BS]
+Croatia 	 EURO	 7*1[BS]	 7*1/2[BS]
+Croatia 	 EURO	 7*1/2[BS]
+Cyprus 	 EURO 	 No periodicities
+Czechia 	 EURO	 7*1[BS]	 7*1/2[BS]
+Czechia 	 EURO	 7*1/2[BS]
+Denmark 	 EURO	 7*1[BS]
+Denmark 	 EURO
+Estonia 	 EURO	 7*1[BS]
+Estonia 	 EURO	 7*1/2[BS]
+Faroe Islands 	 EURO 	 No periodicities
+Finland 	 EURO	 7*1[BS]	 7*1/2[BS]
+Finland 	 EURO	 7*1/2[BS]	 7*1/3[BS]
+France 	 EURO	 7*1/2[BS]
+Georgia 	 EURO	 7*1/2[BS]
+Germany 	 EURO	 7*1[BS]	 7*1/2[BS]
+Germany 	 EURO	 7*1/2[BS]
+Gibraltar 	 EURO 	 No periodicities
+Greece 	 EURO 	 No periodicities
+Greenland 	 EURO 	 No periodicities
+Guernsey 	 EURO	 7*1/2[BS]
+Holy See 	 EURO 	 No periodicities
+Hungary 	 EURO	 7*1/3[BS]
+Iceland 	 EURO 	 No periodicities
+Ireland 	 EURO 	 No periodicities
+Isle of Man 	 EURO 	 No periodicities
+Israel 	 EURO	 7*1[BS]	 7*1/2[BS]
+Israel 	 EURO	 7*1/2[BS]
+Italy 	 EURO	 7*1[BS]
+Italy 	 EURO	 7*1/2[BS]	 7*1/3[B]
+Jersey 	 EURO	 7*1[BS]
+Jersey 	 EURO
+Kazakhstan 	 EURO	 7*1[BS]
+Kazakhstan 	 EURO	 7*1/2[BS]
+Kosovo 	 EURO	 7*1[BS]
+Kosovo 	 EURO	 7*1/2[BS]
+Kyrgyzstan 	 EURO 	 No periodicities
+Latvia 	 EURO	 7*1[BS]	 7*1/2[BS]
+Latvia 	 EURO	 7*1/2[BS]
+Liechtenstein 	 EURO	 7*1/2[B]
+Lithuania 	 EURO	 7*1[BS]	 7*1/2[BS]
+Lithuania 	 EURO	 7*1/2[BS]
+Luxembourg 	 EURO	 7*1[BS]	 7*1/2[BS]
+Luxembourg 	 EURO	 7*1/2[BS]
+Malta 	 EURO 	 No periodicities
+Monaco 	 EURO	 7*1/2[BS]
+Montenegro 	 EURO	 7*1/2[BS]
+Netherlands 	 EURO	 7*1[BS]
+Netherlands 	 EURO
+North Macedonia 	 EURO 	 No periodicities
+Norway 	 EURO	 7*1[B]	 7*1/2[BS]
+Norway 	 EURO	 7*1/2[BS]	 7*1/3[BS]
+Poland 	 EURO	 7*1[BS]
+Poland 	 EURO	 7*1/2[BS]
+Portugal 	 EURO	 7*1[BS]	 7*1/2[BS]
+Portugal 	 EURO	 7*1/2[BS]
+Republic of Moldova 	 EURO	 7*1[BS]
+Republic of Moldova 	 EURO	 7*1/2[B]
+Romania 	 EURO	 7*1[BS]
+Romania 	 EURO	 7*1/2[BS]
+Russian Federation 	 EURO	 7*1[BS]
+Russian Federation 	 EURO
+San Marino 	 EURO	 7*1/2[BS]
+Serbia 	 EURO	 7*1[BS]	 7*1/2[BS]
+Serbia 	 EURO	 7*1/2[BS]
+Slovakia 	 EURO	 7*1[BS]	 7*1/2[BS]
+Slovakia 	 EURO	 7*1/2[BS]
+Slovenia 	 EURO	 7*1[B]	 7*1/2[BS]
+Slovenia 	 EURO	 7*1/2[BS]
+Spain 	 EURO	 7*1[BS]	 7*1/2[B]
+Spain 	 EURO	 7*1/2[BS]
+Sweden 	 EURO	 7*1[BS]	 7*1/2[BS]
+Sweden 	 EURO	 7*1/2[BS]
+Switzerland 	 EURO	 7*1/2[BS]
+Tajikistan 	 EURO 	 No periodicities
+The United Kingdom 	 EURO	 7*1[BS]	 7*1/2[BS]
+The United Kingdom 	 EURO	 7*1/2[BS]
+Trkiye 	 EURO	 7*1[BS]
+Trkiye 	 EURO	 7*1/2[BS]
+Turkmenistan 	 EURO 	 No data
+Ukraine 	 EURO	 7*1[BS]
+Ukraine 	 EURO
+Uzbekistan 	 EURO 	 No periodicities
