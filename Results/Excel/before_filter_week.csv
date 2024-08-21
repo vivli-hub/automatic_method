@@ -1,0 +1,1889 @@
+Country,WHO_region,T0,T0/2,T0/3,T0/4,T0/5,Criterion,transform,filter,domain,latitude_region
+Algeria, AFRO,0,1,0,0,0,BIC,0,none,none,group_2
+Angola, AFRO,0,0,0,0,0,BIC,0,none,none,group_1
+Benin, AFRO,0,0,0,0,0,BIC,0,none,none,group_1
+Botswana, AFRO,0,0,0,0,0,BIC,0,none,none,group_4
+Burkina Faso, AFRO,1,1,1,1,0,BIC,0,none,none,group_1
+Burundi, AFRO,0,0,0,0,0,BIC,0,none,none,group_1
+Cabo Verde, AFRO,0,0,0,0,0,BIC,0,none,none,group_1
+Cameroon, AFRO,0,1,1,0,0,BIC,0,none,none,group_1
+Central African Republic, AFRO,1,0,1,0,0,BIC,0,none,none,group_1
+Chad, AFRO,1,0,0,0,0,BIC,0,none,none,group_1
+Comoros, AFRO,0,0,0,0,0,BIC,0,none,none,group_1
+Congo, AFRO,0,0,0,0,0,BIC,0,none,none,group_1
+Ctedvoire, AFRO,0,0,0,0,0,BIC,0,none,none,group_1
+Democratic Republic of the Congo, AFRO,0,1,0,0,0,BIC,0,none,none,group_1
+Equatorial Guinea, AFRO,0,0,0,0,0,BIC,0,none,none,group_1
+Eritrea, AFRO,0,1,0,0,0,BIC,0,none,none,group_2
+Eswatini, AFRO,0,0,0,0,0,BIC,0,none,none,group_4
+Ethiopia, AFRO,0,1,1,0,0,BIC,0,none,none,group_1
+Gabon, AFRO,0,0,0,1,0,BIC,0,none,none,group_1
+Gambia, AFRO,0,1,0,0,0,BIC,0,none,none,group_1
+Ghana, AFRO,0,1,1,1,0,BIC,0,none,none,group_1
+Guinea, AFRO,0,1,1,0,0,BIC,0,none,none,group_1
+Guinea-Bissau, AFRO,0,1,1,0,0,BIC,0,none,none,group_1
+Kenya, AFRO,0,0,1,0,0,BIC,0,none,none,group_1
+Lesotho, AFRO,0,0,0,0,0,BIC,0,none,none,group_4
+Liberia, AFRO,0,1,0,0,0,BIC,0,none,none,group_1
+Madagascar, AFRO,1,0,1,1,0,BIC,0,none,none,group_4
+Malawi, AFRO,0,1,1,1,1,BIC,0,none,none,group_1
+Mali, AFRO,0,0,0,0,0,BIC,0,none,none,group_1
+Mauritania, AFRO,0,0,0,0,0,BIC,0,none,none,group_2
+Mauritius, AFRO,1,1,1,1,0,BIC,0,none,none,group_4
+Mayotte, AFRO,0,0,0,0,0,BIC,0,none,none,group_1
+Mozambique, AFRO,0,1,1,1,1,BIC,0,none,none,group_4
+Namibia, AFRO,1,1,1,1,1,BIC,0,none,none,group_4
+Niger, AFRO,1,1,1,0,0,BIC,0,none,none,group_1
+Nigeria, AFRO,1,1,1,1,1,BIC,0,none,none,group_1
+Runion, AFRO,0,0,0,0,0,BIC,0,none,none,group_4
+Rwanda, AFRO,1,1,1,1,1,BIC,0,none,none,group_1
+Saint Helena Ascension and Tristan da Cunha, AFRO ,0,0,0,0,0,BIC,0,none,none,group_4
+Sao Tome and Principe, AFRO ,0,0,0,0,0,BIC,0,none,none,group_1
+Senegal, AFRO,0,1,1,1,1,BIC,0,none,none,group_1
+Seychelles, AFRO,0,0,0,0,0,BIC,0,none,none,group_1
+Sierra Leone, AFRO,0,1,0,0,0,BIC,0,none,none,group_1
+South Africa, AFRO,1,1,1,1,1,BIC,0,none,none,group_4
+South Sudan, AFRO,0,0,1,0,0,BIC,0,none,none,group_1
+Togo, AFRO,0,1,1,0,0,BIC,0,none,none,group_1
+Uganda, AFRO,0,0,0,0,0,BIC,0,none,none,group_1
+United Republic of Tanzania, AFRO ,0,0,0,0,0,BIC,0,none,none,group_2
+Zambia, AFRO,0,1,1,0,0,BIC,0,none,none,group_4
+Zimbabwe, AFRO,0,1,0,0,0,BIC,0,none,none,group_4
+Algeria, AFRO,0,1,0,0,0,SC,0,none,none,group_2
+Angola, AFRO,0,0,0,0,0,SC,0,none,none,group_1
+Benin, AFRO,0,0,0,0,0,SC,0,none,none,group_1
+Botswana, AFRO,0,0,0,0,0,SC,0,none,none,group_4
+Burkina Faso, AFRO,1,1,1,0,0,SC,0,none,none,group_1
+Burundi, AFRO,0,0,0,0,0,SC,0,none,none,group_1
+Cabo Verde, AFRO,0,0,0,0,0,SC,0,none,none,group_1
+Cameroon, AFRO,0,1,1,0,0,SC,0,none,none,group_1
+Central African Republic, AFRO,1,1,1,0,0,SC,0,none,none,group_1
+Chad, AFRO,1,0,0,0,0,SC,0,none,none,group_1
+Comoros, AFRO,0,0,0,0,0,SC,0,none,none,group_1
+Congo, AFRO,0,0,0,0,0,SC,0,none,none,group_1
+Ctedvoire, AFRO,0,0,0,0,0,SC,0,none,none,group_1
+Democratic Republic of the Congo, AFRO,0,1,0,0,0,SC,0,none,none,group_1
+Equatorial Guinea, AFRO,0,0,1,0,0,SC,0,none,none,group_1
+Eritrea, AFRO,0,1,0,0,0,SC,0,none,none,group_2
+Eswatini, AFRO,0,1,1,0,0,SC,0,none,none,group_4
+Ethiopia, AFRO,0,1,1,0,0,SC,0,none,none,group_1
+Gabon, AFRO,0,0,0,1,0,SC,0,none,none,group_1
+Gambia, AFRO,0,1,0,0,0,SC,0,none,none,group_1
+Ghana, AFRO,0,1,1,1,0,SC,0,none,none,group_1
+Guinea, AFRO,0,1,1,0,0,SC,0,none,none,group_1
+Guinea-Bissau, AFRO,0,1,1,0,0,SC,0,none,none,group_1
+Kenya, AFRO,0,0,1,0,0,SC,0,none,none,group_1
+Lesotho, AFRO,0,0,0,0,0,SC,0,none,none,group_4
+Liberia, AFRO,0,1,0,0,0,SC,0,none,none,group_1
+Madagascar, AFRO,1,0,1,1,0,SC,0,none,none,group_4
+Malawi, AFRO,0,1,1,1,1,SC,0,none,none,group_1
+Mali, AFRO,0,0,0,0,0,SC,0,none,none,group_1
+Mauritania, AFRO,0,1,0,0,0,SC,0,none,none,group_2
+Mauritius, AFRO,1,1,1,1,0,SC,0,none,none,group_4
+Mayotte, AFRO,0,0,0,0,0,SC,0,none,none,group_1
+Mozambique, AFRO,0,1,1,1,1,SC,0,none,none,group_4
+Namibia, AFRO,1,1,1,1,1,SC,0,none,none,group_4
+Niger, AFRO,1,1,1,0,0,SC,0,none,none,group_1
+Nigeria, AFRO,1,1,1,1,0,SC,0,none,none,group_1
+Runion, AFRO,0,0,0,0,0,SC,0,none,none,group_4
+Rwanda, AFRO,1,1,1,1,1,SC,0,none,none,group_1
+Saint Helena Ascension and Tristan da Cunha, AFRO ,0,0,0,0,0,SC,0,none,none,group_4
+Sao Tome and Principe, AFRO ,0,0,0,0,0,SC,0,none,none,group_1
+Senegal, AFRO,0,1,1,0,1,SC,0,none,none,group_1
+Seychelles, AFRO,0,0,0,0,0,SC,0,none,none,group_1
+Sierra Leone, AFRO,0,1,0,0,0,SC,0,none,none,group_1
+South Africa, AFRO,1,1,1,1,1,SC,0,none,none,group_4
+South Sudan, AFRO,0,0,1,0,0,SC,0,none,none,group_1
+Togo, AFRO,0,1,1,0,0,SC,0,none,none,group_1
+Uganda, AFRO,0,0,0,0,0,SC,0,none,none,group_1
+United Republic of Tanzania, AFRO ,0,0,0,0,0,SC,0,none,none,group_2
+Zambia, AFRO,0,1,0,0,0,SC,0,none,none,group_4
+Zimbabwe, AFRO,0,1,1,0,0,SC,0,none,none,group_4
+Anguilla, AMRO,0,0,0,0,0,BIC,0,none,none,group_2
+Antigua and Barbuda, AMRO,0,1,1,1,0,BIC,0,none,none,group_2
+Argentina, AMRO,0,0,0,0,0,BIC,0,none,none,group_4
+Aruba, AMRO,0,0,0,0,0,BIC,0,none,none,group_1
+Bahamas, AMRO,0,1,0,0,0,BIC,0,none,none,group_2
+Barbados, AMRO,0,1,1,1,1,BIC,0,none,none,group_1
+Belize, AMRO,0,0,0,0,0,BIC,0,none,none,group_2
+Bermuda, AMRO,0,0,0,0,0,BIC,0,none,none,group_2
+Bolivia (Plurinational State of), AMRO,0,1,0,1,1,BIC,0,none,none,group_4
+Bonaire, AMRO,0,0,0,0,0,BIC,0,none,none,group_1
+Brazil, AMRO,1,1,1,1,1,BIC,0,none,none,group_4
+British Virgin Islands, AMRO,0,0,0,0,0,BIC,0,none,none,group_2
+Canada, AMRO,1,1,1,1,0,BIC,0,none,none,group_3
+Cayman Islands, AMRO,0,0,0,0,0,BIC,0,none,none,group_2
+Chile, AMRO,1,1,1,1,0,BIC,0,none,none,group_4
+Colombia, AMRO,1,1,1,1,1,BIC,0,none,none,group_1
+Costa Rica, AMRO,1,1,1,0,1,BIC,0,none,none,group_1
+Cuba, AMRO,1,1,1,0,1,BIC,0,none,none,group_2
+Curaao, AMRO,0,0,0,0,0,BIC,0,none,none,group_1
+Dominica, AMRO,0,0,1,0,0,BIC,0,none,none,group_2
+Dominican Republic, AMRO,0,1,0,0,0,BIC,0,none,none,group_2
+Ecuador, AMRO,0,0,1,0,0,BIC,0,none,none,group_1
+El Salvador, AMRO,0,0,0,0,0,BIC,0,none,none,group_1
+Falkland Islands (Malvinas), AMRO ,0,0,0,0,0,BIC,0,none,none,group_5
+French Guiana, AMRO ,0,0,0,0,0,BIC,0,none,none,group_1
+Grenada, AMRO,0,1,1,1,1,BIC,0,none,none,group_1
+Guadeloupe, AMRO,0,1,0,0,0,BIC,0,none,none,group_2
+Guatemala, AMRO,1,1,1,0,1,BIC,0,none,none,group_1
+Guyana, AMRO,0,0,0,0,0,BIC,0,none,none,group_1
+Haiti, AMRO,1,1,1,1,1,BIC,0,none,none,group_2
+Honduras, AMRO,1,1,1,1,0,BIC,0,none,none,group_1
+Jamaica, AMRO,0,1,1,0,0,BIC,0,none,none,group_2
+Martinique, AMRO,0,1,1,0,0,BIC,0,none,none,group_1
+Mexico, AMRO,0,1,1,1,1,BIC,0,none,none,group_2
+Montserrat, AMRO ,0,0,0,0,0,BIC,0,none,none,group_2
+Nicaragua, AMRO,1,1,1,0,0,BIC,0,none,none,group_1
+Panama, AMRO,0,1,1,1,0,BIC,0,none,none,group_1
+Paraguay, AMRO,1,1,1,1,1,BIC,0,none,none,group_4
+Peru, AMRO,0,1,0,0,0,BIC,0,none,none,group_1
+Puerto Rico, AMRO,0,1,1,1,0,BIC,0,none,none,group_2
+Saba, AMRO,0,0,0,0,0,BIC,0,none,none,group_2
+Saint Barthlemy, AMRO,0,0,0,0,0,BIC,0,none,none,group_2
+Saint Kitts and Nevis, AMRO,0,0,0,0,0,BIC,0,none,none,group_2
+Saint Lucia, AMRO,0,1,1,1,1,BIC,0,none,none,group_1
+Saint Martin, AMRO ,0,0,0,0,0,BIC,0,none,none,group_2
+Saint Pierre and Miquelon, AMRO,0,0,0,0,0,BIC,0,none,none,group_3
+Saint Vincent and the Grenadines, AMRO,0,0,1,0,0,BIC,0,none,none,group_1
+Sint Eustatius, AMRO,0,0,0,0,0,BIC,0,none,none,group_2
+Sint Maarten, AMRO ,0,0,0,0,0,BIC,0,none,none,group_2
+Suriname, AMRO,0,0,1,1,0,BIC,0,none,none,group_1
+Trinidad and Tobago, AMRO,0,1,1,1,0,BIC,0,none,none,group_1
+Turks and Caicos Islands, AMRO ,0,0,0,0,0,BIC,0,none,none,group_2
+United States Virgin Islands, AMRO,0,0,1,0,0,BIC,0,none,none,group_2
+United States of America, AMRO,1,1,1,0,0,BIC,0,none,none,group_2
+Uruguay, AMRO,1,1,1,1,1,BIC,0,none,none,group_4
+Venezuela (Bolivarian Republic of), AMRO,1,1,1,1,1,BIC,0,none,none,group_1
+Anguilla, AMRO,0,0,0,0,0,SC,0,none,none,group_2
+Antigua and Barbuda, AMRO,0,1,1,1,0,SC,0,none,none,group_2
+Argentina, AMRO,0,1,0,0,0,SC,0,none,none,group_4
+Aruba, AMRO,0,1,0,0,0,SC,0,none,none,group_1
+Bahamas, AMRO,0,1,0,0,0,SC,0,none,none,group_2
+Barbados, AMRO,0,1,1,1,1,SC,0,none,none,group_1
+Belize, AMRO,0,0,0,0,0,SC,0,none,none,group_2
+Bermuda, AMRO,0,1,1,0,0,SC,0,none,none,group_2
+Bolivia (Plurinational State of), AMRO,0,1,1,1,1,SC,0,none,none,group_4
+Bonaire, AMRO,0,0,0,0,0,SC,0,none,none,group_1
+Brazil, AMRO,1,1,1,1,1,SC,0,none,none,group_4
+British Virgin Islands, AMRO,0,0,0,0,0,SC,0,none,none,group_2
+Canada, AMRO,1,0,0,0,0,SC,0,none,none,group_3
+Cayman Islands, AMRO,0,0,0,0,0,SC,0,none,none,group_2
+Chile, AMRO,1,1,1,1,0,SC,0,none,none,group_4
+Colombia, AMRO,0,1,0,0,0,SC,0,none,none,group_1
+Costa Rica, AMRO,1,1,1,0,1,SC,0,none,none,group_1
+Cuba, AMRO,1,1,1,0,1,SC,0,none,none,group_2
+Curaao, AMRO,0,0,0,0,0,SC,0,none,none,group_1
+Dominica, AMRO,0,0,1,0,0,SC,0,none,none,group_2
+Dominican Republic, AMRO,0,1,0,0,0,SC,0,none,none,group_2
+Ecuador, AMRO,0,1,1,0,0,SC,0,none,none,group_1
+El Salvador, AMRO,0,0,0,0,0,SC,0,none,none,group_1
+Falkland Islands (Malvinas), AMRO ,0,0,0,0,0,SC,0,none,none,group_5
+French Guiana, AMRO ,0,0,0,0,0,SC,0,none,none,group_1
+Grenada, AMRO,0,0,1,1,0,SC,0,none,none,group_1
+Guadeloupe, AMRO,0,1,0,0,0,SC,0,none,none,group_2
+Guatemala, AMRO,1,1,1,0,1,SC,0,none,none,group_1
+Guyana, AMRO,0,0,0,0,0,SC,0,none,none,group_1
+Haiti, AMRO,1,1,1,1,1,SC,0,none,none,group_2
+Honduras, AMRO,1,1,1,1,0,SC,0,none,none,group_1
+Jamaica, AMRO,0,1,1,0,0,SC,0,none,none,group_2
+Martinique, AMRO,0,1,1,0,0,SC,0,none,none,group_1
+Mexico, AMRO,0,1,1,1,1,SC,0,none,none,group_2
+Montserrat, AMRO ,0,0,0,0,0,SC,0,none,none,group_2
+Nicaragua, AMRO,1,1,1,0,0,SC,0,none,none,group_1
+Panama, AMRO,0,1,1,1,0,SC,0,none,none,group_1
+Paraguay, AMRO,1,1,1,1,1,SC,0,none,none,group_4
+Peru, AMRO,0,1,0,0,0,SC,0,none,none,group_1
+Puerto Rico, AMRO,0,1,1,0,0,SC,0,none,none,group_2
+Saba, AMRO,0,0,0,0,0,SC,0,none,none,group_2
+Saint Barthlemy, AMRO,0,0,0,0,0,SC,0,none,none,group_2
+Saint Kitts and Nevis, AMRO,0,0,0,0,0,SC,0,none,none,group_2
+Saint Lucia, AMRO,0,1,1,1,1,SC,0,none,none,group_1
+Saint Martin, AMRO ,0,0,0,0,0,SC,0,none,none,group_2
+Saint Pierre and Miquelon, AMRO,0,0,0,0,0,SC,0,none,none,group_3
+Saint Vincent and the Grenadines, AMRO,0,0,1,0,0,SC,0,none,none,group_1
+Sint Eustatius, AMRO,0,0,0,0,0,SC,0,none,none,group_2
+Sint Maarten, AMRO ,0,0,0,0,0,SC,0,none,none,group_2
+Suriname, AMRO,0,0,1,1,0,SC,0,none,none,group_1
+Trinidad and Tobago, AMRO,0,1,1,1,0,SC,0,none,none,group_1
+Turks and Caicos Islands, AMRO ,0,0,0,0,0,SC,0,none,none,group_2
+United States Virgin Islands, AMRO,0,0,1,0,0,SC,0,none,none,group_2
+United States of America, AMRO,1,1,1,0,0,SC,0,none,none,group_2
+Uruguay, AMRO,1,1,1,1,1,SC,0,none,none,group_4
+Venezuela (Bolivarian Republic of), AMRO,1,0,0,0,0,SC,0,none,none,group_1
+Afghanistan, EMRO,1,1,1,1,1,BIC,0,none,none,group_2
+Bahrain, EMRO,1,1,1,1,1,BIC,0,none,none,group_2
+Djibouti, EMRO,0,1,1,0,0,BIC,0,none,none,group_1
+Egypt, EMRO,1,1,1,1,1,BIC,0,none,none,group_2
+Iran (Islamic Republic of), EMRO,1,1,1,1,0,BIC,0,none,none,group_2
+Iraq, EMRO,1,1,1,1,1,BIC,0,none,none,group_2
+Jordan, EMRO,1,1,1,1,1,BIC,0,none,none,group_2
+Kuwait, EMRO,1,1,1,1,1,BIC,0,none,none,group_2
+Lebanon, EMRO,1,1,1,1,1,BIC,0,none,none,group_2
+Libya, EMRO,1,1,1,1,1,BIC,0,none,none,group_2
+Morocco, EMRO,1,1,1,1,1,BIC,0,none,none,group_2
+Oman, EMRO,1,1,1,1,1,BIC,0,none,none,group_2
+Pakistan, EMRO,1,1,1,1,0,BIC,0,none,none,group_2
+Qatar, EMRO,0,1,1,1,0,BIC,0,none,none,group_2
+Saudi Arabia, EMRO,1,1,1,1,1,BIC,0,none,none,group_2
+Somalia, EMRO,0,1,1,0,0,BIC,0,none,none,group_1
+Sudan, EMRO,0,1,0,0,0,BIC,0,none,none,group_2
+Syrian Arab Republic, EMRO,1,1,1,1,0,BIC,0,none,none,group_2
+Tunisia, EMRO,0,1,0,1,0,BIC,0,none,none,group_2
+United Arab Emirates, EMRO,1,1,1,1,1,BIC,0,none,none,group_2
+Yemen, EMRO,1,1,1,1,1,BIC,0,none,none,group_2
+occupied Palestinian territory including east Jerusalem, EMRO,0,1,1,0,0,BIC,0,none,none,group_2
+Afghanistan, EMRO,1,1,1,1,1,SC,0,none,none,group_2
+Bahrain, EMRO,1,1,1,0,1,SC,0,none,none,group_2
+Djibouti, EMRO,0,1,1,0,0,SC,0,none,none,group_1
+Egypt, EMRO,1,1,1,1,0,SC,0,none,none,group_2
+Iran (Islamic Republic of), EMRO,1,1,1,1,0,SC,0,none,none,group_2
+Iraq, EMRO,1,1,1,1,1,SC,0,none,none,group_2
+Jordan, EMRO,1,0,1,1,0,SC,0,none,none,group_2
+Kuwait, EMRO,1,1,1,1,0,SC,0,none,none,group_2
+Lebanon, EMRO,1,1,1,1,1,SC,0,none,none,group_2
+Libya, EMRO,1,1,1,1,0,SC,0,none,none,group_2
+Morocco, EMRO,1,1,1,1,1,SC,0,none,none,group_2
+Oman, EMRO,1,1,1,1,1,SC,0,none,none,group_2
+Pakistan, EMRO,1,1,1,1,0,SC,0,none,none,group_2
+Qatar, EMRO,0,1,1,1,0,SC,0,none,none,group_2
+Saudi Arabia, EMRO,1,1,1,0,0,SC,0,none,none,group_2
+Somalia, EMRO,0,1,1,0,0,SC,0,none,none,group_1
+Sudan, EMRO,0,1,0,1,0,SC,0,none,none,group_2
+Syrian Arab Republic, EMRO,1,1,1,1,0,SC,0,none,none,group_2
+Tunisia, EMRO,0,1,0,1,0,SC,0,none,none,group_2
+United Arab Emirates, EMRO,1,1,1,1,1,SC,0,none,none,group_2
+Yemen, EMRO,1,1,1,1,1,SC,0,none,none,group_2
+occupied Palestinian territory including east Jerusalem, EMRO,0,1,1,0,0,SC,0,none,none,group_2
+Albania, EURO,1,1,1,1,1,BIC,0,none,none,group_2
+Andorra, EURO,1,1,1,0,0,BIC,0,none,none,group_2
+Armenia, EURO,1,1,1,1,1,BIC,0,none,none,group_2
+Austria, EURO,1,1,1,0,0,BIC,0,none,none,group_3
+Azerbaijan, EURO,0,1,1,0,0,BIC,0,none,none,group_2
+Belarus, EURO,1,1,1,0,0,BIC,0,none,none,group_3
+Belgium, EURO,1,0,0,0,0,BIC,0,none,none,group_3
+Bosnia and Herzegovina, EURO,1,1,1,1,1,BIC,0,none,none,group_2
+Bulgaria, EURO,1,1,1,1,1,BIC,0,none,none,group_2
+Croatia, EURO,1,1,1,1,1,BIC,0,none,none,group_3
+Cyprus, EURO,1,1,0,0,0,BIC,0,none,none,group_2
+Czechia, EURO,1,0,0,0,0,BIC,0,none,none,group_3
+Denmark, EURO,1,1,1,1,1,BIC,0,none,none,group_3
+Estonia, EURO,1,1,1,1,1,BIC,0,none,none,group_3
+Faroe Islands, EURO,1,1,1,1,0,BIC,0,none,none,group_3
+Finland, EURO,1,1,1,1,1,BIC,0,none,none,group_3
+France, EURO,1,1,1,1,1,BIC,0,none,none,group_3
+Georgia, EURO,0,0,0,0,0,BIC,0,none,none,group_2
+Germany, EURO,1,1,1,1,1,BIC,0,none,none,group_3
+Gibraltar, EURO,1,1,1,1,1,BIC,0,none,none,group_2
+Greece, EURO,0,1,0,0,0,BIC,0,none,none,group_2
+Greenland, EURO,0,0,0,0,0,BIC,0,none,none,group_3
+Guernsey, EURO,0,0,0,0,0,BIC,0,none,none,group_3
+Holy See, EURO ,0,0,0,0,0,BIC,0,none,none,group_2
+Hungary, EURO,1,1,1,1,1,BIC,0,none,none,group_3
+Iceland, EURO,1,1,1,1,0,BIC,0,none,none,group_3
+Ireland, EURO,1,0,0,0,0,BIC,0,none,none,group_3
+Isle of Man, EURO,0,0,0,0,0,BIC,0,none,none,group_3
+Israel, EURO,0,1,0,0,0,BIC,0,none,none,group_2
+Italy, EURO,1,1,1,1,1,BIC,0,none,none,group_2
+Jersey, EURO,1,1,0,1,1,BIC,0,none,none,group_3
+Kazakhstan, EURO,0,1,1,1,0,BIC,0,none,none,group_3
+Kosovo, EURO,0,1,1,0,0,BIC,0,none,none,group_2
+Kyrgyzstan, EURO,1,1,1,1,1,BIC,0,none,none,group_2
+Latvia, EURO,1,1,1,1,0,BIC,0,none,none,group_3
+Liechtenstein, EURO,1,1,1,0,0,BIC,0,none,none,group_3
+Lithuania, EURO,1,1,1,1,1,BIC,0,none,none,group_3
+Luxembourg, EURO,1,1,1,1,1,BIC,0,none,none,group_3
+Malta, EURO,0,1,0,1,1,BIC,0,none,none,group_2
+Monaco, EURO,1,1,1,1,1,BIC,0,none,none,group_2
+Montenegro, EURO,1,1,0,0,0,BIC,0,none,none,group_2
+Netherlands, EURO,1,1,1,0,0,BIC,0,none,none,group_3
+North Macedonia, EURO,1,1,1,1,1,BIC,0,none,none,group_2
+Norway, EURO,1,1,1,1,1,BIC,0,none,none,group_3
+Poland, EURO,1,1,1,1,1,BIC,0,none,none,group_3
+Portugal, EURO,1,1,1,1,1,BIC,0,none,none,group_2
+Republic of Moldova, EURO,1,1,1,1,0,BIC,0,none,none,group_3
+Romania, EURO,1,1,1,1,0,BIC,0,none,none,group_2
+Russian Federation, EURO,1,1,1,1,1,BIC,0,none,none,group_3
+San Marino, EURO,1,1,1,1,1,BIC,0,none,none,group_2
+Serbia, EURO,1,1,1,1,1,BIC,0,none,none,group_2
+Slovakia, EURO,1,0,0,0,0,BIC,0,none,none,group_3
+Slovenia, EURO,1,0,0,0,0,BIC,0,none,none,group_3
+Spain, EURO,1,1,1,1,1,BIC,0,none,none,group_2
+Sweden, EURO,0,0,0,0,0,BIC,0,none,none,group_3
+Switzerland, EURO,1,1,1,0,0,BIC,0,none,none,group_3
+Tajikistan, EURO,1,1,1,1,0,BIC,0,none,none,group_2
+The United Kingdom, EURO,1,1,0,1,0,BIC,0,none,none,group_3
+Trkiye, EURO,1,1,1,1,1,BIC,0,none,none,group_2
+Turkmenistan, EURO ,0,0,0,0,0,BIC,0,none,none,group_2
+Ukraine, EURO,1,1,1,1,1,BIC,0,none,none,group_3
+Uzbekistan, EURO,1,1,1,1,1,BIC,0,none,none,group_2
+Albania, EURO,1,1,1,1,1,SC,0,none,none,group_2
+Andorra, EURO,1,1,0,0,0,SC,0,none,none,group_2
+Armenia, EURO,1,1,1,1,1,SC,0,none,none,group_2
+Austria, EURO,1,1,1,1,0,SC,0,none,none,group_3
+Azerbaijan, EURO,0,1,1,0,0,SC,0,none,none,group_2
+Belarus, EURO,1,1,1,0,0,SC,0,none,none,group_3
+Belgium, EURO,1,0,0,0,1,SC,0,none,none,group_3
+Bosnia and Herzegovina, EURO,1,1,1,1,1,SC,0,none,none,group_2
+Bulgaria, EURO,1,1,1,1,1,SC,0,none,none,group_2
+Croatia, EURO,1,1,1,0,0,SC,0,none,none,group_3
+Cyprus, EURO,1,0,0,0,0,SC,0,none,none,group_2
+Czechia, EURO,1,0,0,0,0,SC,0,none,none,group_3
+Denmark, EURO,1,1,1,1,1,SC,0,none,none,group_3
+Estonia, EURO,1,1,1,1,1,SC,0,none,none,group_3
+Faroe Islands, EURO,1,1,1,1,0,SC,0,none,none,group_3
+Finland, EURO,1,1,1,1,1,SC,0,none,none,group_3
+France, EURO,1,1,1,1,1,SC,0,none,none,group_3
+Georgia, EURO,0,0,0,0,0,SC,0,none,none,group_2
+Germany, EURO,1,1,1,1,0,SC,0,none,none,group_3
+Gibraltar, EURO,1,1,1,1,1,SC,0,none,none,group_2
+Greece, EURO,0,1,1,0,0,SC,0,none,none,group_2
+Greenland, EURO,0,0,0,0,0,SC,0,none,none,group_3
+Guernsey, EURO,0,0,0,0,0,SC,0,none,none,group_3
+Holy See, EURO ,0,0,0,0,0,SC,0,none,none,group_2
+Hungary, EURO,1,0,0,0,0,SC,0,none,none,group_3
+Iceland, EURO,1,1,1,1,0,SC,0,none,none,group_3
+Ireland, EURO,1,1,0,0,0,SC,0,none,none,group_3
+Isle of Man, EURO,0,0,0,0,0,SC,0,none,none,group_3
+Israel, EURO,0,1,0,0,0,SC,0,none,none,group_2
+Italy, EURO,1,1,1,1,1,SC,0,none,none,group_2
+Jersey, EURO,1,1,0,1,1,SC,0,none,none,group_3
+Kazakhstan, EURO,0,1,1,1,0,SC,0,none,none,group_3
+Kosovo, EURO,0,1,1,0,0,SC,0,none,none,group_2
+Kyrgyzstan, EURO,1,1,1,1,1,SC,0,none,none,group_2
+Latvia, EURO,1,1,1,1,0,SC,0,none,none,group_3
+Liechtenstein, EURO,1,1,1,0,0,SC,0,none,none,group_3
+Lithuania, EURO,1,1,1,1,0,SC,0,none,none,group_3
+Luxembourg, EURO,1,0,1,1,1,SC,0,none,none,group_3
+Malta, EURO,0,1,0,1,1,SC,0,none,none,group_2
+Monaco, EURO,1,1,1,1,1,SC,0,none,none,group_2
+Montenegro, EURO,1,1,0,0,0,SC,0,none,none,group_2
+Netherlands, EURO,1,1,1,0,0,SC,0,none,none,group_3
+North Macedonia, EURO,1,1,1,1,1,SC,0,none,none,group_2
+Norway, EURO,1,1,1,1,1,SC,0,none,none,group_3
+Poland, EURO,1,1,1,0,1,SC,0,none,none,group_3
+Portugal, EURO,1,1,1,0,0,SC,0,none,none,group_2
+Republic of Moldova, EURO,1,1,1,1,0,SC,0,none,none,group_3
+Romania, EURO,1,1,1,1,0,SC,0,none,none,group_2
+Russian Federation, EURO,1,1,1,1,0,SC,0,none,none,group_3
+San Marino, EURO,1,1,1,1,1,SC,0,none,none,group_2
+Serbia, EURO,1,1,1,1,1,SC,0,none,none,group_2
+Slovakia, EURO,1,0,0,0,0,SC,0,none,none,group_3
+Slovenia, EURO,1,0,0,0,0,SC,0,none,none,group_3
+Spain, EURO,1,1,1,1,1,SC,0,none,none,group_2
+Sweden, EURO,1,0,0,0,0,SC,0,none,none,group_3
+Switzerland, EURO,1,1,1,0,0,SC,0,none,none,group_3
+Tajikistan, EURO,1,1,1,1,0,SC,0,none,none,group_2
+The United Kingdom, EURO,1,1,0,1,0,SC,0,none,none,group_3
+Trkiye, EURO,1,1,1,1,1,SC,0,none,none,group_2
+Turkmenistan, EURO ,0,0,0,0,0,SC,0,none,none,group_2
+Ukraine, EURO,1,1,1,1,1,SC,0,none,none,group_3
+Uzbekistan, EURO,1,1,1,1,1,SC,0,none,none,group_2
+Bangladesh, SEARO,1,1,1,1,1,BIC,0,none,none,group_2
+Bhutan, SEARO,0,0,0,0,0,BIC,0,none,none,group_2
+Democratic Peoples Republic of Korea, SEARO ,0,0,0,0,0,BIC,0,none,none,group_2
+India, SEARO,1,1,1,1,1,BIC,0,none,none,group_2
+Indonesia, SEARO,0,1,1,1,1,BIC,0,none,none,group_1
+Maldives, SEARO,0,0,1,0,0,BIC,0,none,none,group_1
+Myanmar, SEARO,1,1,1,1,1,BIC,0,none,none,group_2
+Nepal, SEARO,0,1,0,0,0,BIC,0,none,none,group_2
+Sri Lanka, SEARO,1,1,1,1,1,BIC,0,none,none,group_1
+Thailand, SEARO,1,1,1,1,1,BIC,0,none,none,group_1
+Timor-Leste, SEARO,1,1,1,1,1,BIC,0,none,none,group_1
+Bangladesh, SEARO,1,1,1,1,0,SC,0,none,none,group_2
+Bhutan, SEARO,0,0,0,0,0,SC,0,none,none,group_2
+Democratic Peoples Republic of Korea, SEARO ,0,0,0,0,0,SC,0,none,none,group_2
+India, SEARO,1,1,1,1,1,SC,0,none,none,group_2
+Indonesia, SEARO,0,1,1,1,1,SC,0,none,none,group_1
+Maldives, SEARO,0,0,1,0,0,SC,0,none,none,group_1
+Myanmar, SEARO,1,1,1,1,1,SC,0,none,none,group_2
+Nepal, SEARO,0,1,0,0,0,SC,0,none,none,group_2
+Sri Lanka, SEARO,1,1,1,1,1,SC,0,none,none,group_1
+Thailand, SEARO,1,1,1,1,1,SC,0,none,none,group_1
+Timor-Leste, SEARO,1,0,0,0,0,SC,0,none,none,group_1
+American Samoa, WPRO,0,0,0,0,0,BIC,0,none,none,group_1
+Australia, WPRO,1,0,0,0,0,BIC,0,none,none,group_4
+Brunei Darussalam, WPRO,0,1,1,0,0,BIC,0,none,none,group_1
+Cambodia, WPRO,1,1,1,0,1,BIC,0,none,none,group_1
+China, WPRO ,0,0,0,0,0,BIC,0,none,none,group_2
+Cook Islands, WPRO,1,1,1,1,0,BIC,0,none,none,group_4
+Fiji, WPRO,1,1,1,1,1,BIC,0,none,none,group_4
+French Polynesia, WPRO,0,0,0,0,0,BIC,0,none,none,group_4
+Guam, WPRO,0,1,1,0,0,BIC,0,none,none,group_1
+Japan, WPRO,1,1,1,1,0,BIC,0,none,none,group_2
+Kiribati, WPRO ,0,0,0,0,0,BIC,0,none,none,group_1
+Lao Peoples Democratic Republic, WPRO,1,0,1,1,0,BIC,0,none,none,group_2
+Malaysia, WPRO,1,1,1,1,0,BIC,0,none,none,group_1
+Marshall Islands, WPRO ,0,0,0,0,0,BIC,0,none,none,group_1
+Micronesia (Federated States of), WPRO ,0,0,0,0,0,BIC,0,none,none,group_1
+Mongolia, WPRO,1,1,1,1,0,BIC,0,none,none,group_3
+Nauru, WPRO ,0,0,0,0,0,BIC,0,none,none,group_1
+New Caledonia, WPRO,0,1,1,0,0,BIC,0,none,none,group_4
+New Zealand, WPRO,1,0,1,0,0,BIC,0,none,none,group_4
+Niue, WPRO,0,0,0,0,0,BIC,0,none,none,group_4
+Northern Mariana Islands (Commonwealth of the), WPRO,1,1,0,0,0,BIC,0,none,none,group_2
+Palau, WPRO,0,0,0,0,0,BIC,0,none,none,group_1
+Papua New Guinea, WPRO,0,1,1,1,0,BIC,0,none,none,group_1
+Philippines, WPRO,0,1,1,0,0,BIC,0,none,none,group_1
+Pitcairn Islands, WPRO ,0,0,0,0,0,BIC,0,none,none,group_4
+Republic of Korea, WPRO,1,1,1,1,1,BIC,0,none,none,group_2
+Samoa, WPRO,1,1,1,1,0,BIC,0,none,none,group_1
+Singapore, WPRO,1,1,1,1,1,BIC,0,none,none,group_1
+Solomon Islands, WPRO,0,0,0,0,0,BIC,0,none,none,group_1
+Tokelau, WPRO ,0,0,0,0,0,BIC,0,none,none,group_1
+Tonga, WPRO,0,0,1,0,0,BIC,0,none,none,group_4
+Tuvalu, WPRO ,0,0,0,0,0,BIC,0,none,none,group_1
+Vanuatu, WPRO,1,1,0,0,0,BIC,0,none,none,group_4
+Viet Nam, WPRO,0,0,0,0,0,BIC,0,none,none,group_2
+Wallis and Futuna, WPRO ,0,0,0,0,0,BIC,0,none,none,group_1
+American Samoa, WPRO,0,0,0,0,0,SC,0,none,none,group_1
+Australia, WPRO,1,0,0,0,0,SC,0,none,none,group_4
+Brunei Darussalam, WPRO,0,1,1,0,0,SC,0,none,none,group_1
+Cambodia, WPRO,1,0,1,0,0,SC,0,none,none,group_1
+China, WPRO ,0,0,0,0,0,SC,0,none,none,group_2
+Cook Islands, WPRO,1,1,1,1,0,SC,0,none,none,group_4
+Fiji, WPRO,1,1,1,1,1,SC,0,none,none,group_4
+French Polynesia, WPRO,0,1,0,0,0,SC,0,none,none,group_4
+Guam, WPRO,0,1,1,0,0,SC,0,none,none,group_1
+Japan, WPRO,1,1,1,1,0,SC,0,none,none,group_2
+Kiribati, WPRO ,0,0,0,0,0,SC,0,none,none,group_1
+Lao Peoples Democratic Republic, WPRO,1,0,1,1,0,SC,0,none,none,group_2
+Malaysia, WPRO,1,1,1,1,0,SC,0,none,none,group_1
+Marshall Islands, WPRO ,0,0,0,0,0,SC,0,none,none,group_1
+Micronesia (Federated States of), WPRO ,0,0,0,0,0,SC,0,none,none,group_1
+Mongolia, WPRO,1,1,1,1,0,SC,0,none,none,group_3
+Nauru, WPRO ,0,0,0,0,0,SC,0,none,none,group_1
+New Caledonia, WPRO,0,1,1,0,0,SC,0,none,none,group_4
+New Zealand, WPRO,1,0,1,0,0,SC,0,none,none,group_4
+Niue, WPRO,0,0,0,0,0,SC,0,none,none,group_4
+Northern Mariana Islands (Commonwealth of the), WPRO,1,1,0,0,0,SC,0,none,none,group_2
+Palau, WPRO,0,0,0,0,0,SC,0,none,none,group_1
+Papua New Guinea, WPRO,0,1,1,1,0,SC,0,none,none,group_1
+Philippines, WPRO,0,1,1,0,0,SC,0,none,none,group_1
+Pitcairn Islands, WPRO ,0,0,0,0,0,SC,0,none,none,group_4
+Republic of Korea, WPRO,1,1,1,1,1,SC,0,none,none,group_2
+Samoa, WPRO,1,1,1,0,0,SC,0,none,none,group_1
+Singapore, WPRO,0,1,1,1,1,SC,0,none,none,group_1
+Solomon Islands, WPRO,0,0,0,0,0,SC,0,none,none,group_1
+Tokelau, WPRO ,0,0,0,0,0,SC,0,none,none,group_1
+Tonga, WPRO,0,0,1,0,0,SC,0,none,none,group_4
+Tuvalu, WPRO ,0,0,0,0,0,SC,0,none,none,group_1
+Vanuatu, WPRO,1,0,0,0,0,SC,0,none,none,group_4
+Viet Nam, WPRO,0,0,0,0,0,SC,0,none,none,group_2
+Wallis and Futuna, WPRO ,0,0,0,0,0,SC,0,none,none,group_1
+Algeria, AFRO,0,1,0,0,0,BIC,1,none,none,group_2
+Angola, AFRO ,0,0,0,0,0,BIC,1,none,none,group_1
+Benin, AFRO ,0,0,0,0,0,BIC,1,none,none,group_1
+Botswana, AFRO ,0,0,0,0,0,BIC,1,none,none,group_4
+Burkina Faso, AFRO ,0,0,0,0,0,BIC,1,none,none,group_1
+Burundi, AFRO ,0,0,0,0,0,BIC,1,none,none,group_1
+Cabo Verde, AFRO ,0,0,0,0,0,BIC,1,none,none,group_1
+Cameroon, AFRO ,0,0,0,0,0,BIC,1,none,none,group_1
+Central African Republic, AFRO ,0,0,0,0,0,BIC,1,none,none,group_1
+Chad, AFRO ,0,0,0,0,0,BIC,1,none,none,group_1
+Comoros, AFRO ,0,0,0,0,0,BIC,1,none,none,group_1
+Congo, AFRO ,0,0,0,0,0,BIC,1,none,none,group_1
+Ctedvoire, AFRO ,0,0,0,0,0,BIC,1,none,none,group_1
+Democratic Republic of the Congo, AFRO,0,0,0,0,0,BIC,1,none,none,group_1
+Equatorial Guinea, AFRO ,0,0,0,0,0,BIC,1,none,none,group_1
+Eritrea, AFRO ,0,0,0,0,0,BIC,1,none,none,group_2
+Eswatini, AFRO ,0,0,0,0,0,BIC,1,none,none,group_4
+Ethiopia, AFRO,0,0,1,0,0,BIC,1,none,none,group_1
+Gabon, AFRO,0,0,0,0,0,BIC,1,none,none,group_1
+Gambia, AFRO ,0,0,0,0,0,BIC,1,none,none,group_1
+Ghana, AFRO ,0,0,0,0,0,BIC,1,none,none,group_1
+Guinea, AFRO ,0,0,0,0,0,BIC,1,none,none,group_1
+Guinea-Bissau, AFRO ,0,0,0,0,0,BIC,1,none,none,group_1
+Kenya, AFRO,0,0,1,0,0,BIC,1,none,none,group_1
+Lesotho, AFRO ,0,0,0,0,0,BIC,1,none,none,group_4
+Liberia, AFRO ,0,0,0,0,0,BIC,1,none,none,group_1
+Madagascar, AFRO ,0,0,0,0,0,BIC,1,none,none,group_4
+Malawi, AFRO,0,1,0,0,0,BIC,1,none,none,group_1
+Mali, AFRO ,0,0,0,0,0,BIC,1,none,none,group_1
+Mauritania, AFRO,0,0,0,0,0,BIC,1,none,none,group_2
+Mauritius, AFRO,0,0,1,0,0,BIC,1,none,none,group_4
+Mayotte, AFRO ,0,0,0,0,0,BIC,1,none,none,group_1
+Mozambique, AFRO,0,1,1,0,0,BIC,1,none,none,group_4
+Namibia, AFRO,0,1,0,0,0,BIC,1,none,none,group_4
+Niger, AFRO ,0,0,0,0,0,BIC,1,none,none,group_1
+Nigeria, AFRO,0,0,0,0,0,BIC,1,none,none,group_1
+Runion, AFRO,0,0,0,0,0,BIC,1,none,none,group_4
+Rwanda, AFRO,0,0,0,0,0,BIC,1,none,none,group_1
+Saint Helena Ascension and Tristan da Cunha, AFRO ,0,0,0,0,0,BIC,1,none,none,group_4
+Sao Tome and Principe, AFRO ,0,0,0,0,0,BIC,1,none,none,group_1
+Senegal, AFRO,0,1,0,0,0,BIC,1,none,none,group_1
+Seychelles, AFRO ,0,0,0,0,0,BIC,1,none,none,group_1
+Sierra Leone, AFRO ,0,0,0,0,0,BIC,1,none,none,group_1
+South Africa, AFRO,0,0,0,0,0,BIC,1,none,none,group_4
+South Sudan, AFRO ,0,0,0,0,0,BIC,1,none,none,group_1
+Togo, AFRO,0,0,0,0,0,BIC,1,none,none,group_1
+Uganda, AFRO ,0,0,0,0,0,BIC,1,none,none,group_1
+United Republic of Tanzania, AFRO ,0,0,0,0,0,BIC,1,none,none,group_2
+Zambia, AFRO,0,1,0,0,0,BIC,1,none,none,group_4
+Zimbabwe, AFRO ,0,0,0,0,0,BIC,1,none,none,group_4
+Algeria, AFRO,0,1,0,0,0,SC,1,none,none,group_2
+Angola, AFRO ,0,0,0,0,0,SC,1,none,none,group_1
+Benin, AFRO ,0,0,0,0,0,SC,1,none,none,group_1
+Botswana, AFRO ,0,0,0,0,0,SC,1,none,none,group_4
+Burkina Faso, AFRO ,0,0,0,0,0,SC,1,none,none,group_1
+Burundi, AFRO ,0,0,0,0,0,SC,1,none,none,group_1
+Cabo Verde, AFRO ,0,0,0,0,0,SC,1,none,none,group_1
+Cameroon, AFRO ,0,0,0,0,0,SC,1,none,none,group_1
+Central African Republic, AFRO ,0,0,0,0,0,SC,1,none,none,group_1
+Chad, AFRO ,0,0,0,0,0,SC,1,none,none,group_1
+Comoros, AFRO ,0,0,0,0,0,SC,1,none,none,group_1
+Congo, AFRO ,0,0,0,0,0,SC,1,none,none,group_1
+Ctedvoire, AFRO ,0,0,0,0,0,SC,1,none,none,group_1
+Democratic Republic of the Congo, AFRO,0,1,0,0,0,SC,1,none,none,group_1
+Equatorial Guinea, AFRO ,0,0,0,0,0,SC,1,none,none,group_1
+Eritrea, AFRO ,0,0,0,0,0,SC,1,none,none,group_2
+Eswatini, AFRO ,0,0,0,0,0,SC,1,none,none,group_4
+Ethiopia, AFRO,0,0,1,0,0,SC,1,none,none,group_1
+Gabon, AFRO,0,0,0,0,0,SC,1,none,none,group_1
+Gambia, AFRO ,0,0,0,0,0,SC,1,none,none,group_1
+Ghana, AFRO ,0,0,0,0,0,SC,1,none,none,group_1
+Guinea, AFRO ,0,0,0,0,0,SC,1,none,none,group_1
+Guinea-Bissau, AFRO ,0,0,0,0,0,SC,1,none,none,group_1
+Kenya, AFRO,0,0,1,0,0,SC,1,none,none,group_1
+Lesotho, AFRO ,0,0,0,0,0,SC,1,none,none,group_4
+Liberia, AFRO ,0,0,0,0,0,SC,1,none,none,group_1
+Madagascar, AFRO ,0,0,0,0,0,SC,1,none,none,group_4
+Malawi, AFRO,0,1,0,0,0,SC,1,none,none,group_1
+Mali, AFRO ,0,0,0,0,0,SC,1,none,none,group_1
+Mauritania, AFRO,0,1,0,0,0,SC,1,none,none,group_2
+Mauritius, AFRO,0,0,1,0,0,SC,1,none,none,group_4
+Mayotte, AFRO ,0,0,0,0,0,SC,1,none,none,group_1
+Mozambique, AFRO,0,1,1,0,0,SC,1,none,none,group_4
+Namibia, AFRO,0,1,0,0,0,SC,1,none,none,group_4
+Niger, AFRO ,0,0,0,0,0,SC,1,none,none,group_1
+Nigeria, AFRO,0,1,0,0,0,SC,1,none,none,group_1
+Runion, AFRO,0,0,1,0,0,SC,1,none,none,group_4
+Rwanda, AFRO,0,1,0,0,0,SC,1,none,none,group_1
+Saint Helena Ascension and Tristan da Cunha, AFRO ,0,0,0,0,0,SC,1,none,none,group_4
+Sao Tome and Principe, AFRO ,0,0,0,0,0,SC,1,none,none,group_1
+Senegal, AFRO,0,1,0,0,0,SC,1,none,none,group_1
+Seychelles, AFRO ,0,0,0,0,0,SC,1,none,none,group_1
+Sierra Leone, AFRO ,0,0,0,0,0,SC,1,none,none,group_1
+South Africa, AFRO,0,1,0,0,0,SC,1,none,none,group_4
+South Sudan, AFRO ,0,0,0,0,0,SC,1,none,none,group_1
+Togo, AFRO,0,0,1,0,0,SC,1,none,none,group_1
+Uganda, AFRO ,0,0,0,0,0,SC,1,none,none,group_1
+United Republic of Tanzania, AFRO ,0,0,0,0,0,SC,1,none,none,group_2
+Zambia, AFRO,0,1,0,0,0,SC,1,none,none,group_4
+Zimbabwe, AFRO ,0,0,0,0,0,SC,1,none,none,group_4
+Anguilla, AMRO ,0,0,0,0,0,BIC,1,none,none,group_2
+Antigua and Barbuda, AMRO ,0,0,0,0,0,BIC,1,none,none,group_2
+Argentina, AMRO,0,0,0,0,0,BIC,1,none,none,group_4
+Aruba, AMRO,0,0,0,0,0,BIC,1,none,none,group_1
+Bahamas, AMRO ,0,0,0,0,0,BIC,1,none,none,group_2
+Barbados, AMRO ,0,0,0,0,0,BIC,1,none,none,group_1
+Belize, AMRO ,0,0,0,0,0,BIC,1,none,none,group_2
+Bermuda, AMRO ,0,0,0,0,0,BIC,1,none,none,group_2
+Bolivia (Plurinational State of), AMRO,0,1,0,0,0,BIC,1,none,none,group_4
+Bonaire, AMRO ,0,0,0,0,0,BIC,1,none,none,group_1
+Brazil, AMRO,0,0,0,0,0,BIC,1,none,none,group_4
+British Virgin Islands, AMRO ,0,0,0,0,0,BIC,1,none,none,group_2
+Canada, AMRO,0,0,1,0,0,BIC,1,none,none,group_3
+Cayman Islands, AMRO ,0,0,0,0,0,BIC,1,none,none,group_2
+Chile, AMRO,0,0,1,1,1,BIC,1,none,none,group_4
+Colombia, AMRO,0,1,0,0,0,BIC,1,none,none,group_1
+Costa Rica, AMRO,0,0,1,0,0,BIC,1,none,none,group_1
+Cuba, AMRO ,0,0,0,0,0,BIC,1,none,none,group_2
+Curaao, AMRO ,0,0,0,0,0,BIC,1,none,none,group_1
+Dominica, AMRO ,0,0,0,0,0,BIC,1,none,none,group_2
+Dominican Republic, AMRO,0,1,0,0,0,BIC,1,none,none,group_2
+Ecuador, AMRO ,0,0,0,0,0,BIC,1,none,none,group_1
+El Salvador, AMRO ,0,0,0,0,0,BIC,1,none,none,group_1
+Falkland Islands (Malvinas), AMRO ,0,0,0,0,0,BIC,1,none,none,group_5
+French Guiana, AMRO ,0,0,0,0,0,BIC,1,none,none,group_1
+Grenada, AMRO ,0,0,0,0,0,BIC,1,none,none,group_1
+Guadeloupe, AMRO,0,0,0,0,0,BIC,1,none,none,group_2
+Guatemala, AMRO ,0,0,0,0,0,BIC,1,none,none,group_1
+Guyana, AMRO ,0,0,0,0,0,BIC,1,none,none,group_1
+Haiti, AMRO ,0,0,0,0,0,BIC,1,none,none,group_2
+Honduras, AMRO ,0,0,0,0,0,BIC,1,none,none,group_1
+Jamaica, AMRO,0,0,0,0,0,BIC,1,none,none,group_2
+Martinique, AMRO,0,0,1,0,0,BIC,1,none,none,group_1
+Mexico, AMRO,0,1,0,0,0,BIC,1,none,none,group_2
+Montserrat, AMRO ,0,0,0,0,0,BIC,1,none,none,group_2
+Nicaragua, AMRO ,0,0,0,0,0,BIC,1,none,none,group_1
+Panama, AMRO,0,1,0,0,0,BIC,1,none,none,group_1
+Paraguay, AMRO,0,0,0,0,0,BIC,1,none,none,group_4
+Peru, AMRO,0,0,0,0,0,BIC,1,none,none,group_1
+Puerto Rico, AMRO,0,0,1,0,0,BIC,1,none,none,group_2
+Saba, AMRO ,0,0,0,0,0,BIC,1,none,none,group_2
+Saint Barthlemy, AMRO ,0,0,0,0,0,BIC,1,none,none,group_2
+Saint Kitts and Nevis, AMRO ,0,0,0,0,0,BIC,1,none,none,group_2
+Saint Lucia, AMRO,0,0,0,0,0,BIC,1,none,none,group_1
+Saint Martin, AMRO ,0,0,0,0,0,BIC,1,none,none,group_2
+Saint Pierre and Miquelon, AMRO ,0,0,0,0,0,BIC,1,none,none,group_3
+Saint Vincent and the Grenadines, AMRO ,0,0,0,0,0,BIC,1,none,none,group_1
+Sint Eustatius, AMRO ,0,0,0,0,0,BIC,1,none,none,group_2
+Sint Maarten, AMRO ,0,0,0,0,0,BIC,1,none,none,group_2
+Suriname, AMRO,0,0,1,0,0,BIC,1,none,none,group_1
+Trinidad and Tobago, AMRO ,0,0,0,0,0,BIC,1,none,none,group_1
+Turks and Caicos Islands, AMRO ,0,0,0,0,0,BIC,1,none,none,group_2
+United States Virgin Islands, AMRO,0,0,0,0,0,BIC,1,none,none,group_2
+United States of America, AMRO,0,0,1,0,0,BIC,1,none,none,group_2
+Uruguay, AMRO ,0,0,0,0,0,BIC,1,none,none,group_4
+Venezuela (Bolivarian Republic of), AMRO ,0,0,0,0,0,BIC,1,none,none,group_1
+Anguilla, AMRO ,0,0,0,0,0,SC,1,none,none,group_2
+Antigua and Barbuda, AMRO ,0,0,0,0,0,SC,1,none,none,group_2
+Argentina, AMRO,0,1,0,0,0,SC,1,none,none,group_4
+Aruba, AMRO,0,1,0,0,0,SC,1,none,none,group_1
+Bahamas, AMRO ,0,0,0,0,0,SC,1,none,none,group_2
+Barbados, AMRO ,0,0,0,0,0,SC,1,none,none,group_1
+Belize, AMRO ,0,0,0,0,0,SC,1,none,none,group_2
+Bermuda, AMRO ,0,0,0,0,0,SC,1,none,none,group_2
+Bolivia (Plurinational State of), AMRO,0,1,0,0,0,SC,1,none,none,group_4
+Bonaire, AMRO ,0,0,0,0,0,SC,1,none,none,group_1
+Brazil, AMRO,0,1,0,0,0,SC,1,none,none,group_4
+British Virgin Islands, AMRO ,0,0,0,0,0,SC,1,none,none,group_2
+Canada, AMRO,1,0,1,0,0,SC,1,none,none,group_3
+Cayman Islands, AMRO ,0,0,0,0,0,SC,1,none,none,group_2
+Chile, AMRO,0,0,1,1,1,SC,1,none,none,group_4
+Colombia, AMRO,0,1,0,0,0,SC,1,none,none,group_1
+Costa Rica, AMRO,0,0,1,0,0,SC,1,none,none,group_1
+Cuba, AMRO ,0,0,0,0,0,SC,1,none,none,group_2
+Curaao, AMRO ,0,0,0,0,0,SC,1,none,none,group_1
+Dominica, AMRO ,0,0,0,0,0,SC,1,none,none,group_2
+Dominican Republic, AMRO,0,1,0,0,0,SC,1,none,none,group_2
+Ecuador, AMRO ,0,0,0,0,0,SC,1,none,none,group_1
+El Salvador, AMRO ,0,0,0,0,0,SC,1,none,none,group_1
+Falkland Islands (Malvinas), AMRO ,0,0,0,0,0,SC,1,none,none,group_5
+French Guiana, AMRO ,0,0,0,0,0,SC,1,none,none,group_1
+Grenada, AMRO ,0,0,0,0,0,SC,1,none,none,group_1
+Guadeloupe, AMRO,0,1,0,0,0,SC,1,none,none,group_2
+Guatemala, AMRO ,0,0,0,0,0,SC,1,none,none,group_1
+Guyana, AMRO ,0,0,0,0,0,SC,1,none,none,group_1
+Haiti, AMRO ,0,0,0,0,0,SC,1,none,none,group_2
+Honduras, AMRO ,0,0,0,0,0,SC,1,none,none,group_1
+Jamaica, AMRO,0,1,0,0,0,SC,1,none,none,group_2
+Martinique, AMRO,0,0,1,0,0,SC,1,none,none,group_1
+Mexico, AMRO,0,1,1,0,0,SC,1,none,none,group_2
+Montserrat, AMRO ,0,0,0,0,0,SC,1,none,none,group_2
+Nicaragua, AMRO ,0,0,0,0,0,SC,1,none,none,group_1
+Panama, AMRO,0,1,0,0,0,SC,1,none,none,group_1
+Paraguay, AMRO,0,0,0,0,0,SC,1,none,none,group_4
+Peru, AMRO,0,0,0,0,0,SC,1,none,none,group_1
+Puerto Rico, AMRO,0,0,1,0,0,SC,1,none,none,group_2
+Saba, AMRO ,0,0,0,0,0,SC,1,none,none,group_2
+Saint Barthlemy, AMRO ,0,0,0,0,0,SC,1,none,none,group_2
+Saint Kitts and Nevis, AMRO ,0,0,0,0,0,SC,1,none,none,group_2
+Saint Lucia, AMRO,0,0,1,0,0,SC,1,none,none,group_1
+Saint Martin, AMRO ,0,0,0,0,0,SC,1,none,none,group_2
+Saint Pierre and Miquelon, AMRO ,0,0,0,0,0,SC,1,none,none,group_3
+Saint Vincent and the Grenadines, AMRO ,0,0,0,0,0,SC,1,none,none,group_1
+Sint Eustatius, AMRO ,0,0,0,0,0,SC,1,none,none,group_2
+Sint Maarten, AMRO ,0,0,0,0,0,SC,1,none,none,group_2
+Suriname, AMRO,0,0,1,0,0,SC,1,none,none,group_1
+Trinidad and Tobago, AMRO ,0,0,0,0,0,SC,1,none,none,group_1
+Turks and Caicos Islands, AMRO ,0,0,0,0,0,SC,1,none,none,group_2
+United States Virgin Islands, AMRO,0,0,1,0,0,SC,1,none,none,group_2
+United States of America, AMRO,0,0,1,0,0,SC,1,none,none,group_2
+Uruguay, AMRO ,0,0,0,0,0,SC,1,none,none,group_4
+Venezuela (Bolivarian Republic of), AMRO ,0,0,0,0,0,SC,1,none,none,group_1
+Afghanistan, EMRO,0,0,0,0,0,BIC,1,none,none,group_2
+Bahrain, EMRO,0,0,1,0,0,BIC,1,none,none,group_2
+Djibouti, EMRO ,0,0,0,0,0,BIC,1,none,none,group_1
+Egypt, EMRO,0,1,1,0,0,BIC,1,none,none,group_2
+Iran (Islamic Republic of), EMRO,0,0,0,0,0,BIC,1,none,none,group_2
+Iraq, EMRO,0,1,1,0,0,BIC,1,none,none,group_2
+Jordan, EMRO,0,1,1,0,0,BIC,1,none,none,group_2
+Kuwait, EMRO ,0,0,0,0,0,BIC,1,none,none,group_2
+Lebanon, EMRO,0,1,0,0,0,BIC,1,none,none,group_2
+Libya, EMRO,0,1,0,0,0,BIC,1,none,none,group_2
+Morocco, EMRO,0,1,1,0,0,BIC,1,none,none,group_2
+Oman, EMRO ,0,0,0,0,0,BIC,1,none,none,group_2
+Pakistan, EMRO,0,0,1,0,0,BIC,1,none,none,group_2
+Qatar, EMRO,0,0,1,0,0,BIC,1,none,none,group_2
+Saudi Arabia, EMRO,1,0,1,0,0,BIC,1,none,none,group_2
+Somalia, EMRO ,0,0,0,0,0,BIC,1,none,none,group_1
+Sudan, EMRO ,0,0,0,0,0,BIC,1,none,none,group_2
+Syrian Arab Republic, EMRO,0,0,0,0,0,BIC,1,none,none,group_2
+Tunisia, EMRO ,0,0,0,0,0,BIC,1,none,none,group_2
+United Arab Emirates, EMRO,0,0,0,0,0,BIC,1,none,none,group_2
+Yemen, EMRO,0,0,1,0,0,BIC,1,none,none,group_2
+occupied Palestinian territory including east Jerusalem, EMRO,0,0,1,0,0,BIC,1,none,none,group_2
+Afghanistan, EMRO,0,0,0,0,0,SC,1,none,none,group_2
+Bahrain, EMRO,0,0,1,0,0,SC,1,none,none,group_2
+Djibouti, EMRO ,0,0,0,0,0,SC,1,none,none,group_1
+Egypt, EMRO,0,1,1,0,0,SC,1,none,none,group_2
+Iran (Islamic Republic of), EMRO,0,0,0,1,0,SC,1,none,none,group_2
+Iraq, EMRO,0,1,0,0,0,SC,1,none,none,group_2
+Jordan, EMRO,0,1,1,0,0,SC,1,none,none,group_2
+Kuwait, EMRO ,0,0,0,0,0,SC,1,none,none,group_2
+Lebanon, EMRO,0,1,0,0,0,SC,1,none,none,group_2
+Libya, EMRO,0,0,0,0,0,SC,1,none,none,group_2
+Morocco, EMRO,0,1,1,0,0,SC,1,none,none,group_2
+Oman, EMRO ,0,0,0,0,0,SC,1,none,none,group_2
+Pakistan, EMRO,0,1,1,0,0,SC,1,none,none,group_2
+Qatar, EMRO,0,0,1,0,0,SC,1,none,none,group_2
+Saudi Arabia, EMRO,1,0,1,0,0,SC,1,none,none,group_2
+Somalia, EMRO ,0,0,0,0,0,SC,1,none,none,group_1
+Sudan, EMRO ,0,0,0,0,0,SC,1,none,none,group_2
+Syrian Arab Republic, EMRO,0,0,1,0,0,SC,1,none,none,group_2
+Tunisia, EMRO ,0,0,0,0,0,SC,1,none,none,group_2
+United Arab Emirates, EMRO,0,0,1,0,0,SC,1,none,none,group_2
+Yemen, EMRO,0,0,1,0,0,SC,1,none,none,group_2
+occupied Palestinian territory including east Jerusalem, EMRO,0,0,1,0,0,SC,1,none,none,group_2
+Albania, EURO,0,0,0,0,0,BIC,1,none,none,group_2
+Andorra, EURO ,0,0,0,0,0,BIC,1,none,none,group_2
+Armenia, EURO,0,1,1,1,0,BIC,1,none,none,group_2
+Austria, EURO,0,0,1,0,0,BIC,1,none,none,group_3
+Azerbaijan, EURO,0,1,1,1,0,BIC,1,none,none,group_2
+Belarus, EURO,0,0,0,0,0,BIC,1,none,none,group_3
+Belgium, EURO,0,0,0,0,1,BIC,1,none,none,group_3
+Bosnia and Herzegovina, EURO,0,0,0,0,0,BIC,1,none,none,group_2
+Bulgaria, EURO,0,0,0,0,0,BIC,1,none,none,group_2
+Croatia, EURO,0,0,1,0,0,BIC,1,none,none,group_3
+Cyprus, EURO,0,0,0,0,0,BIC,1,none,none,group_2
+Czechia, EURO,0,0,0,0,0,BIC,1,none,none,group_3
+Denmark, EURO,0,0,0,0,0,BIC,1,none,none,group_3
+Estonia, EURO,0,0,0,0,0,BIC,1,none,none,group_3
+Faroe Islands, EURO ,0,0,0,0,0,BIC,1,none,none,group_3
+Finland, EURO,0,0,1,0,0,BIC,1,none,none,group_3
+France, EURO,0,0,0,0,0,BIC,1,none,none,group_3
+Georgia, EURO,0,1,0,1,0,BIC,1,none,none,group_2
+Germany, EURO,0,0,0,0,0,BIC,1,none,none,group_3
+Gibraltar, EURO ,0,0,0,0,0,BIC,1,none,none,group_2
+Greece, EURO ,0,0,0,0,0,BIC,1,none,none,group_2
+Greenland, EURO ,0,0,0,0,0,BIC,1,none,none,group_3
+Guernsey, EURO ,0,0,0,0,0,BIC,1,none,none,group_3
+Holy See, EURO ,0,0,0,0,0,BIC,1,none,none,group_2
+Hungary, EURO ,0,0,0,0,0,BIC,1,none,none,group_3
+Iceland, EURO,0,0,0,0,0,BIC,1,none,none,group_3
+Ireland, EURO,0,0,0,0,0,BIC,1,none,none,group_3
+Isle of Man, EURO ,0,0,0,0,0,BIC,1,none,none,group_3
+Israel, EURO,0,1,1,1,1,BIC,1,none,none,group_2
+Italy, EURO,0,0,0,0,0,BIC,1,none,none,group_2
+Jersey, EURO ,0,0,0,0,0,BIC,1,none,none,group_3
+Kazakhstan, EURO,0,0,0,0,0,BIC,1,none,none,group_3
+Kosovo, EURO,0,0,0,0,0,BIC,1,none,none,group_2
+Kyrgyzstan, EURO,0,1,0,1,0,BIC,1,none,none,group_2
+Latvia, EURO,0,0,1,0,0,BIC,1,none,none,group_3
+Liechtenstein, EURO ,0,0,0,0,0,BIC,1,none,none,group_3
+Lithuania, EURO,0,1,1,0,0,BIC,1,none,none,group_3
+Luxembourg, EURO,0,0,0,0,1,BIC,1,none,none,group_3
+Malta, EURO ,0,0,0,0,0,BIC,1,none,none,group_2
+Monaco, EURO,0,0,0,1,0,BIC,1,none,none,group_2
+Montenegro, EURO ,0,0,0,0,0,BIC,1,none,none,group_2
+Netherlands, EURO,0,0,0,0,1,BIC,1,none,none,group_3
+North Macedonia, EURO,0,1,1,0,0,BIC,1,none,none,group_2
+Norway, EURO,0,1,0,0,0,BIC,1,none,none,group_3
+Poland, EURO,0,1,0,0,1,BIC,1,none,none,group_3
+Portugal, EURO ,0,0,0,0,0,BIC,1,none,none,group_2
+Republic of Moldova, EURO,0,1,0,0,0,BIC,1,none,none,group_3
+Romania, EURO,0,1,0,0,0,BIC,1,none,none,group_2
+Russian Federation, EURO,0,1,0,1,0,BIC,1,none,none,group_3
+San Marino, EURO ,0,0,0,0,0,BIC,1,none,none,group_2
+Serbia, EURO,0,1,1,1,1,BIC,1,none,none,group_2
+Slovakia, EURO,1,0,0,0,0,BIC,1,none,none,group_3
+Slovenia, EURO,0,0,0,0,1,BIC,1,none,none,group_3
+Spain, EURO,0,1,0,0,0,BIC,1,none,none,group_2
+Sweden, EURO,0,1,1,0,0,BIC,1,none,none,group_3
+Switzerland, EURO,0,0,1,0,0,BIC,1,none,none,group_3
+Tajikistan, EURO ,0,0,0,0,0,BIC,1,none,none,group_2
+The United Kingdom, EURO,0,0,0,1,0,BIC,1,none,none,group_3
+Trkiye, EURO,0,1,1,0,0,BIC,1,none,none,group_2
+Turkmenistan, EURO ,0,0,0,0,0,BIC,1,none,none,group_2
+Ukraine, EURO,0,1,0,1,0,BIC,1,none,none,group_3
+Uzbekistan, EURO,0,0,0,0,0,BIC,1,none,none,group_2
+Albania, EURO,0,1,0,0,0,SC,1,none,none,group_2
+Andorra, EURO ,0,0,0,0,0,SC,1,none,none,group_2
+Armenia, EURO,0,1,1,1,0,SC,1,none,none,group_2
+Austria, EURO,0,0,1,0,1,SC,1,none,none,group_3
+Azerbaijan, EURO,0,1,1,0,0,SC,1,none,none,group_2
+Belarus, EURO,0,1,0,0,0,SC,1,none,none,group_3
+Belgium, EURO,0,0,0,0,1,SC,1,none,none,group_3
+Bosnia and Herzegovina, EURO,0,1,0,0,0,SC,1,none,none,group_2
+Bulgaria, EURO,0,0,1,0,0,SC,1,none,none,group_2
+Croatia, EURO,0,0,1,0,0,SC,1,none,none,group_3
+Cyprus, EURO,0,0,1,0,0,SC,1,none,none,group_2
+Czechia, EURO,1,0,0,0,0,SC,1,none,none,group_3
+Denmark, EURO,0,0,0,0,0,SC,1,none,none,group_3
+Estonia, EURO,0,0,0,1,0,SC,1,none,none,group_3
+Faroe Islands, EURO ,0,0,0,0,0,SC,1,none,none,group_3
+Finland, EURO,0,0,1,0,0,SC,1,none,none,group_3
+France, EURO,0,1,0,0,0,SC,1,none,none,group_3
+Georgia, EURO,0,1,0,1,0,SC,1,none,none,group_2
+Germany, EURO,0,0,0,0,1,SC,1,none,none,group_3
+Gibraltar, EURO ,0,0,0,0,0,SC,1,none,none,group_2
+Greece, EURO ,0,0,0,0,0,SC,1,none,none,group_2
+Greenland, EURO ,0,0,0,0,0,SC,1,none,none,group_3
+Guernsey, EURO ,0,0,0,0,0,SC,1,none,none,group_3
+Holy See, EURO ,0,0,0,0,0,SC,1,none,none,group_2
+Hungary, EURO ,0,0,0,0,0,SC,1,none,none,group_3
+Iceland, EURO,0,1,0,0,0,SC,1,none,none,group_3
+Ireland, EURO,0,0,0,1,0,SC,1,none,none,group_3
+Isle of Man, EURO ,0,0,0,0,0,SC,1,none,none,group_3
+Israel, EURO,0,1,1,1,1,SC,1,none,none,group_2
+Italy, EURO,0,1,0,0,0,SC,1,none,none,group_2
+Jersey, EURO ,0,0,0,0,0,SC,1,none,none,group_3
+Kazakhstan, EURO,0,0,1,0,0,SC,1,none,none,group_3
+Kosovo, EURO,0,0,1,0,0,SC,1,none,none,group_2
+Kyrgyzstan, EURO,0,1,0,0,0,SC,1,none,none,group_2
+Latvia, EURO,0,0,1,0,0,SC,1,none,none,group_3
+Liechtenstein, EURO ,0,0,0,0,0,SC,1,none,none,group_3
+Lithuania, EURO,0,1,1,0,0,SC,1,none,none,group_3
+Luxembourg, EURO,0,0,0,0,1,SC,1,none,none,group_3
+Malta, EURO ,0,0,0,0,0,SC,1,none,none,group_2
+Monaco, EURO,0,0,0,1,0,SC,1,none,none,group_2
+Montenegro, EURO ,0,0,0,0,0,SC,1,none,none,group_2
+Netherlands, EURO,0,0,0,0,1,SC,1,none,none,group_3
+North Macedonia, EURO,0,1,1,0,1,SC,1,none,none,group_2
+Norway, EURO,0,1,0,0,0,SC,1,none,none,group_3
+Poland, EURO,0,1,0,0,1,SC,1,none,none,group_3
+Portugal, EURO ,0,0,0,0,0,SC,1,none,none,group_2
+Republic of Moldova, EURO,0,1,0,1,0,SC,1,none,none,group_3
+Romania, EURO,0,1,1,0,0,SC,1,none,none,group_2
+Russian Federation, EURO,0,1,0,1,0,SC,1,none,none,group_3
+San Marino, EURO ,0,0,0,0,0,SC,1,none,none,group_2
+Serbia, EURO,0,1,1,1,1,SC,1,none,none,group_2
+Slovakia, EURO,1,0,0,0,0,SC,1,none,none,group_3
+Slovenia, EURO,0,0,0,0,1,SC,1,none,none,group_3
+Spain, EURO,0,1,0,0,0,SC,1,none,none,group_2
+Sweden, EURO,0,1,1,0,0,SC,1,none,none,group_3
+Switzerland, EURO,0,0,1,0,0,SC,1,none,none,group_3
+Tajikistan, EURO ,0,0,0,0,0,SC,1,none,none,group_2
+The United Kingdom, EURO,0,0,0,1,0,SC,1,none,none,group_3
+Trkiye, EURO,0,1,1,0,0,SC,1,none,none,group_2
+Turkmenistan, EURO ,0,0,0,0,0,SC,1,none,none,group_2
+Ukraine, EURO,0,1,0,1,0,SC,1,none,none,group_3
+Uzbekistan, EURO,1,0,0,0,0,SC,1,none,none,group_2
+Bangladesh, SEARO,0,1,1,0,0,BIC,1,none,none,group_2
+Bhutan, SEARO ,0,0,0,0,0,BIC,1,none,none,group_2
+Democratic Peoples Republic of Korea, SEARO ,0,0,0,0,0,BIC,1,none,none,group_2
+India, SEARO,1,0,1,0,0,BIC,1,none,none,group_2
+Indonesia, SEARO,0,1,1,0,0,BIC,1,none,none,group_1
+Maldives, SEARO ,0,0,0,0,0,BIC,1,none,none,group_1
+Myanmar, SEARO,0,0,0,0,0,BIC,1,none,none,group_2
+Nepal, SEARO,0,0,0,0,0,BIC,1,none,none,group_2
+Sri Lanka, SEARO,0,0,0,1,0,BIC,1,none,none,group_1
+Thailand, SEARO,0,0,0,0,0,BIC,1,none,none,group_1
+Timor-Leste, SEARO ,0,0,0,0,0,BIC,1,none,none,group_1
+Bangladesh, SEARO,0,1,1,0,0,SC,1,none,none,group_2
+Bhutan, SEARO ,0,0,0,0,0,SC,1,none,none,group_2
+Democratic Peoples Republic of Korea, SEARO ,0,0,0,0,0,SC,1,none,none,group_2
+India, SEARO,1,0,1,1,0,SC,1,none,none,group_2
+Indonesia, SEARO,0,1,1,0,0,SC,1,none,none,group_1
+Maldives, SEARO ,0,0,0,0,0,SC,1,none,none,group_1
+Myanmar, SEARO,1,0,0,0,0,SC,1,none,none,group_2
+Nepal, SEARO,0,0,0,0,0,SC,1,none,none,group_2
+Sri Lanka, SEARO,0,0,0,1,0,SC,1,none,none,group_1
+Thailand, SEARO,0,0,0,0,0,SC,1,none,none,group_1
+Timor-Leste, SEARO ,0,0,0,0,0,SC,1,none,none,group_1
+American Samoa, WPRO ,0,0,0,0,0,BIC,1,none,none,group_1
+Australia, WPRO,0,0,1,1,0,BIC,1,none,none,group_4
+Brunei Darussalam, WPRO,0,0,1,0,0,BIC,1,none,none,group_1
+Cambodia, WPRO,0,0,0,0,0,BIC,1,none,none,group_1
+China, WPRO ,0,0,0,0,0,BIC,1,none,none,group_2
+Cook Islands, WPRO ,0,0,0,0,0,BIC,1,none,none,group_4
+Fiji, WPRO,0,0,0,0,0,BIC,1,none,none,group_4
+French Polynesia, WPRO ,0,0,0,0,0,BIC,1,none,none,group_4
+Guam, WPRO,0,0,0,0,0,BIC,1,none,none,group_1
+Japan, WPRO,0,0,1,1,0,BIC,1,none,none,group_2
+Kiribati, WPRO ,0,0,0,0,0,BIC,1,none,none,group_1
+Lao Peoples Democratic Republic, WPRO,0,0,1,0,0,BIC,1,none,none,group_2
+Malaysia, WPRO,0,0,0,0,0,BIC,1,none,none,group_1
+Marshall Islands, WPRO ,0,0,0,0,0,BIC,1,none,none,group_1
+Micronesia (Federated States of), WPRO ,0,0,0,0,0,BIC,1,none,none,group_1
+Mongolia, WPRO ,0,0,0,0,0,BIC,1,none,none,group_3
+Nauru, WPRO ,0,0,0,0,0,BIC,1,none,none,group_1
+New Caledonia, WPRO,0,0,1,0,0,BIC,1,none,none,group_4
+New Zealand, WPRO ,0,0,0,0,0,BIC,1,none,none,group_4
+Niue, WPRO ,0,0,0,0,0,BIC,1,none,none,group_4
+Northern Mariana Islands (Commonwealth of the), WPRO ,0,0,0,0,0,BIC,1,none,none,group_2
+Palau, WPRO ,0,0,0,0,0,BIC,1,none,none,group_1
+Papua New Guinea, WPRO,0,0,0,0,0,BIC,1,none,none,group_1
+Philippines, WPRO,0,0,0,0,0,BIC,1,none,none,group_1
+Pitcairn Islands, WPRO ,0,0,0,0,0,BIC,1,none,none,group_4
+Republic of Korea, WPRO,0,0,1,0,0,BIC,1,none,none,group_2
+Samoa, WPRO ,0,0,0,0,0,BIC,1,none,none,group_1
+Singapore, WPRO,0,0,1,0,0,BIC,1,none,none,group_1
+Solomon Islands, WPRO ,0,0,0,0,0,BIC,1,none,none,group_1
+Tokelau, WPRO ,0,0,0,0,0,BIC,1,none,none,group_1
+Tonga, WPRO ,0,0,0,0,0,BIC,1,none,none,group_4
+Tuvalu, WPRO ,0,0,0,0,0,BIC,1,none,none,group_1
+Vanuatu, WPRO ,0,0,0,0,0,BIC,1,none,none,group_4
+Viet Nam, WPRO,0,0,0,0,0,BIC,1,none,none,group_2
+Wallis and Futuna, WPRO ,0,0,0,0,0,BIC,1,none,none,group_1
+American Samoa, WPRO ,0,0,0,0,0,SC,1,none,none,group_1
+Australia, WPRO,0,0,1,1,0,SC,1,none,none,group_4
+Brunei Darussalam, WPRO,0,0,1,0,0,SC,1,none,none,group_1
+Cambodia, WPRO,0,0,1,0,0,SC,1,none,none,group_1
+China, WPRO ,0,0,0,0,0,SC,1,none,none,group_2
+Cook Islands, WPRO ,0,0,0,0,0,SC,1,none,none,group_4
+Fiji, WPRO,0,1,0,0,0,SC,1,none,none,group_4
+French Polynesia, WPRO ,0,0,0,0,0,SC,1,none,none,group_4
+Guam, WPRO,0,1,0,0,0,SC,1,none,none,group_1
+Japan, WPRO,0,0,1,1,0,SC,1,none,none,group_2
+Kiribati, WPRO ,0,0,0,0,0,SC,1,none,none,group_1
+Lao Peoples Democratic Republic, WPRO,0,0,1,0,0,SC,1,none,none,group_2
+Malaysia, WPRO,0,0,0,0,0,SC,1,none,none,group_1
+Marshall Islands, WPRO ,0,0,0,0,0,SC,1,none,none,group_1
+Micronesia (Federated States of), WPRO ,0,0,0,0,0,SC,1,none,none,group_1
+Mongolia, WPRO ,0,0,0,0,0,SC,1,none,none,group_3
+Nauru, WPRO ,0,0,0,0,0,SC,1,none,none,group_1
+New Caledonia, WPRO,0,0,1,0,0,SC,1,none,none,group_4
+New Zealand, WPRO ,0,0,0,0,0,SC,1,none,none,group_4
+Niue, WPRO ,0,0,0,0,0,SC,1,none,none,group_4
+Northern Mariana Islands (Commonwealth of the), WPRO ,0,0,0,0,0,SC,1,none,none,group_2
+Palau, WPRO ,0,0,0,0,0,SC,1,none,none,group_1
+Papua New Guinea, WPRO,0,1,0,0,0,SC,1,none,none,group_1
+Philippines, WPRO,0,0,1,0,0,SC,1,none,none,group_1
+Pitcairn Islands, WPRO ,0,0,0,0,0,SC,1,none,none,group_4
+Republic of Korea, WPRO,0,0,1,0,0,SC,1,none,none,group_2
+Samoa, WPRO ,0,0,0,0,0,SC,1,none,none,group_1
+Singapore, WPRO,0,0,1,0,0,SC,1,none,none,group_1
+Solomon Islands, WPRO ,0,0,0,0,0,SC,1,none,none,group_1
+Tokelau, WPRO ,0,0,0,0,0,SC,1,none,none,group_1
+Tonga, WPRO ,0,0,0,0,0,SC,1,none,none,group_4
+Tuvalu, WPRO ,0,0,0,0,0,SC,1,none,none,group_1
+Vanuatu, WPRO ,0,0,0,0,0,SC,1,none,none,group_4
+Viet Nam, WPRO,0,0,0,0,0,SC,1,none,none,group_2
+Wallis and Futuna, WPRO ,0,0,0,0,0,SC,1,none,none,group_1
+Algeria, AFRO,0,0,0,0,0,BIC,2,none,none,group_2
+Angola, AFRO ,0,0,0,0,0,BIC,2,none,none,group_1
+Benin, AFRO ,0,0,0,0,0,BIC,2,none,none,group_1
+Botswana, AFRO,0,0,0,0,0,BIC,2,none,none,group_4
+Burkina Faso, AFRO ,0,0,0,0,0,BIC,2,none,none,group_1
+Burundi, AFRO ,0,0,0,0,0,BIC,2,none,none,group_1
+Cabo Verde, AFRO ,0,0,0,0,0,BIC,2,none,none,group_1
+Cameroon, AFRO ,0,0,0,0,0,BIC,2,none,none,group_1
+Central African Republic, AFRO ,0,0,0,0,0,BIC,2,none,none,group_1
+Chad, AFRO ,0,0,0,0,0,BIC,2,none,none,group_1
+Comoros, AFRO ,0,0,0,0,0,BIC,2,none,none,group_1
+Congo, AFRO ,0,0,0,0,0,BIC,2,none,none,group_1
+Ctedvoire, AFRO ,0,0,0,0,0,BIC,2,none,none,group_1
+Democratic Republic of the Congo, AFRO ,0,0,0,0,0,BIC,2,none,none,group_1
+Equatorial Guinea, AFRO ,0,0,0,0,0,BIC,2,none,none,group_1
+Eritrea, AFRO ,0,0,0,0,0,BIC,2,none,none,group_2
+Eswatini, AFRO ,0,0,0,0,0,BIC,2,none,none,group_4
+Ethiopia, AFRO ,0,0,0,0,0,BIC,2,none,none,group_1
+Gabon, AFRO ,0,0,0,0,0,BIC,2,none,none,group_1
+Gambia, AFRO ,0,0,0,0,0,BIC,2,none,none,group_1
+Ghana, AFRO ,0,0,0,0,0,BIC,2,none,none,group_1
+Guinea, AFRO ,0,0,0,0,0,BIC,2,none,none,group_1
+Guinea-Bissau, AFRO ,0,0,0,0,0,BIC,2,none,none,group_1
+Kenya, AFRO,0,0,1,0,0,BIC,2,none,none,group_1
+Lesotho, AFRO ,0,0,0,0,0,BIC,2,none,none,group_4
+Liberia, AFRO ,0,0,0,0,0,BIC,2,none,none,group_1
+Madagascar, AFRO ,0,0,0,0,0,BIC,2,none,none,group_4
+Malawi, AFRO,0,0,0,0,0,BIC,2,none,none,group_1
+Mali, AFRO ,0,0,0,0,0,BIC,2,none,none,group_1
+Mauritania, AFRO ,0,0,0,0,0,BIC,2,none,none,group_2
+Mauritius, AFRO ,0,0,0,0,0,BIC,2,none,none,group_4
+Mayotte, AFRO ,0,0,0,0,0,BIC,2,none,none,group_1
+Mozambique, AFRO ,0,0,0,0,0,BIC,2,none,none,group_4
+Namibia, AFRO ,0,0,0,0,0,BIC,2,none,none,group_4
+Niger, AFRO ,0,0,0,0,0,BIC,2,none,none,group_1
+Nigeria, AFRO ,0,0,0,0,0,BIC,2,none,none,group_1
+Runion, AFRO ,0,0,0,0,0,BIC,2,none,none,group_4
+Rwanda, AFRO ,0,0,0,0,0,BIC,2,none,none,group_1
+Saint Helena Ascension and Tristan da Cunha, AFRO ,0,0,0,0,0,BIC,2,none,none,group_4
+Sao Tome and Principe, AFRO ,0,0,0,0,0,BIC,2,none,none,group_1
+Senegal, AFRO ,0,0,0,0,0,BIC,2,none,none,group_1
+Seychelles, AFRO ,0,0,0,0,0,BIC,2,none,none,group_1
+Sierra Leone, AFRO ,0,0,0,0,0,BIC,2,none,none,group_1
+South Africa, AFRO ,0,0,0,0,0,BIC,2,none,none,group_4
+South Sudan, AFRO ,0,0,0,0,0,BIC,2,none,none,group_1
+Togo, AFRO ,0,0,0,0,0,BIC,2,none,none,group_1
+Uganda, AFRO ,0,0,0,0,0,BIC,2,none,none,group_1
+United Republic of Tanzania, AFRO ,0,0,0,0,0,BIC,2,none,none,group_2
+Zambia, AFRO ,0,0,0,0,0,BIC,2,none,none,group_4
+Zimbabwe, AFRO ,0,0,0,0,0,BIC,2,none,none,group_4
+Algeria, AFRO,0,1,0,0,0,SC,2,none,none,group_2
+Angola, AFRO ,0,0,0,0,0,SC,2,none,none,group_1
+Benin, AFRO ,0,0,0,0,0,SC,2,none,none,group_1
+Botswana, AFRO,0,0,0,0,0,SC,2,none,none,group_4
+Burkina Faso, AFRO ,0,0,0,0,0,SC,2,none,none,group_1
+Burundi, AFRO ,0,0,0,0,0,SC,2,none,none,group_1
+Cabo Verde, AFRO ,0,0,0,0,0,SC,2,none,none,group_1
+Cameroon, AFRO ,0,0,0,0,0,SC,2,none,none,group_1
+Central African Republic, AFRO ,0,0,0,0,0,SC,2,none,none,group_1
+Chad, AFRO ,0,0,0,0,0,SC,2,none,none,group_1
+Comoros, AFRO ,0,0,0,0,0,SC,2,none,none,group_1
+Congo, AFRO ,0,0,0,0,0,SC,2,none,none,group_1
+Ctedvoire, AFRO ,0,0,0,0,0,SC,2,none,none,group_1
+Democratic Republic of the Congo, AFRO ,0,0,0,0,0,SC,2,none,none,group_1
+Equatorial Guinea, AFRO ,0,0,0,0,0,SC,2,none,none,group_1
+Eritrea, AFRO ,0,0,0,0,0,SC,2,none,none,group_2
+Eswatini, AFRO ,0,0,0,0,0,SC,2,none,none,group_4
+Ethiopia, AFRO ,0,0,0,0,0,SC,2,none,none,group_1
+Gabon, AFRO ,0,0,0,0,0,SC,2,none,none,group_1
+Gambia, AFRO ,0,0,0,0,0,SC,2,none,none,group_1
+Ghana, AFRO ,0,0,0,0,0,SC,2,none,none,group_1
+Guinea, AFRO ,0,0,0,0,0,SC,2,none,none,group_1
+Guinea-Bissau, AFRO ,0,0,0,0,0,SC,2,none,none,group_1
+Kenya, AFRO,0,0,1,0,0,SC,2,none,none,group_1
+Lesotho, AFRO ,0,0,0,0,0,SC,2,none,none,group_4
+Liberia, AFRO ,0,0,0,0,0,SC,2,none,none,group_1
+Madagascar, AFRO ,0,0,0,0,0,SC,2,none,none,group_4
+Malawi, AFRO,0,1,0,0,0,SC,2,none,none,group_1
+Mali, AFRO ,0,0,0,0,0,SC,2,none,none,group_1
+Mauritania, AFRO ,0,0,0,0,0,SC,2,none,none,group_2
+Mauritius, AFRO ,0,0,0,0,0,SC,2,none,none,group_4
+Mayotte, AFRO ,0,0,0,0,0,SC,2,none,none,group_1
+Mozambique, AFRO ,0,0,0,0,0,SC,2,none,none,group_4
+Namibia, AFRO ,0,0,0,0,0,SC,2,none,none,group_4
+Niger, AFRO ,0,0,0,0,0,SC,2,none,none,group_1
+Nigeria, AFRO ,0,0,0,0,0,SC,2,none,none,group_1
+Runion, AFRO ,0,0,0,0,0,SC,2,none,none,group_4
+Rwanda, AFRO ,0,0,0,0,0,SC,2,none,none,group_1
+Saint Helena Ascension and Tristan da Cunha, AFRO ,0,0,0,0,0,SC,2,none,none,group_4
+Sao Tome and Principe, AFRO ,0,0,0,0,0,SC,2,none,none,group_1
+Senegal, AFRO ,0,0,0,0,0,SC,2,none,none,group_1
+Seychelles, AFRO ,0,0,0,0,0,SC,2,none,none,group_1
+Sierra Leone, AFRO ,0,0,0,0,0,SC,2,none,none,group_1
+South Africa, AFRO ,0,0,0,0,0,SC,2,none,none,group_4
+South Sudan, AFRO ,0,0,0,0,0,SC,2,none,none,group_1
+Togo, AFRO ,0,0,0,0,0,SC,2,none,none,group_1
+Uganda, AFRO ,0,0,0,0,0,SC,2,none,none,group_1
+United Republic of Tanzania, AFRO ,0,0,0,0,0,SC,2,none,none,group_2
+Zambia, AFRO ,0,0,0,0,0,SC,2,none,none,group_4
+Zimbabwe, AFRO ,0,0,0,0,0,SC,2,none,none,group_4
+Anguilla, AMRO ,0,0,0,0,0,BIC,2,none,none,group_2
+Antigua and Barbuda, AMRO ,0,0,0,0,0,BIC,2,none,none,group_2
+Argentina, AMRO ,0,0,0,0,0,BIC,2,none,none,group_4
+Aruba, AMRO ,0,0,0,0,0,BIC,2,none,none,group_1
+Bahamas, AMRO ,0,0,0,0,0,BIC,2,none,none,group_2
+Barbados, AMRO ,0,0,0,0,0,BIC,2,none,none,group_1
+Belize, AMRO ,0,0,0,0,0,BIC,2,none,none,group_2
+Bermuda, AMRO ,0,0,0,0,0,BIC,2,none,none,group_2
+Bolivia (Plurinational State of), AMRO ,0,0,0,0,0,BIC,2,none,none,group_4
+Bonaire, AMRO ,0,0,0,0,0,BIC,2,none,none,group_1
+Brazil, AMRO ,0,0,0,0,0,BIC,2,none,none,group_4
+British Virgin Islands, AMRO ,0,0,0,0,0,BIC,2,none,none,group_2
+Canada, AMRO,0,0,0,0,0,BIC,2,none,none,group_3
+Cayman Islands, AMRO ,0,0,0,0,0,BIC,2,none,none,group_2
+Chile, AMRO,0,0,0,0,0,BIC,2,none,none,group_4
+Colombia, AMRO ,0,0,0,0,0,BIC,2,none,none,group_1
+Costa Rica, AMRO ,0,0,0,0,0,BIC,2,none,none,group_1
+Cuba, AMRO ,0,0,0,0,0,BIC,2,none,none,group_2
+Curaao, AMRO ,0,0,0,0,0,BIC,2,none,none,group_1
+Dominica, AMRO ,0,0,0,0,0,BIC,2,none,none,group_2
+Dominican Republic, AMRO,0,0,0,0,0,BIC,2,none,none,group_2
+Ecuador, AMRO ,0,0,0,0,0,BIC,2,none,none,group_1
+El Salvador, AMRO ,0,0,0,0,0,BIC,2,none,none,group_1
+Falkland Islands (Malvinas), AMRO ,0,0,0,0,0,BIC,2,none,none,group_5
+French Guiana, AMRO ,0,0,0,0,0,BIC,2,none,none,group_1
+Grenada, AMRO ,0,0,0,0,0,BIC,2,none,none,group_1
+Guadeloupe, AMRO ,0,0,0,0,0,BIC,2,none,none,group_2
+Guatemala, AMRO ,0,0,0,0,0,BIC,2,none,none,group_1
+Guyana, AMRO ,0,0,0,0,0,BIC,2,none,none,group_1
+Haiti, AMRO ,0,0,0,0,0,BIC,2,none,none,group_2
+Honduras, AMRO ,0,0,0,0,0,BIC,2,none,none,group_1
+Jamaica, AMRO ,0,0,0,0,0,BIC,2,none,none,group_2
+Martinique, AMRO ,0,0,0,0,0,BIC,2,none,none,group_1
+Mexico, AMRO,0,1,0,0,0,BIC,2,none,none,group_2
+Montserrat, AMRO ,0,0,0,0,0,BIC,2,none,none,group_2
+Nicaragua, AMRO ,0,0,0,0,0,BIC,2,none,none,group_1
+Panama, AMRO ,0,0,0,0,0,BIC,2,none,none,group_1
+Paraguay, AMRO ,0,0,0,0,0,BIC,2,none,none,group_4
+Peru, AMRO ,0,0,0,0,0,BIC,2,none,none,group_1
+Puerto Rico, AMRO,0,0,1,0,0,BIC,2,none,none,group_2
+Saba, AMRO ,0,0,0,0,0,BIC,2,none,none,group_2
+Saint Barthlemy, AMRO,0,0,0,0,0,BIC,2,none,none,group_2
+Saint Kitts and Nevis, AMRO ,0,0,0,0,0,BIC,2,none,none,group_2
+Saint Lucia, AMRO ,0,0,0,0,0,BIC,2,none,none,group_1
+Saint Martin, AMRO ,0,0,0,0,0,BIC,2,none,none,group_2
+Saint Pierre and Miquelon, AMRO ,0,0,0,0,0,BIC,2,none,none,group_3
+Saint Vincent and the Grenadines, AMRO ,0,0,0,0,0,BIC,2,none,none,group_1
+Sint Eustatius, AMRO ,0,0,0,0,0,BIC,2,none,none,group_2
+Sint Maarten, AMRO ,0,0,0,0,0,BIC,2,none,none,group_2
+Suriname, AMRO ,0,0,0,0,0,BIC,2,none,none,group_1
+Trinidad and Tobago, AMRO ,0,0,0,0,0,BIC,2,none,none,group_1
+Turks and Caicos Islands, AMRO ,0,0,0,0,0,BIC,2,none,none,group_2
+United States Virgin Islands, AMRO ,0,0,0,0,0,BIC,2,none,none,group_2
+United States of America, AMRO,0,0,0,0,0,BIC,2,none,none,group_2
+Uruguay, AMRO ,0,0,0,0,0,BIC,2,none,none,group_4
+Venezuela (Bolivarian Republic of), AMRO ,0,0,0,0,0,BIC,2,none,none,group_1
+Anguilla, AMRO ,0,0,0,0,0,SC,2,none,none,group_2
+Antigua and Barbuda, AMRO ,0,0,0,0,0,SC,2,none,none,group_2
+Argentina, AMRO ,0,0,0,0,0,SC,2,none,none,group_4
+Aruba, AMRO ,0,0,0,0,0,SC,2,none,none,group_1
+Bahamas, AMRO ,0,0,0,0,0,SC,2,none,none,group_2
+Barbados, AMRO ,0,0,0,0,0,SC,2,none,none,group_1
+Belize, AMRO ,0,0,0,0,0,SC,2,none,none,group_2
+Bermuda, AMRO ,0,0,0,0,0,SC,2,none,none,group_2
+Bolivia (Plurinational State of), AMRO ,0,0,0,0,0,SC,2,none,none,group_4
+Bonaire, AMRO ,0,0,0,0,0,SC,2,none,none,group_1
+Brazil, AMRO ,0,0,0,0,0,SC,2,none,none,group_4
+British Virgin Islands, AMRO ,0,0,0,0,0,SC,2,none,none,group_2
+Canada, AMRO,0,0,1,0,0,SC,2,none,none,group_3
+Cayman Islands, AMRO ,0,0,0,0,0,SC,2,none,none,group_2
+Chile, AMRO,0,0,0,0,0,SC,2,none,none,group_4
+Colombia, AMRO ,0,0,0,0,0,SC,2,none,none,group_1
+Costa Rica, AMRO ,0,0,0,0,0,SC,2,none,none,group_1
+Cuba, AMRO ,0,0,0,0,0,SC,2,none,none,group_2
+Curaao, AMRO ,0,0,0,0,0,SC,2,none,none,group_1
+Dominica, AMRO ,0,0,0,0,0,SC,2,none,none,group_2
+Dominican Republic, AMRO,0,0,0,0,1,SC,2,none,none,group_2
+Ecuador, AMRO ,0,0,0,0,0,SC,2,none,none,group_1
+El Salvador, AMRO ,0,0,0,0,0,SC,2,none,none,group_1
+Falkland Islands (Malvinas), AMRO ,0,0,0,0,0,SC,2,none,none,group_5
+French Guiana, AMRO ,0,0,0,0,0,SC,2,none,none,group_1
+Grenada, AMRO ,0,0,0,0,0,SC,2,none,none,group_1
+Guadeloupe, AMRO ,0,0,0,0,0,SC,2,none,none,group_2
+Guatemala, AMRO ,0,0,0,0,0,SC,2,none,none,group_1
+Guyana, AMRO ,0,0,0,0,0,SC,2,none,none,group_1
+Haiti, AMRO ,0,0,0,0,0,SC,2,none,none,group_2
+Honduras, AMRO ,0,0,0,0,0,SC,2,none,none,group_1
+Jamaica, AMRO ,0,0,0,0,0,SC,2,none,none,group_2
+Martinique, AMRO ,0,0,0,0,0,SC,2,none,none,group_1
+Mexico, AMRO,0,1,0,0,0,SC,2,none,none,group_2
+Montserrat, AMRO ,0,0,0,0,0,SC,2,none,none,group_2
+Nicaragua, AMRO ,0,0,0,0,0,SC,2,none,none,group_1
+Panama, AMRO ,0,0,0,0,0,SC,2,none,none,group_1
+Paraguay, AMRO ,0,0,0,0,0,SC,2,none,none,group_4
+Peru, AMRO ,0,0,0,0,0,SC,2,none,none,group_1
+Puerto Rico, AMRO,0,0,1,0,0,SC,2,none,none,group_2
+Saba, AMRO ,0,0,0,0,0,SC,2,none,none,group_2
+Saint Barthlemy, AMRO,0,0,0,0,0,SC,2,none,none,group_2
+Saint Kitts and Nevis, AMRO ,0,0,0,0,0,SC,2,none,none,group_2
+Saint Lucia, AMRO ,0,0,0,0,0,SC,2,none,none,group_1
+Saint Martin, AMRO ,0,0,0,0,0,SC,2,none,none,group_2
+Saint Pierre and Miquelon, AMRO ,0,0,0,0,0,SC,2,none,none,group_3
+Saint Vincent and the Grenadines, AMRO ,0,0,0,0,0,SC,2,none,none,group_1
+Sint Eustatius, AMRO ,0,0,0,0,0,SC,2,none,none,group_2
+Sint Maarten, AMRO ,0,0,0,0,0,SC,2,none,none,group_2
+Suriname, AMRO ,0,0,0,0,0,SC,2,none,none,group_1
+Trinidad and Tobago, AMRO ,0,0,0,0,0,SC,2,none,none,group_1
+Turks and Caicos Islands, AMRO ,0,0,0,0,0,SC,2,none,none,group_2
+United States Virgin Islands, AMRO ,0,0,0,0,0,SC,2,none,none,group_2
+United States of America, AMRO,0,0,1,0,0,SC,2,none,none,group_2
+Uruguay, AMRO ,0,0,0,0,0,SC,2,none,none,group_4
+Venezuela (Bolivarian Republic of), AMRO ,0,0,0,0,0,SC,2,none,none,group_1
+Afghanistan, EMRO,0,0,0,0,0,BIC,2,none,none,group_2
+Bahrain, EMRO ,0,0,0,0,0,BIC,2,none,none,group_2
+Djibouti, EMRO ,0,0,0,0,0,BIC,2,none,none,group_1
+Egypt, EMRO ,0,0,0,0,0,BIC,2,none,none,group_2
+Iran (Islamic Republic of), EMRO,0,0,0,1,0,BIC,2,none,none,group_2
+Iraq, EMRO ,0,0,0,0,0,BIC,2,none,none,group_2
+Jordan, EMRO ,0,0,0,0,0,BIC,2,none,none,group_2
+Kuwait, EMRO ,0,0,0,0,0,BIC,2,none,none,group_2
+Lebanon, EMRO ,0,0,0,0,0,BIC,2,none,none,group_2
+Libya, EMRO ,0,0,0,0,0,BIC,2,none,none,group_2
+Morocco, EMRO,0,1,1,0,0,BIC,2,none,none,group_2
+Oman, EMRO ,0,0,0,0,0,BIC,2,none,none,group_2
+Pakistan, EMRO ,0,0,0,0,0,BIC,2,none,none,group_2
+Qatar, EMRO ,0,0,0,0,0,BIC,2,none,none,group_2
+Saudi Arabia, EMRO,1,0,0,0,0,BIC,2,none,none,group_2
+Somalia, EMRO ,0,0,0,0,0,BIC,2,none,none,group_1
+Sudan, EMRO ,0,0,0,0,0,BIC,2,none,none,group_2
+Syrian Arab Republic, EMRO ,0,0,0,0,0,BIC,2,none,none,group_2
+Tunisia, EMRO ,0,0,0,0,0,BIC,2,none,none,group_2
+United Arab Emirates, EMRO ,0,0,0,0,0,BIC,2,none,none,group_2
+Yemen, EMRO ,0,0,0,0,0,BIC,2,none,none,group_2
+occupied Palestinian territory including east Jerusalem, EMRO ,0,0,0,0,0,BIC,2,none,none,group_2
+Afghanistan, EMRO,0,0,0,0,0,SC,2,none,none,group_2
+Bahrain, EMRO ,0,0,0,0,0,SC,2,none,none,group_2
+Djibouti, EMRO ,0,0,0,0,0,SC,2,none,none,group_1
+Egypt, EMRO ,0,0,0,0,0,SC,2,none,none,group_2
+Iran (Islamic Republic of), EMRO,0,0,0,1,0,SC,2,none,none,group_2
+Iraq, EMRO ,0,0,0,0,0,SC,2,none,none,group_2
+Jordan, EMRO ,0,0,0,0,0,SC,2,none,none,group_2
+Kuwait, EMRO ,0,0,0,0,0,SC,2,none,none,group_2
+Lebanon, EMRO ,0,0,0,0,0,SC,2,none,none,group_2
+Libya, EMRO ,0,0,0,0,0,SC,2,none,none,group_2
+Morocco, EMRO,0,1,1,0,0,SC,2,none,none,group_2
+Oman, EMRO ,0,0,0,0,0,SC,2,none,none,group_2
+Pakistan, EMRO ,0,0,0,0,0,SC,2,none,none,group_2
+Qatar, EMRO ,0,0,0,0,0,SC,2,none,none,group_2
+Saudi Arabia, EMRO,1,0,0,0,0,SC,2,none,none,group_2
+Somalia, EMRO ,0,0,0,0,0,SC,2,none,none,group_1
+Sudan, EMRO ,0,0,0,0,0,SC,2,none,none,group_2
+Syrian Arab Republic, EMRO ,0,0,0,0,0,SC,2,none,none,group_2
+Tunisia, EMRO ,0,0,0,0,0,SC,2,none,none,group_2
+United Arab Emirates, EMRO ,0,0,0,0,0,SC,2,none,none,group_2
+Yemen, EMRO ,0,0,0,0,0,SC,2,none,none,group_2
+occupied Palestinian territory including east Jerusalem, EMRO ,0,0,0,0,0,SC,2,none,none,group_2
+Albania, EURO ,0,0,0,0,0,BIC,2,none,none,group_2
+Andorra, EURO ,0,0,0,0,0,BIC,2,none,none,group_2
+Armenia, EURO ,0,0,0,0,0,BIC,2,none,none,group_2
+Austria, EURO,0,0,0,0,0,BIC,2,none,none,group_3
+Azerbaijan, EURO,0,1,1,0,0,BIC,2,none,none,group_2
+Belarus, EURO ,0,0,0,0,0,BIC,2,none,none,group_3
+Belgium, EURO ,0,0,0,0,0,BIC,2,none,none,group_3
+Bosnia and Herzegovina, EURO,0,0,0,0,0,BIC,2,none,none,group_2
+Bulgaria, EURO ,0,0,0,0,0,BIC,2,none,none,group_2
+Croatia, EURO,0,0,0,0,0,BIC,2,none,none,group_3
+Cyprus, EURO ,0,0,0,0,0,BIC,2,none,none,group_2
+Czechia, EURO,0,0,0,0,0,BIC,2,none,none,group_3
+Denmark, EURO ,0,0,0,0,0,BIC,2,none,none,group_3
+Estonia, EURO ,0,0,0,0,0,BIC,2,none,none,group_3
+Faroe Islands, EURO ,0,0,0,0,0,BIC,2,none,none,group_3
+Finland, EURO,0,0,0,0,0,BIC,2,none,none,group_3
+France, EURO,0,0,0,0,0,BIC,2,none,none,group_3
+Georgia, EURO ,0,0,0,0,0,BIC,2,none,none,group_2
+Germany, EURO ,0,0,0,0,0,BIC,2,none,none,group_3
+Gibraltar, EURO ,0,0,0,0,0,BIC,2,none,none,group_2
+Greece, EURO ,0,0,0,0,0,BIC,2,none,none,group_2
+Greenland, EURO ,0,0,0,0,0,BIC,2,none,none,group_3
+Guernsey, EURO ,0,0,0,0,0,BIC,2,none,none,group_3
+Holy See, EURO ,0,0,0,0,0,BIC,2,none,none,group_2
+Hungary, EURO ,0,0,0,0,0,BIC,2,none,none,group_3
+Iceland, EURO ,0,0,0,0,0,BIC,2,none,none,group_3
+Ireland, EURO,0,0,0,0,0,BIC,2,none,none,group_3
+Isle of Man, EURO ,0,0,0,0,0,BIC,2,none,none,group_3
+Israel, EURO,0,1,0,1,0,BIC,2,none,none,group_2
+Italy, EURO ,0,0,0,0,0,BIC,2,none,none,group_2
+Jersey, EURO ,0,0,0,0,0,BIC,2,none,none,group_3
+Kazakhstan, EURO,0,0,0,0,0,BIC,2,none,none,group_3
+Kosovo, EURO,0,1,0,0,0,BIC,2,none,none,group_2
+Kyrgyzstan, EURO ,0,0,0,0,0,BIC,2,none,none,group_2
+Latvia, EURO,0,0,1,0,0,BIC,2,none,none,group_3
+Liechtenstein, EURO ,0,0,0,0,0,BIC,2,none,none,group_3
+Lithuania, EURO ,0,0,0,0,0,BIC,2,none,none,group_3
+Luxembourg, EURO ,0,0,0,0,0,BIC,2,none,none,group_3
+Malta, EURO,0,0,0,0,0,BIC,2,none,none,group_2
+Monaco, EURO ,0,0,0,0,0,BIC,2,none,none,group_2
+Montenegro, EURO,0,0,0,0,0,BIC,2,none,none,group_2
+Netherlands, EURO ,0,0,0,0,0,BIC,2,none,none,group_3
+North Macedonia, EURO ,0,0,0,0,0,BIC,2,none,none,group_2
+Norway, EURO,0,0,0,0,0,BIC,2,none,none,group_3
+Poland, EURO,0,1,0,0,0,BIC,2,none,none,group_3
+Portugal, EURO,0,0,0,0,0,BIC,2,none,none,group_2
+Republic of Moldova, EURO,0,1,0,0,0,BIC,2,none,none,group_3
+Romania, EURO,0,1,1,0,0,BIC,2,none,none,group_2
+Russian Federation, EURO,0,0,0,0,0,BIC,2,none,none,group_3
+San Marino, EURO ,0,0,0,0,0,BIC,2,none,none,group_2
+Serbia, EURO,0,0,0,0,0,BIC,2,none,none,group_2
+Slovakia, EURO ,0,0,0,0,0,BIC,2,none,none,group_3
+Slovenia, EURO ,0,0,0,0,0,BIC,2,none,none,group_3
+Spain, EURO ,0,0,0,0,0,BIC,2,none,none,group_2
+Sweden, EURO ,0,0,0,0,0,BIC,2,none,none,group_3
+Switzerland, EURO ,0,0,0,0,0,BIC,2,none,none,group_3
+Tajikistan, EURO ,0,0,0,0,0,BIC,2,none,none,group_2
+The United Kingdom, EURO ,0,0,0,0,0,BIC,2,none,none,group_3
+Trkiye, EURO ,0,0,0,0,0,BIC,2,none,none,group_2
+Turkmenistan, EURO ,0,0,0,0,0,BIC,2,none,none,group_2
+Ukraine, EURO ,0,0,0,0,0,BIC,2,none,none,group_3
+Uzbekistan, EURO ,0,0,0,0,0,BIC,2,none,none,group_2
+Albania, EURO ,0,0,0,0,0,SC,2,none,none,group_2
+Andorra, EURO ,0,0,0,0,0,SC,2,none,none,group_2
+Armenia, EURO ,0,0,0,0,0,SC,2,none,none,group_2
+Austria, EURO,0,0,1,0,0,SC,2,none,none,group_3
+Azerbaijan, EURO,0,1,0,0,0,SC,2,none,none,group_2
+Belarus, EURO ,0,0,0,0,0,SC,2,none,none,group_3
+Belgium, EURO ,0,0,0,0,0,SC,2,none,none,group_3
+Bosnia and Herzegovina, EURO,0,1,0,0,0,SC,2,none,none,group_2
+Bulgaria, EURO ,0,0,0,0,0,SC,2,none,none,group_2
+Croatia, EURO,0,0,1,0,0,SC,2,none,none,group_3
+Cyprus, EURO ,0,0,0,0,0,SC,2,none,none,group_2
+Czechia, EURO,0,1,0,0,0,SC,2,none,none,group_3
+Denmark, EURO ,0,0,0,0,0,SC,2,none,none,group_3
+Estonia, EURO ,0,0,0,0,0,SC,2,none,none,group_3
+Faroe Islands, EURO ,0,0,0,0,0,SC,2,none,none,group_3
+Finland, EURO,0,1,0,0,0,SC,2,none,none,group_3
+France, EURO,0,1,0,0,0,SC,2,none,none,group_3
+Georgia, EURO ,0,0,0,0,0,SC,2,none,none,group_2
+Germany, EURO ,0,0,0,0,0,SC,2,none,none,group_3
+Gibraltar, EURO ,0,0,0,0,0,SC,2,none,none,group_2
+Greece, EURO ,0,0,0,0,0,SC,2,none,none,group_2
+Greenland, EURO ,0,0,0,0,0,SC,2,none,none,group_3
+Guernsey, EURO ,0,0,0,0,0,SC,2,none,none,group_3
+Holy See, EURO ,0,0,0,0,0,SC,2,none,none,group_2
+Hungary, EURO ,0,0,0,0,0,SC,2,none,none,group_3
+Iceland, EURO ,0,0,0,0,0,SC,2,none,none,group_3
+Ireland, EURO,0,1,0,0,0,SC,2,none,none,group_3
+Isle of Man, EURO ,0,0,0,0,0,SC,2,none,none,group_3
+Israel, EURO,0,1,0,1,0,SC,2,none,none,group_2
+Italy, EURO ,0,0,0,0,0,SC,2,none,none,group_2
+Jersey, EURO ,0,0,0,0,0,SC,2,none,none,group_3
+Kazakhstan, EURO,0,0,0,1,0,SC,2,none,none,group_3
+Kosovo, EURO,0,1,0,0,0,SC,2,none,none,group_2
+Kyrgyzstan, EURO ,0,0,0,0,0,SC,2,none,none,group_2
+Latvia, EURO,0,0,1,0,0,SC,2,none,none,group_3
+Liechtenstein, EURO ,0,0,0,0,0,SC,2,none,none,group_3
+Lithuania, EURO ,0,0,0,0,0,SC,2,none,none,group_3
+Luxembourg, EURO ,0,0,0,0,0,SC,2,none,none,group_3
+Malta, EURO,0,1,0,0,0,SC,2,none,none,group_2
+Monaco, EURO ,0,0,0,0,0,SC,2,none,none,group_2
+Montenegro, EURO,0,0,0,0,1,SC,2,none,none,group_2
+Netherlands, EURO ,0,0,0,0,0,SC,2,none,none,group_3
+North Macedonia, EURO ,0,0,0,0,0,SC,2,none,none,group_2
+Norway, EURO,0,1,0,0,0,SC,2,none,none,group_3
+Poland, EURO,0,1,0,0,0,SC,2,none,none,group_3
+Portugal, EURO,0,0,0,0,0,SC,2,none,none,group_2
+Republic of Moldova, EURO,0,1,0,0,0,SC,2,none,none,group_3
+Romania, EURO,0,1,1,0,0,SC,2,none,none,group_2
+Russian Federation, EURO,0,0,0,0,0,SC,2,none,none,group_3
+San Marino, EURO ,0,0,0,0,0,SC,2,none,none,group_2
+Serbia, EURO,0,1,0,0,0,SC,2,none,none,group_2
+Slovakia, EURO ,0,0,0,0,0,SC,2,none,none,group_3
+Slovenia, EURO ,0,0,0,0,0,SC,2,none,none,group_3
+Spain, EURO ,0,0,0,0,0,SC,2,none,none,group_2
+Sweden, EURO ,0,0,0,0,0,SC,2,none,none,group_3
+Switzerland, EURO ,0,0,0,0,0,SC,2,none,none,group_3
+Tajikistan, EURO ,0,0,0,0,0,SC,2,none,none,group_2
+The United Kingdom, EURO ,0,0,0,0,0,SC,2,none,none,group_3
+Trkiye, EURO ,0,0,0,0,0,SC,2,none,none,group_2
+Turkmenistan, EURO ,0,0,0,0,0,SC,2,none,none,group_2
+Ukraine, EURO ,0,0,0,0,0,SC,2,none,none,group_3
+Uzbekistan, EURO ,0,0,0,0,0,SC,2,none,none,group_2
+Bangladesh, SEARO,0,0,0,0,0,BIC,2,none,none,group_2
+Bhutan, SEARO ,0,0,0,0,0,BIC,2,none,none,group_2
+Democratic Peoples Republic of Korea, SEARO ,0,0,0,0,0,BIC,2,none,none,group_2
+India, SEARO,0,0,0,0,0,BIC,2,none,none,group_2
+Indonesia, SEARO,0,1,1,0,0,BIC,2,none,none,group_1
+Maldives, SEARO ,0,0,0,0,0,BIC,2,none,none,group_1
+Myanmar, SEARO,0,0,0,0,0,BIC,2,none,none,group_2
+Nepal, SEARO ,0,0,0,0,0,BIC,2,none,none,group_2
+Sri Lanka, SEARO ,0,0,0,0,0,BIC,2,none,none,group_1
+Thailand, SEARO ,0,0,0,0,0,BIC,2,none,none,group_1
+Timor-Leste, SEARO ,0,0,0,0,0,BIC,2,none,none,group_1
+Bangladesh, SEARO,0,0,1,0,0,SC,2,none,none,group_2
+Bhutan, SEARO ,0,0,0,0,0,SC,2,none,none,group_2
+Democratic Peoples Republic of Korea, SEARO ,0,0,0,0,0,SC,2,none,none,group_2
+India, SEARO,1,0,0,0,0,SC,2,none,none,group_2
+Indonesia, SEARO,0,1,1,0,0,SC,2,none,none,group_1
+Maldives, SEARO ,0,0,0,0,0,SC,2,none,none,group_1
+Myanmar, SEARO,0,0,0,0,0,SC,2,none,none,group_2
+Nepal, SEARO ,0,0,0,0,0,SC,2,none,none,group_2
+Sri Lanka, SEARO ,0,0,0,0,0,SC,2,none,none,group_1
+Thailand, SEARO ,0,0,0,0,0,SC,2,none,none,group_1
+Timor-Leste, SEARO ,0,0,0,0,0,SC,2,none,none,group_1
+American Samoa, WPRO ,0,0,0,0,0,BIC,2,none,none,group_1
+Australia, WPRO ,0,0,0,0,0,BIC,2,none,none,group_4
+Brunei Darussalam, WPRO ,0,0,0,0,0,BIC,2,none,none,group_1
+Cambodia, WPRO ,0,0,0,0,0,BIC,2,none,none,group_1
+China, WPRO,0,0,0,0,0,BIC,2,none,none,group_2
+Cook Islands, WPRO ,0,0,0,0,0,BIC,2,none,none,group_4
+Fiji, WPRO ,0,0,0,0,0,BIC,2,none,none,group_4
+French Polynesia, WPRO ,0,0,0,0,0,BIC,2,none,none,group_4
+Guam, WPRO ,0,0,0,0,0,BIC,2,none,none,group_1
+Japan, WPRO ,0,0,0,0,0,BIC,2,none,none,group_2
+Kiribati, WPRO ,0,0,0,0,0,BIC,2,none,none,group_1
+Lao Peoples Democratic Republic, WPRO ,0,0,0,0,0,BIC,2,none,none,group_2
+Malaysia, WPRO,0,0,0,0,0,BIC,2,none,none,group_1
+Marshall Islands, WPRO ,0,0,0,0,0,BIC,2,none,none,group_1
+Micronesia (Federated States of), WPRO ,0,0,0,0,0,BIC,2,none,none,group_1
+Mongolia, WPRO ,0,0,0,0,0,BIC,2,none,none,group_3
+Nauru, WPRO ,0,0,0,0,0,BIC,2,none,none,group_1
+New Caledonia, WPRO ,0,0,0,0,0,BIC,2,none,none,group_4
+New Zealand, WPRO ,0,0,0,0,0,BIC,2,none,none,group_4
+Niue, WPRO ,0,0,0,0,0,BIC,2,none,none,group_4
+Northern Mariana Islands (Commonwealth of the), WPRO ,0,0,0,0,0,BIC,2,none,none,group_2
+Palau, WPRO ,0,0,0,0,0,BIC,2,none,none,group_1
+Papua New Guinea, WPRO ,0,0,0,0,0,BIC,2,none,none,group_1
+Philippines, WPRO,0,0,0,0,0,BIC,2,none,none,group_1
+Pitcairn Islands, WPRO ,0,0,0,0,0,BIC,2,none,none,group_4
+Republic of Korea, WPRO,0,0,0,0,0,BIC,2,none,none,group_2
+Samoa, WPRO ,0,0,0,0,0,BIC,2,none,none,group_1
+Singapore, WPRO ,0,0,0,0,0,BIC,2,none,none,group_1
+Solomon Islands, WPRO ,0,0,0,0,0,BIC,2,none,none,group_1
+Tokelau, WPRO ,0,0,0,0,0,BIC,2,none,none,group_1
+Tonga, WPRO ,0,0,0,0,0,BIC,2,none,none,group_4
+Tuvalu, WPRO ,0,0,0,0,0,BIC,2,none,none,group_1
+Vanuatu, WPRO ,0,0,0,0,0,BIC,2,none,none,group_4
+Viet Nam, WPRO ,0,0,0,0,0,BIC,2,none,none,group_2
+Wallis and Futuna, WPRO ,0,0,0,0,0,BIC,2,none,none,group_1
+American Samoa, WPRO ,0,0,0,0,0,SC,2,none,none,group_1
+Australia, WPRO ,0,0,0,0,0,SC,2,none,none,group_4
+Brunei Darussalam, WPRO ,0,0,0,0,0,SC,2,none,none,group_1
+Cambodia, WPRO ,0,0,0,0,0,SC,2,none,none,group_1
+China, WPRO,0,0,1,0,0,SC,2,none,none,group_2
+Cook Islands, WPRO ,0,0,0,0,0,SC,2,none,none,group_4
+Fiji, WPRO ,0,0,0,0,0,SC,2,none,none,group_4
+French Polynesia, WPRO ,0,0,0,0,0,SC,2,none,none,group_4
+Guam, WPRO ,0,0,0,0,0,SC,2,none,none,group_1
+Japan, WPRO ,0,0,0,0,0,SC,2,none,none,group_2
+Kiribati, WPRO ,0,0,0,0,0,SC,2,none,none,group_1
+Lao Peoples Democratic Republic, WPRO ,0,0,0,0,0,SC,2,none,none,group_2
+Malaysia, WPRO,0,0,0,0,0,SC,2,none,none,group_1
+Marshall Islands, WPRO ,0,0,0,0,0,SC,2,none,none,group_1
+Micronesia (Federated States of), WPRO ,0,0,0,0,0,SC,2,none,none,group_1
+Mongolia, WPRO ,0,0,0,0,0,SC,2,none,none,group_3
+Nauru, WPRO ,0,0,0,0,0,SC,2,none,none,group_1
+New Caledonia, WPRO ,0,0,0,0,0,SC,2,none,none,group_4
+New Zealand, WPRO ,0,0,0,0,0,SC,2,none,none,group_4
+Niue, WPRO ,0,0,0,0,0,SC,2,none,none,group_4
+Northern Mariana Islands (Commonwealth of the), WPRO ,0,0,0,0,0,SC,2,none,none,group_2
+Palau, WPRO ,0,0,0,0,0,SC,2,none,none,group_1
+Papua New Guinea, WPRO ,0,0,0,0,0,SC,2,none,none,group_1
+Philippines, WPRO,0,1,0,0,0,SC,2,none,none,group_1
+Pitcairn Islands, WPRO ,0,0,0,0,0,SC,2,none,none,group_4
+Republic of Korea, WPRO,0,0,1,0,0,SC,2,none,none,group_2
+Samoa, WPRO ,0,0,0,0,0,SC,2,none,none,group_1
+Singapore, WPRO ,0,0,0,0,0,SC,2,none,none,group_1
+Solomon Islands, WPRO ,0,0,0,0,0,SC,2,none,none,group_1
+Tokelau, WPRO ,0,0,0,0,0,SC,2,none,none,group_1
+Tonga, WPRO ,0,0,0,0,0,SC,2,none,none,group_4
+Tuvalu, WPRO ,0,0,0,0,0,SC,2,none,none,group_1
+Vanuatu, WPRO ,0,0,0,0,0,SC,2,none,none,group_4
+Viet Nam, WPRO ,0,0,0,0,0,SC,2,none,none,group_2
+Wallis and Futuna, WPRO ,0,0,0,0,0,SC,2,none,none,group_1
+Algeria, AFRO ,0,0,0,0,0,BIC,3,none,none,group_2
+Angola, AFRO ,0,0,0,0,0,BIC,3,none,none,group_1
+Benin, AFRO ,0,0,0,0,0,BIC,3,none,none,group_1
+Botswana, AFRO ,0,0,0,0,0,BIC,3,none,none,group_4
+Burkina Faso, AFRO ,0,0,0,0,0,BIC,3,none,none,group_1
+Burundi, AFRO ,0,0,0,0,0,BIC,3,none,none,group_1
+Cabo Verde, AFRO ,0,0,0,0,0,BIC,3,none,none,group_1
+Cameroon, AFRO ,0,0,0,0,0,BIC,3,none,none,group_1
+Central African Republic, AFRO ,0,0,0,0,0,BIC,3,none,none,group_1
+Chad, AFRO ,0,0,0,0,0,BIC,3,none,none,group_1
+Comoros, AFRO ,0,0,0,0,0,BIC,3,none,none,group_1
+Congo, AFRO ,0,0,0,0,0,BIC,3,none,none,group_1
+Ctedvoire, AFRO ,0,0,0,0,0,BIC,3,none,none,group_1
+Democratic Republic of the Congo, AFRO ,0,0,0,0,0,BIC,3,none,none,group_1
+Equatorial Guinea, AFRO ,0,0,0,0,0,BIC,3,none,none,group_1
+Eritrea, AFRO ,0,0,0,0,0,BIC,3,none,none,group_2
+Eswatini, AFRO ,0,0,0,0,0,BIC,3,none,none,group_4
+Ethiopia, AFRO ,0,0,0,0,0,BIC,3,none,none,group_1
+Gabon, AFRO ,0,0,0,0,0,BIC,3,none,none,group_1
+Gambia, AFRO ,0,0,0,0,0,BIC,3,none,none,group_1
+Ghana, AFRO ,0,0,0,0,0,BIC,3,none,none,group_1
+Guinea, AFRO ,0,0,0,0,0,BIC,3,none,none,group_1
+Guinea-Bissau, AFRO ,0,0,0,0,0,BIC,3,none,none,group_1
+Kenya, AFRO ,0,0,0,0,0,BIC,3,none,none,group_1
+Lesotho, AFRO ,0,0,0,0,0,BIC,3,none,none,group_4
+Liberia, AFRO ,0,0,0,0,0,BIC,3,none,none,group_1
+Madagascar, AFRO ,0,0,0,0,0,BIC,3,none,none,group_4
+Malawi, AFRO ,0,0,0,0,0,BIC,3,none,none,group_1
+Mali, AFRO ,0,0,0,0,0,BIC,3,none,none,group_1
+Mauritania, AFRO ,0,0,0,0,0,BIC,3,none,none,group_2
+Mauritius, AFRO ,0,0,0,0,0,BIC,3,none,none,group_4
+Mayotte, AFRO ,0,0,0,0,0,BIC,3,none,none,group_1
+Mozambique, AFRO ,0,0,0,0,0,BIC,3,none,none,group_4
+Namibia, AFRO ,0,0,0,0,0,BIC,3,none,none,group_4
+Niger, AFRO ,0,0,0,0,0,BIC,3,none,none,group_1
+Nigeria, AFRO ,0,0,0,0,0,BIC,3,none,none,group_1
+Runion, AFRO ,0,0,0,0,0,BIC,3,none,none,group_4
+Rwanda, AFRO ,0,0,0,0,0,BIC,3,none,none,group_1
+Saint Helena Ascension and Tristan da Cunha, AFRO ,0,0,0,0,0,BIC,3,none,none,group_4
+Sao Tome and Principe, AFRO ,0,0,0,0,0,BIC,3,none,none,group_1
+Senegal, AFRO ,0,0,0,0,0,BIC,3,none,none,group_1
+Seychelles, AFRO ,0,0,0,0,0,BIC,3,none,none,group_1
+Sierra Leone, AFRO ,0,0,0,0,0,BIC,3,none,none,group_1
+South Africa, AFRO,0,0,0,0,0,BIC,3,none,none,group_4
+South Sudan, AFRO ,0,0,0,0,0,BIC,3,none,none,group_1
+Togo, AFRO ,0,0,0,0,0,BIC,3,none,none,group_1
+Uganda, AFRO ,0,0,0,0,0,BIC,3,none,none,group_1
+United Republic of Tanzania, AFRO ,0,0,0,0,0,BIC,3,none,none,group_2
+Zambia, AFRO ,0,0,0,0,0,BIC,3,none,none,group_4
+Zimbabwe, AFRO ,0,0,0,0,0,BIC,3,none,none,group_4
+Algeria, AFRO ,0,0,0,0,0,SC,3,none,none,group_2
+Angola, AFRO ,0,0,0,0,0,SC,3,none,none,group_1
+Benin, AFRO ,0,0,0,0,0,SC,3,none,none,group_1
+Botswana, AFRO ,0,0,0,0,0,SC,3,none,none,group_4
+Burkina Faso, AFRO ,0,0,0,0,0,SC,3,none,none,group_1
+Burundi, AFRO ,0,0,0,0,0,SC,3,none,none,group_1
+Cabo Verde, AFRO ,0,0,0,0,0,SC,3,none,none,group_1
+Cameroon, AFRO ,0,0,0,0,0,SC,3,none,none,group_1
+Central African Republic, AFRO ,0,0,0,0,0,SC,3,none,none,group_1
+Chad, AFRO ,0,0,0,0,0,SC,3,none,none,group_1
+Comoros, AFRO ,0,0,0,0,0,SC,3,none,none,group_1
+Congo, AFRO ,0,0,0,0,0,SC,3,none,none,group_1
+Ctedvoire, AFRO ,0,0,0,0,0,SC,3,none,none,group_1
+Democratic Republic of the Congo, AFRO ,0,0,0,0,0,SC,3,none,none,group_1
+Equatorial Guinea, AFRO ,0,0,0,0,0,SC,3,none,none,group_1
+Eritrea, AFRO ,0,0,0,0,0,SC,3,none,none,group_2
+Eswatini, AFRO ,0,0,0,0,0,SC,3,none,none,group_4
+Ethiopia, AFRO ,0,0,0,0,0,SC,3,none,none,group_1
+Gabon, AFRO ,0,0,0,0,0,SC,3,none,none,group_1
+Gambia, AFRO ,0,0,0,0,0,SC,3,none,none,group_1
+Ghana, AFRO ,0,0,0,0,0,SC,3,none,none,group_1
+Guinea, AFRO ,0,0,0,0,0,SC,3,none,none,group_1
+Guinea-Bissau, AFRO ,0,0,0,0,0,SC,3,none,none,group_1
+Kenya, AFRO ,0,0,0,0,0,SC,3,none,none,group_1
+Lesotho, AFRO ,0,0,0,0,0,SC,3,none,none,group_4
+Liberia, AFRO ,0,0,0,0,0,SC,3,none,none,group_1
+Madagascar, AFRO ,0,0,0,0,0,SC,3,none,none,group_4
+Malawi, AFRO ,0,0,0,0,0,SC,3,none,none,group_1
+Mali, AFRO ,0,0,0,0,0,SC,3,none,none,group_1
+Mauritania, AFRO ,0,0,0,0,0,SC,3,none,none,group_2
+Mauritius, AFRO ,0,0,0,0,0,SC,3,none,none,group_4
+Mayotte, AFRO ,0,0,0,0,0,SC,3,none,none,group_1
+Mozambique, AFRO ,0,0,0,0,0,SC,3,none,none,group_4
+Namibia, AFRO ,0,0,0,0,0,SC,3,none,none,group_4
+Niger, AFRO ,0,0,0,0,0,SC,3,none,none,group_1
+Nigeria, AFRO ,0,0,0,0,0,SC,3,none,none,group_1
+Runion, AFRO ,0,0,0,0,0,SC,3,none,none,group_4
+Rwanda, AFRO ,0,0,0,0,0,SC,3,none,none,group_1
+Saint Helena Ascension and Tristan da Cunha, AFRO ,0,0,0,0,0,SC,3,none,none,group_4
+Sao Tome and Principe, AFRO ,0,0,0,0,0,SC,3,none,none,group_1
+Senegal, AFRO ,0,0,0,0,0,SC,3,none,none,group_1
+Seychelles, AFRO ,0,0,0,0,0,SC,3,none,none,group_1
+Sierra Leone, AFRO ,0,0,0,0,0,SC,3,none,none,group_1
+South Africa, AFRO,0,0,0,1,0,SC,3,none,none,group_4
+South Sudan, AFRO ,0,0,0,0,0,SC,3,none,none,group_1
+Togo, AFRO ,0,0,0,0,0,SC,3,none,none,group_1
+Uganda, AFRO ,0,0,0,0,0,SC,3,none,none,group_1
+United Republic of Tanzania, AFRO ,0,0,0,0,0,SC,3,none,none,group_2
+Zambia, AFRO ,0,0,0,0,0,SC,3,none,none,group_4
+Zimbabwe, AFRO ,0,0,0,0,0,SC,3,none,none,group_4
+Anguilla, AMRO ,0,0,0,0,0,BIC,3,none,none,group_2
+Antigua and Barbuda, AMRO ,0,0,0,0,0,BIC,3,none,none,group_2
+Argentina, AMRO ,0,0,0,0,0,BIC,3,none,none,group_4
+Aruba, AMRO ,0,0,0,0,0,BIC,3,none,none,group_1
+Bahamas, AMRO ,0,0,0,0,0,BIC,3,none,none,group_2
+Barbados, AMRO,0,0,0,0,0,BIC,3,none,none,group_1
+Belize, AMRO ,0,0,0,0,0,BIC,3,none,none,group_2
+Bermuda, AMRO ,0,0,0,0,0,BIC,3,none,none,group_2
+Bolivia (Plurinational State of), AMRO ,0,0,0,0,0,BIC,3,none,none,group_4
+Bonaire, AMRO ,0,0,0,0,0,BIC,3,none,none,group_1
+Brazil, AMRO,0,0,0,0,0,BIC,3,none,none,group_4
+British Virgin Islands, AMRO ,0,0,0,0,0,BIC,3,none,none,group_2
+Canada, AMRO ,0,0,0,0,0,BIC,3,none,none,group_3
+Cayman Islands, AMRO ,0,0,0,0,0,BIC,3,none,none,group_2
+Chile, AMRO ,0,0,0,0,0,BIC,3,none,none,group_4
+Colombia, AMRO ,0,0,0,0,0,BIC,3,none,none,group_1
+Costa Rica, AMRO ,0,0,0,0,0,BIC,3,none,none,group_1
+Cuba, AMRO ,0,0,0,0,0,BIC,3,none,none,group_2
+Curaao, AMRO ,0,0,0,0,0,BIC,3,none,none,group_1
+Dominica, AMRO ,0,0,0,0,0,BIC,3,none,none,group_2
+Dominican Republic, AMRO ,0,0,0,0,0,BIC,3,none,none,group_2
+Ecuador, AMRO ,0,0,0,0,0,BIC,3,none,none,group_1
+El Salvador, AMRO ,0,0,0,0,0,BIC,3,none,none,group_1
+Falkland Islands (Malvinas), AMRO ,0,0,0,0,0,BIC,3,none,none,group_5
+French Guiana, AMRO ,0,0,0,0,0,BIC,3,none,none,group_1
+Grenada, AMRO ,0,0,0,0,0,BIC,3,none,none,group_1
+Guadeloupe, AMRO ,0,0,0,0,0,BIC,3,none,none,group_2
+Guatemala, AMRO,0,0,0,0,0,BIC,3,none,none,group_1
+Guyana, AMRO ,0,0,0,0,0,BIC,3,none,none,group_1
+Haiti, AMRO ,0,0,0,0,0,BIC,3,none,none,group_2
+Honduras, AMRO ,0,0,0,0,0,BIC,3,none,none,group_1
+Jamaica, AMRO ,0,0,0,0,0,BIC,3,none,none,group_2
+Martinique, AMRO ,0,0,0,0,0,BIC,3,none,none,group_1
+Mexico, AMRO ,0,0,0,0,0,BIC,3,none,none,group_2
+Montserrat, AMRO ,0,0,0,0,0,BIC,3,none,none,group_2
+Nicaragua, AMRO ,0,0,0,0,0,BIC,3,none,none,group_1
+Panama, AMRO ,0,0,0,0,0,BIC,3,none,none,group_1
+Paraguay, AMRO ,0,0,0,0,0,BIC,3,none,none,group_4
+Peru, AMRO ,0,0,0,0,0,BIC,3,none,none,group_1
+Puerto Rico, AMRO ,0,0,0,0,0,BIC,3,none,none,group_2
+Saba, AMRO ,0,0,0,0,0,BIC,3,none,none,group_2
+Saint Barthlemy, AMRO ,0,0,0,0,0,BIC,3,none,none,group_2
+Saint Kitts and Nevis, AMRO ,0,0,0,0,0,BIC,3,none,none,group_2
+Saint Lucia, AMRO ,0,0,0,0,0,BIC,3,none,none,group_1
+Saint Martin, AMRO ,0,0,0,0,0,BIC,3,none,none,group_2
+Saint Pierre and Miquelon, AMRO ,0,0,0,0,0,BIC,3,none,none,group_3
+Saint Vincent and the Grenadines, AMRO ,0,0,0,0,0,BIC,3,none,none,group_1
+Sint Eustatius, AMRO ,0,0,0,0,0,BIC,3,none,none,group_2
+Sint Maarten, AMRO ,0,0,0,0,0,BIC,3,none,none,group_2
+Suriname, AMRO ,0,0,0,0,0,BIC,3,none,none,group_1
+Trinidad and Tobago, AMRO ,0,0,0,0,0,BIC,3,none,none,group_1
+Turks and Caicos Islands, AMRO ,0,0,0,0,0,BIC,3,none,none,group_2
+United States Virgin Islands, AMRO ,0,0,0,0,0,BIC,3,none,none,group_2
+United States of America, AMRO ,0,0,0,0,0,BIC,3,none,none,group_2
+Uruguay, AMRO ,0,0,0,0,0,BIC,3,none,none,group_4
+Venezuela (Bolivarian Republic of), AMRO ,0,0,0,0,0,BIC,3,none,none,group_1
+Anguilla, AMRO ,0,0,0,0,0,SC,3,none,none,group_2
+Antigua and Barbuda, AMRO ,0,0,0,0,0,SC,3,none,none,group_2
+Argentina, AMRO ,0,0,0,0,0,SC,3,none,none,group_4
+Aruba, AMRO ,0,0,0,0,0,SC,3,none,none,group_1
+Bahamas, AMRO ,0,0,0,0,0,SC,3,none,none,group_2
+Barbados, AMRO,0,0,0,1,0,SC,3,none,none,group_1
+Belize, AMRO ,0,0,0,0,0,SC,3,none,none,group_2
+Bermuda, AMRO ,0,0,0,0,0,SC,3,none,none,group_2
+Bolivia (Plurinational State of), AMRO ,0,0,0,0,0,SC,3,none,none,group_4
+Bonaire, AMRO ,0,0,0,0,0,SC,3,none,none,group_1
+Brazil, AMRO,0,0,0,0,1,SC,3,none,none,group_4
+British Virgin Islands, AMRO ,0,0,0,0,0,SC,3,none,none,group_2
+Canada, AMRO ,0,0,0,0,0,SC,3,none,none,group_3
+Cayman Islands, AMRO ,0,0,0,0,0,SC,3,none,none,group_2
+Chile, AMRO ,0,0,0,0,0,SC,3,none,none,group_4
+Colombia, AMRO ,0,0,0,0,0,SC,3,none,none,group_1
+Costa Rica, AMRO ,0,0,0,0,0,SC,3,none,none,group_1
+Cuba, AMRO ,0,0,0,0,0,SC,3,none,none,group_2
+Curaao, AMRO ,0,0,0,0,0,SC,3,none,none,group_1
+Dominica, AMRO ,0,0,0,0,0,SC,3,none,none,group_2
+Dominican Republic, AMRO ,0,0,0,0,0,SC,3,none,none,group_2
+Ecuador, AMRO ,0,0,0,0,0,SC,3,none,none,group_1
+El Salvador, AMRO ,0,0,0,0,0,SC,3,none,none,group_1
+Falkland Islands (Malvinas), AMRO ,0,0,0,0,0,SC,3,none,none,group_5
+French Guiana, AMRO ,0,0,0,0,0,SC,3,none,none,group_1
+Grenada, AMRO ,0,0,0,0,0,SC,3,none,none,group_1
+Guadeloupe, AMRO ,0,0,0,0,0,SC,3,none,none,group_2
+Guatemala, AMRO,0,0,1,0,0,SC,3,none,none,group_1
+Guyana, AMRO ,0,0,0,0,0,SC,3,none,none,group_1
+Haiti, AMRO ,0,0,0,0,0,SC,3,none,none,group_2
+Honduras, AMRO ,0,0,0,0,0,SC,3,none,none,group_1
+Jamaica, AMRO ,0,0,0,0,0,SC,3,none,none,group_2
+Martinique, AMRO ,0,0,0,0,0,SC,3,none,none,group_1
+Mexico, AMRO ,0,0,0,0,0,SC,3,none,none,group_2
+Montserrat, AMRO ,0,0,0,0,0,SC,3,none,none,group_2
+Nicaragua, AMRO ,0,0,0,0,0,SC,3,none,none,group_1
+Panama, AMRO ,0,0,0,0,0,SC,3,none,none,group_1
+Paraguay, AMRO ,0,0,0,0,0,SC,3,none,none,group_4
+Peru, AMRO ,0,0,0,0,0,SC,3,none,none,group_1
+Puerto Rico, AMRO ,0,0,0,0,0,SC,3,none,none,group_2
+Saba, AMRO ,0,0,0,0,0,SC,3,none,none,group_2
+Saint Barthlemy, AMRO ,0,0,0,0,0,SC,3,none,none,group_2
+Saint Kitts and Nevis, AMRO ,0,0,0,0,0,SC,3,none,none,group_2
+Saint Lucia, AMRO ,0,0,0,0,0,SC,3,none,none,group_1
+Saint Martin, AMRO ,0,0,0,0,0,SC,3,none,none,group_2
+Saint Pierre and Miquelon, AMRO ,0,0,0,0,0,SC,3,none,none,group_3
+Saint Vincent and the Grenadines, AMRO ,0,0,0,0,0,SC,3,none,none,group_1
+Sint Eustatius, AMRO ,0,0,0,0,0,SC,3,none,none,group_2
+Sint Maarten, AMRO ,0,0,0,0,0,SC,3,none,none,group_2
+Suriname, AMRO ,0,0,0,0,0,SC,3,none,none,group_1
+Trinidad and Tobago, AMRO ,0,0,0,0,0,SC,3,none,none,group_1
+Turks and Caicos Islands, AMRO ,0,0,0,0,0,SC,3,none,none,group_2
+United States Virgin Islands, AMRO ,0,0,0,0,0,SC,3,none,none,group_2
+United States of America, AMRO ,0,0,0,0,0,SC,3,none,none,group_2
+Uruguay, AMRO ,0,0,0,0,0,SC,3,none,none,group_4
+Venezuela (Bolivarian Republic of), AMRO ,0,0,0,0,0,SC,3,none,none,group_1
+Afghanistan, EMRO ,0,0,0,0,0,BIC,3,none,none,group_2
+Bahrain, EMRO ,0,0,0,0,0,BIC,3,none,none,group_2
+Djibouti, EMRO ,0,0,0,0,0,BIC,3,none,none,group_1
+Egypt, EMRO,0,0,0,0,0,BIC,3,none,none,group_2
+Iran (Islamic Republic of), EMRO ,0,0,0,0,0,BIC,3,none,none,group_2
+Iraq, EMRO,0,0,0,0,0,BIC,3,none,none,group_2
+Jordan, EMRO ,0,0,0,0,0,BIC,3,none,none,group_2
+Kuwait, EMRO ,0,0,0,0,0,BIC,3,none,none,group_2
+Lebanon, EMRO ,0,0,0,0,0,BIC,3,none,none,group_2
+Libya, EMRO ,0,0,0,0,0,BIC,3,none,none,group_2
+Morocco, EMRO ,0,0,0,0,0,BIC,3,none,none,group_2
+Oman, EMRO ,0,0,0,0,0,BIC,3,none,none,group_2
+Pakistan, EMRO,0,0,1,0,0,BIC,3,none,none,group_2
+Qatar, EMRO ,0,0,0,0,0,BIC,3,none,none,group_2
+Saudi Arabia, EMRO ,0,0,0,0,0,BIC,3,none,none,group_2
+Somalia, EMRO ,0,0,0,0,0,BIC,3,none,none,group_1
+Sudan, EMRO ,0,0,0,0,0,BIC,3,none,none,group_2
+Syrian Arab Republic, EMRO ,0,0,0,0,0,BIC,3,none,none,group_2
+Tunisia, EMRO ,0,0,0,0,0,BIC,3,none,none,group_2
+United Arab Emirates, EMRO,0,0,0,0,0,BIC,3,none,none,group_2
+Yemen, EMRO ,0,0,0,0,0,BIC,3,none,none,group_2
+occupied Palestinian territory including east Jerusalem, EMRO ,0,0,0,0,0,BIC,3,none,none,group_2
+Afghanistan, EMRO ,0,0,0,0,0,SC,3,none,none,group_2
+Bahrain, EMRO ,0,0,0,0,0,SC,3,none,none,group_2
+Djibouti, EMRO ,0,0,0,0,0,SC,3,none,none,group_1
+Egypt, EMRO,0,0,1,0,0,SC,3,none,none,group_2
+Iran (Islamic Republic of), EMRO ,0,0,0,0,0,SC,3,none,none,group_2
+Iraq, EMRO,0,1,0,0,0,SC,3,none,none,group_2
+Jordan, EMRO ,0,0,0,0,0,SC,3,none,none,group_2
+Kuwait, EMRO ,0,0,0,0,0,SC,3,none,none,group_2
+Lebanon, EMRO ,0,0,0,0,0,SC,3,none,none,group_2
+Libya, EMRO ,0,0,0,0,0,SC,3,none,none,group_2
+Morocco, EMRO ,0,0,0,0,0,SC,3,none,none,group_2
+Oman, EMRO ,0,0,0,0,0,SC,3,none,none,group_2
+Pakistan, EMRO,0,0,1,0,0,SC,3,none,none,group_2
+Qatar, EMRO ,0,0,0,0,0,SC,3,none,none,group_2
+Saudi Arabia, EMRO ,0,0,0,0,0,SC,3,none,none,group_2
+Somalia, EMRO ,0,0,0,0,0,SC,3,none,none,group_1
+Sudan, EMRO ,0,0,0,0,0,SC,3,none,none,group_2
+Syrian Arab Republic, EMRO ,0,0,0,0,0,SC,3,none,none,group_2
+Tunisia, EMRO ,0,0,0,0,0,SC,3,none,none,group_2
+United Arab Emirates, EMRO,0,1,0,0,0,SC,3,none,none,group_2
+Yemen, EMRO ,0,0,0,0,0,SC,3,none,none,group_2
+occupied Palestinian territory including east Jerusalem, EMRO ,0,0,0,0,0,SC,3,none,none,group_2
+Albania, EURO ,0,0,0,0,0,BIC,3,none,none,group_2
+Andorra, EURO ,0,0,0,0,0,BIC,3,none,none,group_2
+Armenia, EURO ,0,0,0,0,0,BIC,3,none,none,group_2
+Austria, EURO ,0,0,0,0,0,BIC,3,none,none,group_3
+Azerbaijan, EURO ,0,0,0,0,0,BIC,3,none,none,group_2
+Belarus, EURO ,0,0,0,0,0,BIC,3,none,none,group_3
+Belgium, EURO ,0,0,0,0,0,BIC,3,none,none,group_3
+Bosnia and Herzegovina, EURO ,0,0,0,0,0,BIC,3,none,none,group_2
+Bulgaria, EURO ,0,0,0,0,0,BIC,3,none,none,group_2
+Croatia, EURO ,0,0,0,0,0,BIC,3,none,none,group_3
+Cyprus, EURO ,0,0,0,0,0,BIC,3,none,none,group_2
+Czechia, EURO,0,0,0,0,0,BIC,3,none,none,group_3
+Denmark, EURO ,0,0,0,0,0,BIC,3,none,none,group_3
+Estonia, EURO ,0,0,0,0,0,BIC,3,none,none,group_3
+Faroe Islands, EURO ,0,0,0,0,0,BIC,3,none,none,group_3
+Finland, EURO ,0,0,0,0,0,BIC,3,none,none,group_3
+France, EURO,0,0,0,1,1,BIC,3,none,none,group_3
+Georgia, EURO ,0,0,0,0,0,BIC,3,none,none,group_2
+Germany, EURO ,0,0,0,0,0,BIC,3,none,none,group_3
+Gibraltar, EURO ,0,0,0,0,0,BIC,3,none,none,group_2
+Greece, EURO ,0,0,0,0,0,BIC,3,none,none,group_2
+Greenland, EURO ,0,0,0,0,0,BIC,3,none,none,group_3
+Guernsey, EURO ,0,0,0,0,0,BIC,3,none,none,group_3
+Holy See, EURO ,0,0,0,0,0,BIC,3,none,none,group_2
+Hungary, EURO,0,0,0,0,0,BIC,3,none,none,group_3
+Iceland, EURO ,0,0,0,0,0,BIC,3,none,none,group_3
+Ireland, EURO ,0,0,0,0,0,BIC,3,none,none,group_3
+Isle of Man, EURO ,0,0,0,0,0,BIC,3,none,none,group_3
+Israel, EURO ,0,0,0,0,0,BIC,3,none,none,group_2
+Italy, EURO,0,0,0,0,0,BIC,3,none,none,group_2
+Jersey, EURO ,0,0,0,0,0,BIC,3,none,none,group_3
+Kazakhstan, EURO ,0,0,0,0,0,BIC,3,none,none,group_3
+Kosovo, EURO ,0,0,0,0,0,BIC,3,none,none,group_2
+Kyrgyzstan, EURO,0,0,0,0,0,BIC,3,none,none,group_2
+Latvia, EURO,0,0,0,0,0,BIC,3,none,none,group_3
+Liechtenstein, EURO ,0,0,0,0,0,BIC,3,none,none,group_3
+Lithuania, EURO ,0,0,0,0,0,BIC,3,none,none,group_3
+Luxembourg, EURO ,0,0,0,0,0,BIC,3,none,none,group_3
+Malta, EURO ,0,0,0,0,0,BIC,3,none,none,group_2
+Monaco, EURO,0,0,0,0,0,BIC,3,none,none,group_2
+Montenegro, EURO ,0,0,0,0,0,BIC,3,none,none,group_2
+Netherlands, EURO ,0,0,0,0,0,BIC,3,none,none,group_3
+North Macedonia, EURO,0,0,1,0,0,BIC,3,none,none,group_2
+Norway, EURO ,0,0,0,0,0,BIC,3,none,none,group_3
+Poland, EURO,0,0,0,0,0,BIC,3,none,none,group_3
+Portugal, EURO ,0,0,0,0,0,BIC,3,none,none,group_2
+Republic of Moldova, EURO ,0,0,0,0,0,BIC,3,none,none,group_3
+Romania, EURO ,0,0,0,0,0,BIC,3,none,none,group_2
+Russian Federation, EURO ,0,0,0,0,0,BIC,3,none,none,group_3
+San Marino, EURO ,0,0,0,0,0,BIC,3,none,none,group_2
+Serbia, EURO,0,0,0,1,0,BIC,3,none,none,group_2
+Slovakia, EURO ,0,0,0,0,0,BIC,3,none,none,group_3
+Slovenia, EURO ,0,0,0,0,0,BIC,3,none,none,group_3
+Spain, EURO,0,0,0,0,0,BIC,3,none,none,group_2
+Sweden, EURO ,0,0,0,0,0,BIC,3,none,none,group_3
+Switzerland, EURO ,0,0,0,0,0,BIC,3,none,none,group_3
+Tajikistan, EURO ,0,0,0,0,0,BIC,3,none,none,group_2
+The United Kingdom, EURO ,0,0,0,0,0,BIC,3,none,none,group_3
+Trkiye, EURO,0,0,0,0,0,BIC,3,none,none,group_2
+Turkmenistan, EURO ,0,0,0,0,0,BIC,3,none,none,group_2
+Ukraine, EURO,0,0,0,1,0,BIC,3,none,none,group_3
+Uzbekistan, EURO ,0,0,0,0,0,BIC,3,none,none,group_2
+Albania, EURO ,0,0,0,0,0,SC,3,none,none,group_2
+Andorra, EURO ,0,0,0,0,0,SC,3,none,none,group_2
+Armenia, EURO ,0,0,0,0,0,SC,3,none,none,group_2
+Austria, EURO ,0,0,0,0,0,SC,3,none,none,group_3
+Azerbaijan, EURO ,0,0,0,0,0,SC,3,none,none,group_2
+Belarus, EURO ,0,0,0,0,0,SC,3,none,none,group_3
+Belgium, EURO ,0,0,0,0,0,SC,3,none,none,group_3
+Bosnia and Herzegovina, EURO ,0,0,0,0,0,SC,3,none,none,group_2
+Bulgaria, EURO ,0,0,0,0,0,SC,3,none,none,group_2
+Croatia, EURO ,0,0,0,0,0,SC,3,none,none,group_3
+Cyprus, EURO ,0,0,0,0,0,SC,3,none,none,group_2
+Czechia, EURO,0,0,0,0,1,SC,3,none,none,group_3
+Denmark, EURO ,0,0,0,0,0,SC,3,none,none,group_3
+Estonia, EURO ,0,0,0,0,0,SC,3,none,none,group_3
+Faroe Islands, EURO ,0,0,0,0,0,SC,3,none,none,group_3
+Finland, EURO ,0,0,0,0,0,SC,3,none,none,group_3
+France, EURO,0,0,0,1,1,SC,3,none,none,group_3
+Georgia, EURO ,0,0,0,0,0,SC,3,none,none,group_2
+Germany, EURO ,0,0,0,0,0,SC,3,none,none,group_3
+Gibraltar, EURO ,0,0,0,0,0,SC,3,none,none,group_2
+Greece, EURO ,0,0,0,0,0,SC,3,none,none,group_2
+Greenland, EURO ,0,0,0,0,0,SC,3,none,none,group_3
+Guernsey, EURO ,0,0,0,0,0,SC,3,none,none,group_3
+Holy See, EURO ,0,0,0,0,0,SC,3,none,none,group_2
+Hungary, EURO,0,0,0,0,1,SC,3,none,none,group_3
+Iceland, EURO ,0,0,0,0,0,SC,3,none,none,group_3
+Ireland, EURO ,0,0,0,0,0,SC,3,none,none,group_3
+Isle of Man, EURO ,0,0,0,0,0,SC,3,none,none,group_3
+Israel, EURO ,0,0,0,0,0,SC,3,none,none,group_2
+Italy, EURO,0,0,0,1,0,SC,3,none,none,group_2
+Jersey, EURO ,0,0,0,0,0,SC,3,none,none,group_3
+Kazakhstan, EURO ,0,0,0,0,0,SC,3,none,none,group_3
+Kosovo, EURO ,0,0,0,0,0,SC,3,none,none,group_2
+Kyrgyzstan, EURO,0,0,0,1,0,SC,3,none,none,group_2
+Latvia, EURO,0,0,1,0,0,SC,3,none,none,group_3
+Liechtenstein, EURO ,0,0,0,0,0,SC,3,none,none,group_3
+Lithuania, EURO ,0,0,0,0,0,SC,3,none,none,group_3
+Luxembourg, EURO ,0,0,0,0,0,SC,3,none,none,group_3
+Malta, EURO ,0,0,0,0,0,SC,3,none,none,group_2
+Monaco, EURO,0,0,0,1,0,SC,3,none,none,group_2
+Montenegro, EURO ,0,0,0,0,0,SC,3,none,none,group_2
+Netherlands, EURO ,0,0,0,0,0,SC,3,none,none,group_3
+North Macedonia, EURO,0,0,1,0,0,SC,3,none,none,group_2
+Norway, EURO ,0,0,0,0,0,SC,3,none,none,group_3
+Poland, EURO,0,0,0,0,1,SC,3,none,none,group_3
+Portugal, EURO ,0,0,0,0,0,SC,3,none,none,group_2
+Republic of Moldova, EURO ,0,0,0,0,0,SC,3,none,none,group_3
+Romania, EURO ,0,0,0,0,0,SC,3,none,none,group_2
+Russian Federation, EURO ,0,0,0,0,0,SC,3,none,none,group_3
+San Marino, EURO ,0,0,0,0,0,SC,3,none,none,group_2
+Serbia, EURO,0,0,0,1,0,SC,3,none,none,group_2
+Slovakia, EURO ,0,0,0,0,0,SC,3,none,none,group_3
+Slovenia, EURO ,0,0,0,0,0,SC,3,none,none,group_3
+Spain, EURO,0,0,0,1,0,SC,3,none,none,group_2
+Sweden, EURO ,0,0,0,0,0,SC,3,none,none,group_3
+Switzerland, EURO ,0,0,0,0,0,SC,3,none,none,group_3
+Tajikistan, EURO ,0,0,0,0,0,SC,3,none,none,group_2
+The United Kingdom, EURO ,0,0,0,0,0,SC,3,none,none,group_3
+Trkiye, EURO,0,0,1,0,0,SC,3,none,none,group_2
+Turkmenistan, EURO ,0,0,0,0,0,SC,3,none,none,group_2
+Ukraine, EURO,0,0,0,1,0,SC,3,none,none,group_3
+Uzbekistan, EURO ,0,0,0,0,0,SC,3,none,none,group_2
+Bangladesh, SEARO ,0,0,0,0,0,BIC,3,none,none,group_2
+Bhutan, SEARO ,0,0,0,0,0,BIC,3,none,none,group_2
+Democratic Peoples Republic of Korea, SEARO ,0,0,0,0,0,BIC,3,none,none,group_2
+India, SEARO ,0,0,0,0,0,BIC,3,none,none,group_2
+Indonesia, SEARO ,0,0,0,0,0,BIC,3,none,none,group_1
+Maldives, SEARO ,0,0,0,0,0,BIC,3,none,none,group_1
+Myanmar, SEARO ,0,0,0,0,0,BIC,3,none,none,group_2
+Nepal, SEARO ,0,0,0,0,0,BIC,3,none,none,group_2
+Sri Lanka, SEARO,0,0,0,1,0,BIC,3,none,none,group_1
+Thailand, SEARO,0,1,0,0,0,BIC,3,none,none,group_1
+Timor-Leste, SEARO ,0,0,0,0,0,BIC,3,none,none,group_1
+Bangladesh, SEARO ,0,0,0,0,0,SC,3,none,none,group_2
+Bhutan, SEARO ,0,0,0,0,0,SC,3,none,none,group_2
+Democratic Peoples Republic of Korea, SEARO ,0,0,0,0,0,SC,3,none,none,group_2
+India, SEARO ,0,0,0,0,0,SC,3,none,none,group_2
+Indonesia, SEARO ,0,0,0,0,0,SC,3,none,none,group_1
+Maldives, SEARO ,0,0,0,0,0,SC,3,none,none,group_1
+Myanmar, SEARO ,0,0,0,0,0,SC,3,none,none,group_2
+Nepal, SEARO ,0,0,0,0,0,SC,3,none,none,group_2
+Sri Lanka, SEARO,0,0,0,0,0,SC,3,none,none,group_1
+Thailand, SEARO,0,1,0,0,0,SC,3,none,none,group_1
+Timor-Leste, SEARO ,0,0,0,0,0,SC,3,none,none,group_1
+American Samoa, WPRO ,0,0,0,0,0,BIC,3,none,none,group_1
+Australia, WPRO ,0,0,0,0,0,BIC,3,none,none,group_4
+Brunei Darussalam, WPRO ,0,0,0,0,0,BIC,3,none,none,group_1
+Cambodia, WPRO ,0,0,0,0,0,BIC,3,none,none,group_1
+China, WPRO ,0,0,0,0,0,BIC,3,none,none,group_2
+Cook Islands, WPRO ,0,0,0,0,0,BIC,3,none,none,group_4
+Fiji, WPRO ,0,0,0,0,0,BIC,3,none,none,group_4
+French Polynesia, WPRO ,0,0,0,0,0,BIC,3,none,none,group_4
+Guam, WPRO ,0,0,0,0,0,BIC,3,none,none,group_1
+Japan, WPRO,0,0,0,0,0,BIC,3,none,none,group_2
+Kiribati, WPRO ,0,0,0,0,0,BIC,3,none,none,group_1
+Lao Peoples Democratic Republic, WPRO ,0,0,0,0,0,BIC,3,none,none,group_2
+Malaysia, WPRO,0,0,0,0,0,BIC,3,none,none,group_1
+Marshall Islands, WPRO ,0,0,0,0,0,BIC,3,none,none,group_1
+Micronesia (Federated States of), WPRO ,0,0,0,0,0,BIC,3,none,none,group_1
+Mongolia, WPRO ,0,0,0,0,0,BIC,3,none,none,group_3
+Nauru, WPRO ,0,0,0,0,0,BIC,3,none,none,group_1
+New Caledonia, WPRO ,0,0,0,0,0,BIC,3,none,none,group_4
+New Zealand, WPRO ,0,0,0,0,0,BIC,3,none,none,group_4
+Niue, WPRO ,0,0,0,0,0,BIC,3,none,none,group_4
+Northern Mariana Islands (Commonwealth of the), WPRO ,0,0,0,0,0,BIC,3,none,none,group_2
+Palau, WPRO ,0,0,0,0,0,BIC,3,none,none,group_1
+Papua New Guinea, WPRO ,0,0,0,0,0,BIC,3,none,none,group_1
+Philippines, WPRO ,0,0,0,0,0,BIC,3,none,none,group_1
+Pitcairn Islands, WPRO ,0,0,0,0,0,BIC,3,none,none,group_4
+Republic of Korea, WPRO,0,0,0,0,0,BIC,3,none,none,group_2
+Samoa, WPRO ,0,0,0,0,0,BIC,3,none,none,group_1
+Singapore, WPRO,0,0,0,0,0,BIC,3,none,none,group_1
+Solomon Islands, WPRO ,0,0,0,0,0,BIC,3,none,none,group_1
+Tokelau, WPRO ,0,0,0,0,0,BIC,3,none,none,group_1
+Tonga, WPRO ,0,0,0,0,0,BIC,3,none,none,group_4
+Tuvalu, WPRO ,0,0,0,0,0,BIC,3,none,none,group_1
+Vanuatu, WPRO ,0,0,0,0,0,BIC,3,none,none,group_4
+Viet Nam, WPRO ,0,0,0,0,0,BIC,3,none,none,group_2
+Wallis and Futuna, WPRO ,0,0,0,0,0,BIC,3,none,none,group_1
+American Samoa, WPRO ,0,0,0,0,0,SC,3,none,none,group_1
+Australia, WPRO ,0,0,0,0,0,SC,3,none,none,group_4
+Brunei Darussalam, WPRO ,0,0,0,0,0,SC,3,none,none,group_1
+Cambodia, WPRO ,0,0,0,0,0,SC,3,none,none,group_1
+China, WPRO ,0,0,0,0,0,SC,3,none,none,group_2
+Cook Islands, WPRO ,0,0,0,0,0,SC,3,none,none,group_4
+Fiji, WPRO ,0,0,0,0,0,SC,3,none,none,group_4
+French Polynesia, WPRO ,0,0,0,0,0,SC,3,none,none,group_4
+Guam, WPRO ,0,0,0,0,0,SC,3,none,none,group_1
+Japan, WPRO,0,0,1,0,0,SC,3,none,none,group_2
+Kiribati, WPRO ,0,0,0,0,0,SC,3,none,none,group_1
+Lao Peoples Democratic Republic, WPRO ,0,0,0,0,0,SC,3,none,none,group_2
+Malaysia, WPRO,0,1,0,0,0,SC,3,none,none,group_1
+Marshall Islands, WPRO ,0,0,0,0,0,SC,3,none,none,group_1
+Micronesia (Federated States of), WPRO ,0,0,0,0,0,SC,3,none,none,group_1
+Mongolia, WPRO ,0,0,0,0,0,SC,3,none,none,group_3
+Nauru, WPRO ,0,0,0,0,0,SC,3,none,none,group_1
+New Caledonia, WPRO ,0,0,0,0,0,SC,3,none,none,group_4
+New Zealand, WPRO ,0,0,0,0,0,SC,3,none,none,group_4
+Niue, WPRO ,0,0,0,0,0,SC,3,none,none,group_4
+Northern Mariana Islands (Commonwealth of the), WPRO ,0,0,0,0,0,SC,3,none,none,group_2
+Palau, WPRO ,0,0,0,0,0,SC,3,none,none,group_1
+Papua New Guinea, WPRO ,0,0,0,0,0,SC,3,none,none,group_1
+Philippines, WPRO ,0,0,0,0,0,SC,3,none,none,group_1
+Pitcairn Islands, WPRO ,0,0,0,0,0,SC,3,none,none,group_4
+Republic of Korea, WPRO,0,0,1,0,0,SC,3,none,none,group_2
+Samoa, WPRO ,0,0,0,0,0,SC,3,none,none,group_1
+Singapore, WPRO,0,0,1,0,0,SC,3,none,none,group_1
+Solomon Islands, WPRO ,0,0,0,0,0,SC,3,none,none,group_1
+Tokelau, WPRO ,0,0,0,0,0,SC,3,none,none,group_1
+Tonga, WPRO ,0,0,0,0,0,SC,3,none,none,group_4
+Tuvalu, WPRO ,0,0,0,0,0,SC,3,none,none,group_1
+Vanuatu, WPRO ,0,0,0,0,0,SC,3,none,none,group_4
+Viet Nam, WPRO ,0,0,0,0,0,SC,3,none,none,group_2
+Wallis and Futuna, WPRO ,0,0,0,0,0,SC,3,none,none,group_1
