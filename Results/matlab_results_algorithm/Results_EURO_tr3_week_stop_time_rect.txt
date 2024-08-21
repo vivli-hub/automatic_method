@@ -1,0 +1,62 @@
+Albania 	 EURO 	 No periodicities
+Andorra 	 EURO 	 No periodicities
+Armenia 	 EURO 	 No periodicities
+Austria 	 EURO 	 No periodicities
+Azerbaijan 	 EURO 	 No periodicities
+Belarus 	 EURO 	 No periodicities
+Belgium 	 EURO 	 No periodicities
+Bosnia and Herzegovina 	 EURO 	 No periodicities
+Bulgaria 	 EURO 	 No periodicities
+Croatia 	 EURO 	 No periodicities
+Cyprus 	 EURO 	 No periodicities
+Czechia 	 EURO	 52*1/5[S]
+Denmark 	 EURO 	 No periodicities
+Estonia 	 EURO 	 No periodicities
+Faroe Islands 	 EURO 	 No periodicities
+Finland 	 EURO 	 No periodicities
+France 	 EURO	 52*1/4[BS]	 52*1/5[BS]
+Georgia 	 EURO 	 No periodicities
+Germany 	 EURO 	 No periodicities
+Gibraltar 	 EURO 	 No periodicities
+Greece 	 EURO 	 No periodicities
+Greenland 	 EURO 	 No periodicities
+Guernsey 	 EURO 	 No periodicities
+Holy See 	 EURO 	 No periodicities
+Hungary 	 EURO	 52*1/5[S]
+Iceland 	 EURO 	 No periodicities
+Ireland 	 EURO 	 No periodicities
+Isle of Man 	 EURO 	 No periodicities
+Israel 	 EURO 	 No periodicities
+Italy 	 EURO	 52*1/4[S]
+Jersey 	 EURO 	 No periodicities
+Kazakhstan 	 EURO 	 No periodicities
+Kosovo 	 EURO 	 No periodicities
+Kyrgyzstan 	 EURO	 52*1/4[S]
+Latvia 	 EURO	 52*1/3[S]
+Liechtenstein 	 EURO 	 No periodicities
+Lithuania 	 EURO 	 No periodicities
+Luxembourg 	 EURO 	 No periodicities
+Malta 	 EURO 	 No periodicities
+Monaco 	 EURO	 52*1/4[S]
+Montenegro 	 EURO 	 No periodicities
+Netherlands 	 EURO 	 No periodicities
+North Macedonia 	 EURO	 52*1/3[BS]
+Norway 	 EURO 	 No periodicities
+Poland 	 EURO	 52*1/5[S]
+Portugal 	 EURO 	 No periodicities
+Republic of Moldova 	 EURO 	 No periodicities
+Romania 	 EURO 	 No periodicities
+Russian Federation 	 EURO 	 No periodicities
+San Marino 	 EURO 	 No periodicities
+Serbia 	 EURO	 52*1/4[BS]
+Slovakia 	 EURO 	 No periodicities
+Slovenia 	 EURO 	 No periodicities
+Spain 	 EURO	 52*1/4[S]
+Sweden 	 EURO 	 No periodicities
+Switzerland 	 EURO 	 No periodicities
+Tajikistan 	 EURO 	 No periodicities
+The United Kingdom 	 EURO 	 No periodicities
+Trkiye 	 EURO	 52*1/3[S]
+Turkmenistan 	 EURO 	 No data
+Ukraine 	 EURO	 52*1/4[BS]
+Uzbekistan 	 EURO 	 No periodicities
