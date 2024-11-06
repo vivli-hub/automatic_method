@@ -5,24 +5,14 @@ date: "2024-07-07"
 ---
 
 ```{r}
-
 library(dplyr)
 library(tidyr)
 library(ggplot2)
 library(readxl)
-library(patchwork)
-# Load the CSV files containing daily data before and after applying filters
 daily_data_before <- read.csv("before_filter_daily.csv")
 daily_data_after <- read.csv("after_filter_daily.csv")
-
-# Combine the two datasets by stacking them vertically
 daily_data <- rbind(daily_data_before, daily_data_after)
-
-# Remove leading and trailing whitespace from the 'WHO_region' column
 daily_data$WHO_region <- trimws(daily_data$WHO_region)
-
-# Group the data by 'WHO_region', 'transform', 'Criterion', 'filter', and 'domain',
-# and calculate the mean values for T0 and its related variables
 daily_data_results <- daily_data %>%
   group_by(WHO_region, transform, Criterion, filter, domain) %>%
   summarise(T0 = mean(T0),
@@ -30,9 +20,6 @@ daily_data_results <- daily_data %>%
             T03 = mean(T0.3),
             T04 = mean(T0.4),
             T05 = mean(T0.5))
-
-# Reshape the data from wide to long format, gathering the 'T0' and related columns
-# into key-value pairs
 daily_data <- pivot_longer(
   daily_data_results,
   cols = starts_with(c("T0", "T02", "T03", "T04", "T05")),  
@@ -40,212 +27,173 @@ daily_data <- pivot_longer(
   values_to = "Values"       
 )
 
-# Filter the data to include only rows where 'T0' is "T0" and 'Criterion' is "SC"
+daily_data <- read.csv("daily_results.csv")
+
 results_daily_SC <- daily_data %>%
 filter(T0 == "T0", Criterion == "SC")
 
-# Create a new 'group' column by concatenating 'filter', 'domain', and 'transform'
 results_daily_SC <- results_daily_SC %>%
-  mutate(group = paste0(filter, domain, transform))  %>%
+  mutate(group = paste0(filter, domain, transform)) %>%
+  select(-c("Filter", "Domain")) %>%
   filter(filter == "none")
 ```
 
 ```{r}
 
-pdf("figure_2.pdf")
-# Create a line plot using ggplot with the data from 'results_daily_SC'
-  ggplot(results_daily_SC) +
-    
-    # Add lines to the plot, grouping by 'group' and coloring by 'transform'
-  geom_line(aes(x = WHO_region, y = Values, group = group, col=as.character(transform))) +
-    
-     # Add points to the plot, coloring by 'transform'
-geom_point( aes(x = WHO_region, y = Values, col=as.character(transform))) +
+
+ p1 <-  ggplot(results_daily_SC) +
+  geom_line(aes(x = Region, y = Values, group = group, col=as.character(transform))) +
+geom_point( aes(x = Region, y = Values, col=as.character(transform))) +
   scale_color_manual(values = c('black', 'red', 'blue', 'green'), name = 'Transform') + theme_bw() + 
     theme(panel.grid.major=element_line(colour=NA),
-          panel.grid.minor = element_blank()) + 
-    scale_y_continuous(breaks = seq(0, 2, by = 0.2), 
+          panel.grid.minor = element_blank(),
+          plot.title = element_text(size = 10, hjust = 0.5), 
+          plot.subtitle = element_text(size = 8, hjust = 0.5),
+          axis.title.x = element_text(size = 9),
+          axis.title.y = element_text(size = 9),
+          axis.text.x = element_text(angle = 45, hjust = 1, size = 8)) + 
+          scale_y_continuous(breaks = seq(0, 2, by = 0.2), 
                        labels = seq(0, 2, by = 0.2)*100) +
     ylab("Percentage ")  +
     xlab("WHO Region") 
 
-dev.off()
 ```
 
 ```{r}
-# Filter the data to include only rows where 'T0' is "T0" and 'Criterion' is "BIC"
+
+daily_data <- read.csv("daily_results.csv")
+
 results_daily_BIC <- daily_data %>%
 filter(T0 == "T0", Criterion == "BIC")
 
-# Create a new 'group' column by concatenating 'filter', 'domain', and 'transform'
 results_daily_BIC <- results_daily_BIC %>%
   mutate(group = paste0(filter, domain, transform)) %>%
+  select(-c("Filter", "Domain")) %>%
   filter(filter == "none")
 ```
 
 ```{r}
 
-pdf("figure_A1.pdf")
-# Create a line plot using ggplot with the data from 'results_daily_SC'
-  ggplot(results_daily_BIC) +
-        
-    # Add lines to the plot, grouping by 'group' and coloring by 'transform'
-  geom_line(aes(x = WHO_region, y = Values, group = group, col=as.character(transform))) +
-        
-     # Add points to the plot, coloring by 'transform'
-geom_point(aes(x = WHO_region, y = Values, col=as.character(transform))) +
+  p2 <- ggplot(results_daily_BIC) +
+  geom_line(aes(x = Region, y = Values, group = group, col=as.character(transform))) +
+geom_point(aes(x = Region, y = Values, col=as.character(transform))) +
   scale_color_manual(values = c('black', 'red', 'blue', 'green'), name = 'Transform') + theme_bw() + 
     theme(panel.grid.major=element_line(colour=NA),
-          panel.grid.minor = element_blank()) + 
-    scale_y_continuous(breaks = seq(0, 2, by = 0.2), 
+          panel.grid.minor = element_blank(),
+          plot.title = element_text(size = 10, hjust = 0.5), 
+          plot.subtitle = element_text(size = 8, hjust = 0.5),
+          axis.title.x = element_text(size = 9),
+          axis.title.y = element_text(size = 9),
+          axis.text.x = element_text(angle = 45, hjust = 1, size = 8)) + 
+          scale_y_continuous(breaks = seq(0, 2, by = 0.2), 
                        labels = seq(0, 2, by = 0.2)*100) +
     ylab("Percentage ")  +
     xlab("WHO Region") 
 
-dev.off()
-```
-
-```{r}
-
-# Load the CSV files containing weekly data before and after applying filters
-week_data_before <- read.csv("before_filter_week.csv")
-week_data_after <- read.csv("after_filter_week.csv")
-
-# Combine the two datasets by stacking them vertically
-week_data <- rbind(week_data_before, week_data_after)
-
-# Remove leading and trailing whitespace from the 'WHO_region' column
-week_data$WHO_region <- trimws(week_data$WHO_region)
-
-# Group the data by 'WHO_region', 'transform', 'Criterion', 'filter', and 'domain',
-# and calculate the mean values for T0 and its related variables
-week_data_results <- week_data %>%
-  group_by(WHO_region, transform, Criterion, filter, domain) %>%
-  summarise(T0 = mean(T0),
-            T02 = mean(T0.2),
-            T03 = mean(T0.3),
-            T04 = mean(T0.4),
-            T05 = mean(T0.5))
-
-# Reshape the data from wide to long format, gathering the 'T0' and related columns
-# into key-value pairs
-week_data <- pivot_longer(
-  week_data_results,
-  cols = starts_with(c("T0", "T02", "T03", "T04", "T05")),  
-  names_to = "T0",        
-  values_to = "Values"       
-)
-
-# Filter the data to include only rows where 'T0' is "T0", 'Criterion' is "BIC",
-# and 'filter' is "none"
-results_week_BIC <- week_data %>%
-filter(T0 == "T0", Criterion == "BIC", filter == "none")
 
 ```
 
 ```{r}
 
-pdf("figure_B3.pdf")
-# Create a line plot using ggplot with the data from 'results_week_BIC'
-  ggplot(results_week_BIC) +
-    
-    # Add lines to the plot, grouping by 'transform' and coloring by 'transform'
-  geom_line(aes(x = WHO_region, y = Values, group = transform, col=as.character(transform))) +
-    
-    # Add points to the plot, coloring by 'transform'
-geom_point(aes(x = WHO_region, y = Values, col=as.character(transform))) +
-  scale_color_manual(values = c('black', 'red', 'blue', 'green'), name = 'Transform') + theme_bw() + 
-    theme(panel.grid.major=element_line(colour=NA),
-          panel.grid.minor = element_blank()) + 
-    scale_y_continuous(breaks = seq(0, 2, by = 0.2), 
-                       labels = seq(0, 2, by = 0.2)*100) +
-    ylab("Percentage ")  +
-    xlab("WHO Region") 
+week_data <- read.csv("week_results.csv")
 
-dev.off()
-```
-```{r}
-# Filter the data to include only rows where 'T0' is "T0", 'Criterion' is "BIC",
-# and 'filter' is "none"
 results_week_SC <- week_data %>%
 filter(T0 == "T0", Criterion == "SC", filter == "none")
 
-pdf("figure_4.pdf")
-# Create a line plot using ggplot with the data from 'results_week_SC'
-  ggplot(results_week_SC) +
-    
-    # Add lines to the plot, grouping by 'transform' and coloring by 'transform'
+results_week_SC <- results_week_SC %>%
+  select(-c("X", "filter", "domain")) 
+
+```
+
+```{r}
+
+
+  p3 <- ggplot(results_week_SC) +
   geom_line(aes(x = WHO_region, y = Values, group = transform, col=as.character(transform))) +
-    
-    # Add points to the plot, coloring by 'transform'
 geom_point(aes(x = WHO_region, y = Values, col=as.character(transform))) +
   scale_color_manual(values = c('black', 'red', 'blue', 'green'), name = 'Transform') + theme_bw() + 
     theme(panel.grid.major=element_line(colour=NA),
-          panel.grid.minor = element_blank()) + 
+          panel.grid.minor = element_blank(),
+          plot.title = element_text(size = 10, hjust = 0.5), 
+          plot.subtitle = element_text(size = 8, hjust = 0.5),
+          axis.title.x = element_text(size = 9),
+          axis.title.y = element_text(size = 9),
+          axis.text.x = element_text(angle = 45, hjust = 1, size = 8)) + 
     scale_y_continuous(breaks = seq(0, 2, by = 0.2), 
                        labels = seq(0, 2, by = 0.2)*100) +
     ylab("Percentage ")  +
     xlab("WHO Region") 
 
-dev.off()
+```
+
+```{r}
+
+
+week_data <- read.csv("week_results.csv")
+
+results_week_BIC <- week_data %>%
+filter(T0 == "T0", Criterion == "BIC", filter == "none")
+
+results_week_BIC <- results_week_BIC %>%
+  select(-c("X", "filter", "domain")) 
+
+```
+
+```{r}
+
+  p4 <- ggplot(results_week_BIC) +
+  geom_line(aes(x = WHO_region, y = Values, group = transform, col=as.character(transform))) +
+geom_point(aes(x = WHO_region, y = Values, col=as.character(transform))) +
+  scale_color_manual(values = c('black', 'red', 'blue', 'green'), name = 'Transform') + theme_bw() + 
+    theme(panel.grid.major=element_line(colour=NA),
+          panel.grid.minor = element_blank(),
+          plot.title = element_text(size = 10, hjust = 0.5), 
+          plot.subtitle = element_text(size = 8, hjust = 0.5),
+          axis.title.x = element_text(size = 9),
+          axis.title.y = element_text(size = 9),
+          axis.text.x = element_text(angle = 45, hjust = 1, size = 8))  + 
+    scale_y_continuous(breaks = seq(0, 2, by = 0.2), 
+                       labels = seq(0, 2, by = 0.2)*100) +
+    ylab("Percentage ")  +
+    xlab("WHO Region") 
+
+
 ```
 
 
 ```{r}
-# Combine the two datasets by stacking them vertically
-week_data <- rbind(week_data_before, week_data_after)
-
-# Group the data by 'latitude_region', 'transform', 'Criterion', 'filter', and 'domain',
-# and calculate the mean values for T0 and its related variables
-latitude_data_results <- week_data %>%
-  group_by(latitude_region, transform, Criterion, filter, domain) %>%
-  summarise(T0 = mean(T0),
-            T02 = mean(T0.2),
-            T03 = mean(T0.3),
-            T04 = mean(T0.4),
-            T05 = mean(T0.5))
-
-# Reshape the data from wide to long format, gathering the 'T0' and related columns
-# into key-value pairs
-latitude_data <- pivot_longer(
-  latitude_data_results,
-  cols = starts_with(c("T0", "T02", "T03", "T04", "T05")),  
-  names_to = "T0",      # The names of the original columns will go into the 'T0' column   
-  values_to = "Values"    # The corresponding values will go into the 'Values' column
-)    
-
-# Filter the data to include only rows where 'T0' is "T0", 'Criterion' is "SC",
-# and 'filter' is "none"
-results_latitude_SC <- latitude_data %>%
+latitude_data <- read.csv("latitude_results.csv")
+results_latitudek_SC <- latitude_data %>%
 filter(T0 == "T0", Criterion == "SC", filter == "none")
 
-# Further filter the data to exclude rows where 'latitude_region' is "group_5"
-results_latitude_SC <- results_latitude_SC %>%
+results_latitudek_SC <- results_latitudek_SC %>%
+  select(-c("X", "filter", "domain"))
+
+results_latitudek_SC <- results_latitudek_SC %>%
   filter(latitude_region != "group_5")
 
-# Convert 'latitude_region' to a factor with specified levels to ensure the desired order in plots
-results_latitude_SC$latitude_region = factor(results_latitude_SC$latitude_region, levels = c("group_4", "group_1", "group_2", "group_3"))
+results_latitudek_SC$latitude_region = factor(results_latitudek_SC$latitude_region, levels = c("group_4", "group_1", "group_2", "group_3"))
 ```
 
 ```{r}
-pdf("figure_6.pdf")
-# Create a line plot using ggplot with the data from 'results_week_SC'
-ggplot(results_latitude_SC) +
-  
-  # Add lines to the plot, grouping by 'transform' and coloring by 'transform'
+
+p5 <- ggplot(results_latitudek_SC) +
   geom_line(aes(x = latitude_region, y = Values, group = transform, col=as.character(transform))) +
-  
-  # Add points to the plot, coloring by 'transform'
 geom_point(aes(x = latitude_region, y = Values, col=as.character(transform))) +
   scale_color_manual(values = c('black', 'red', 'blue', 'green'), name = 'Transform') + theme_bw() + 
     theme(panel.grid.major=element_line(colour=NA),
-          panel.grid.minor = element_blank()) + 
+          panel.grid.minor = element_blank(),
+          plot.title = element_text(size = 10, hjust = 0.5), 
+          plot.subtitle = element_text(size = 8, hjust = 0.5),
+          axis.title.x = element_text(size = 9),
+          axis.title.y = element_text(size = 9),
+          axis.text.x = element_text(angle = 45, hjust = 1, size = 8)) + 
     scale_y_continuous(breaks = seq(0, 2, by = 0.2), 
                        labels = seq(0, 2, by = 0.2)*100) +
     ylab("Percentage ")  +
     xlab("Latitude") +
     scale_x_discrete(labels = c(expression(italic("L")[-45~ degree]^-{15 ~degree}),                             expression(italic("L")[-15~ degree]^{15~ degree}),                              expression(italic("L")[15~ degree]^{45~ degree}), expression(italic("L")[45~ degree]^{75~ degree}))) 
-dev.off()
+
 ```
 
 
@@ -253,274 +201,263 @@ dev.off()
 
 ```{r}
 ## daily harmonics
-# Load the CSV file containing daily data before applying filters
+
 before_filter_daily <- read.csv("before_filter_daily.csv")
-
-# Remove all spaces from the 'WHO_region' column
 before_filter_daily$WHO_region <- gsub(" ", "", before_filter_daily$WHO_region)
-
-# Trim whitespace from the 'Country' column
 before_filter_daily$Country <- trimws(before_filter_daily$Country)
-
-# Group the data by 'WHO_region', 'Criterion', and 'transform',
-# and calculate counts for different T0 variables, as well as the total number of entries
 T0 <-before_filter_daily %>%
   group_by(WHO_region, Criterion, transform) %>%
   summarise(    T0_count = sum(T0 == 1),
     T0_2_count = sum(T0.2 == 1),
     T0_3_count = sum(T0.3 == 1),
     T0_4_count = sum(T0.4 == 1),
-    T0_5_count = sum(T0.5 == 1), 
     total = n())
-
-# Create a subset of the data with only 'WHO_region', 'Criterion', 'transform', and 'total'
 T01 <- T0 %>%
   select(WHO_region, Criterion, transform, total)
-
-# Load the CSV file containing daily data after applying filters
 after_filter_daily <- read.csv("after_filter_daily.csv")
-
-# Merge the 'after_filter_daily' data with 'before_filter_daily' data on 'Country', 'transform', 'WHO_region', and 'Criterion'
 data <- after_filter_daily %>%
   left_join(before_filter_daily, by = c("Country", "transform", "WHO_region", "Criterion"))
-
-# Group the merged data by 'WHO_region', 'Criterion', 'transform', 'filter.x', and    # 'domain.x', and calculate the counts of T0 variables where the value changed from 1 # in the 'after' data to 0 in the 'before' data
 data <- data %>%
   group_by(WHO_region, Criterion, transform, filter.x, domain.x) %>%
   summarise(
     T0_2_count = sum(T0.2.x== 1 & T0.2.y == 0),
     T0_3_count = sum(T0.3.x == 1 & T0.3.y == 0),
-    T0_4_count = sum(T0.4.x == 1 & T0.4.y == 0),
-    T0_5_count = sum(T0.5.x == 1 & T0.5.y == 0),
+    T0_4_count = sum(T0.4.x == 1 & T0.4.y == 0)
   ) 
-
-# Merge the updated data with 'T01' to include the 'total' column
 data <- data %>%
   left_join(T01, , by = c("transform", "WHO_region", "Criterion"))
 
-# Filter the data for 'Criterion' equal to "BIC", 'transform' equal to 1, and 'filter.x' equal to "high-pass",
-# and calculate the proportion of T0 counts relative to the total
 data_bic <- data %>%
   filter(Criterion == "BIC", transform == 1, filter.x == "high-pass") %>%
-  mutate(T0_2 = T0_2_count/total, T0_3 = T0_3_count/total, T0_4 = T0_4_count/total, T0_5 = T0_5_count/total)
+  mutate(T0_2 = T0_2_count/total, T0_3 = T0_3_count/total, T0_4 = T0_4_count/total)
+data_sc <- data %>%
+  filter(Criterion == "SC", transform == 1, filter.x == "high-pass") %>%
+  mutate(T0_2 = T0_2_count/ total, T0_3 = T0_3_count/total, T0_4 = T0_4_count/total)
+## generate plots
+
+library(ggplot2)
+T0_1 <- T0 %>%
+  filter(transform == 1, Criterion == "SC") %>%
+  pivot_longer(
+    cols = c("T0_count", "T0_2_count", "T0_3_count", "T0_4_count"),  # Select the column to be converted based on the column name
+    names_to = "T0",     # New column name, used to store the original column name
+    values_to = "counts"        # The name of the new column used to store the value of the original column
+  )
+T0_1 <- T0_1 %>%
+  mutate(percentage = counts/total) %>%
+  filter(transform == 1, Criterion == "SC", T0 != "T0_count")
+p1 <- ggplot(T0_1, aes(x = WHO_region, y = percentage*100, color = as.factor(T0))) +
+  geom_line(aes(group = T0)) +  
+  geom_point(shape = 20)+   
+  labs(color = "Period", title = "Detection",
+    subtitle = "(before filtering)") +
+    theme_bw() + 
+    theme(panel.grid.major=element_line(colour=NA),
+          panel.grid.minor = element_blank(),
+          plot.title = element_text(size = 10, hjust = 0.5), 
+          plot.subtitle = element_text(size = 8, hjust = 0.5),
+          legend.position = "none",
+          axis.title.x = element_text(size = 9),
+          axis.title.y = element_text(size = 9),
+          axis.text.x = element_text(angle = 45, hjust = 1, size = 8))  +
+    ylab("Percentage ")  +
+    xlab("WHO Region") +
+  scale_color_manual(values = c('#8E44AD', '#E67E22', '#F1C40F'), name = 'Period', labels = c("7/2","7/3","7/4")) +
+  guides(color = guide_legend(override.aes = list(linetype = "blank", shape = 21)))
+
+
+T0_1 <- T0 %>%
+  filter(transform == 1, Criterion == "BIC") %>%
+  pivot_longer(
+    cols = c("T0_count", "T0_2_count", "T0_3_count", "T0_4_count"),  # Select the column to be converted based on the column name
+    names_to = "T0",     # New column name, used to store the original column name
+    values_to = "counts"        # The name of the new column used to store the value of the original column
+  )
+T0_1 <- T0_1 %>%
+  mutate(percentage = counts/total) %>%
+  filter(T0 != "T0_count")
+
+p3 <- ggplot(T0_1, aes(x = WHO_region, y = percentage*100, color = as.factor(T0))) +
+  geom_line(aes(group = T0)) +   
+  geom_point(shape = 20)+   
+  labs(color = "Period", title = "Detection",
+    subtitle = "(before filtering)") + 
+    theme_bw() + 
+    theme(panel.grid.major=element_line(colour=NA),
+          panel.grid.minor = element_blank(),
+          plot.title = element_text(size = 10, hjust = 0.5), 
+          plot.subtitle = element_text(size = 8, hjust = 0.5),
+        legend.position = "none",
+        axis.title.x = element_text(size = 9),
+          axis.title.y = element_text(size = 9),
+        axis.text.x = element_text(angle = 45, hjust = 1, size = 8))  +
+    ylab("Percentage")  +
+    xlab("WHO Region") +
+  scale_color_manual(values = c('#8E44AD', '#E67E22', '#F1C40F'), name = 'Period', labels = c("7/2","7/3","7/4")) +
+  guides(color = guide_legend(override.aes = list(linetype = "blank", shape = 21)))
 
 data_bic <- data_bic %>%
   pivot_longer(
-    cols = c("T0_2", "T0_3", "T0_4", "T0_5"),  # Select the column to be converted based on the column name
+    cols = c("T0_2", "T0_3", "T0_4"),  # Select the column to be converted based on the column name
     names_to = "period",     # New column name, used to store the original column name
     values_to = "percentage"        # The name of the new column used to store the value of the original column
   ) %>% mutate(group = paste0(filter.x, domain.x, period))
 
-# Filter the data for 'Criterion' equal to "SC", 'transform' equal to 1, and 'filter.x' equal to "high-pass",
-# and calculate the proportion of T0 counts relative to the total
-data_sc <- data %>%
-  filter(Criterion == "SC", transform == 1, filter.x == "high-pass") %>%
-  mutate(T0_2 = T0_2_count/ total, T0_3 = T0_3_count/total, T0_4 = T0_4_count/total,T0_5 = T0_5_count/total)
+data_bic <- data_bic %>%
+  filter(domain.x == "time")
 
-data_sc <- data_sc %>%
-  pivot_longer(
-    cols = c("T0_2", "T0_3", "T0_4", "T0_5"),  # Select the column to be converted based on the column name
-    names_to = "period",     # New column name, used to store the original column name
-    values_to = "percentage"        # The name of the new column used to store the value of the original column
-  ) %>% mutate( group = paste0(filter.x, domain.x, period))
-```
-
-```{R}
-
-# Filter the 'T0' data for 'transform' equal to 1 and 'Criterion' equal to "SC"
-T0_SC <- T0 %>%
-  filter(transform == 1, Criterion == "SC") %>%
-  
-  # Reshape the data from wide to long format, converting the specified columns into key-value pairs
-  pivot_longer(
-    cols = c("T0_count", "T0_2_count", "T0_3_count", "T0_4_count", "T0_5_count"),  # Select the column to be converted based on the column name
-    names_to = "T0",     # New column name, used to store the original column name
-    values_to = "counts"        # The name of the new column used to store the value of the original column
-  )
-
-# Calculate the percentage of counts relative to the total and filter the data to exclude "T0_count"
-T0_SC <- T0_SC %>%
-  mutate(percentage = counts/total) %>%
-  filter(transform == 1, Criterion == "SC", T0 != "T0_count")
-```
-
-```{R}
-## SC Criterion, before filtering, harmonics
-## generate plots
-p1 <- ggplot(T0_SC, aes(x = WHO_region, y = percentage*100, color = as.factor(T0))) +
-    # Initialize ggplot with the dataset T0_SC
-  # Set the x-axis to WHO_region, y-axis to percentage (converted to percentage out of 100)
-  # Map the color aesthetic to T0, treating it as a factor
-  
-  geom_line(aes(group = T0)) +   
-  
-  # Add lines to the plot, grouped by T0
-  labs(color = "Period", title = "Detection (before filtering)") +
-  
-   # Add labels to the plot: a title and a label for the color legend
+p2 <- ggplot(data_bic, aes(x = WHO_region, y = percentage*100, color = as.factor(period))) +
+  geom_line(aes(group = group), linetype = "dashed") +  
+  geom_point(shape = 20)+   
+  labs(color = "Period", title = "Improvement in detection",
+       subtitle = "(after high-pass filtering in time domain)") + 
     theme_bw() + 
     theme(panel.grid.major=element_line(colour=NA),
           panel.grid.minor = element_blank(),
-          plot.title = element_text(hjust = 0.5, size = 9),
-        legend.position = "none",
-        axis.title.x = element_text(size = 9),
-          axis.title.y = element_text(size = 9),
-        axis.text.x = element_text(angle = 45, hjust = 1, size = 8))  +
-  
-  # Customize the theme: remove major and minor grid lines, center the title with size 9
-  # Remove the legend, set axis title font size to 9
-  # Adjust x-axis text to be angled at 45 degrees with size 8
-    ylab("Percentage ")  +
-    xlab("WHO Region") +
-  scale_color_manual(values = c('black', 'red', 'blue', 'green'), name = 'Period', labels = c("7/2","7/3","7/4", "7/5")) 
-```
-
-```{R}
-
-# Filter the 'T0' data for 'transform' equal to 1 and 'Criterion' equal to "BIC"
-T0_BIC <- T0 %>%
-  filter(transform == 1, Criterion == "BIC") %>%
-  pivot_longer(
-    cols = c("T0_count", "T0_2_count", "T0_3_count", "T0_4_count", "T0_5_count"),  # Select the column to be converted based on the column name
-    names_to = "T0",     # New column name, used to store the original column name
-    values_to = "counts"        # The name of the new column used to store the value of the original column
-  )
-
-# Calculate the percentage of counts relative to the total and filter the data to exclude "T0_count"
-T0_BIC <- T0_BIC %>%
-  mutate(percentage = counts/total) %>%
-  filter(T0 != "T0_count")
-```
-
-```{R}
-## BIC Criterion, before filtering, harmonics
-p3 <- ggplot(T0_BIC, aes(x = WHO_region, y = percentage*100, color = as.factor(T0))) +
-  geom_line(aes(group = T0)) +   
-  labs(color = "Period", title = "Detection (before filtering)") + 
-    theme_bw() + 
-    theme(panel.grid.major=element_line(colour=NA),
-          panel.grid.minor = element_blank(),
-          plot.title = element_text(hjust = 0.5, size = 9),
-        legend.position = "none",
-        axis.title.x = element_text(size = 9),
-          axis.title.y = element_text(size = 9),
-        axis.text.x = element_text(angle = 45, hjust = 1, size = 8))  +
-    ylab("Percentage ")  +
-    xlab("WHO Region") +
-  scale_color_manual(values = c('black', 'red', 'blue', 'green'), name = 'Period', labels = c("7/2","7/3","7/4", "7/5")) 
-```
-
-```{R}
-# SC Criterion, after filtering, harmonics
-p2 <- ggplot(data_sc, aes(x = WHO_region, y = percentage*100, color = as.factor(period))) +
-  # Initialize ggplot with the dataset data_bic
-  # Set the x-axis to WHO_region, y-axis to percentage (converted to percentage out of 100)
-  # Map the color aesthetic to period, treating it as a factor
-  geom_line(aes(group = group, linetype = domain.x)) +  
-   # Add lines to the plot, grouped by group and varying by linetype according to domain.x
-  labs(color = "Period", title = "Improvement in detection \n (after filtering)") + 
-    theme_bw() + 
-    theme(panel.grid.major=element_line(colour=NA),
-          panel.grid.minor = element_blank(),
-          plot.title = element_text(hjust = 0.5, size = 9),
-          legend.text = element_text(size = 6),
-          legend.title = element_text(size = 6.5),
-          axis.title.x = element_text(size = 9),
-          axis.title.y = element_text(size = 9),
-        axis.text.x = element_text(angle = 45, hjust = 1, size = 8))  +
-  
-  # Customize the theme: remove major and minor grid lines, center the title with size 9
-  # Set legend text size to 6, legend title size to 6.5
-  # Set axis title font size to 9 and adjust x-axis text to be angled at 45 degrees with size 8
-    ylab("Percentage ")  +
-    xlab("WHO Region") +
-  scale_color_manual(values = c('black', 'red', 'blue', 'green'), name = 'Period', labels = c("7/2","7/3","7/4", "7/5")) +
-  scale_linetype_manual(values = c('dashed',  'dotted'), name = 'Filter', labels =c( "high-pass \n (frequency \n domain)", "high-pass \n (time domain)"))
-
-```
-
-```{R}
-# BIC Criterion, after filtering, harmonics
-
-p4 <- ggplot(data_bic, aes(x = WHO_region, y = percentage*100, color = as.factor(period))) +
-  geom_line(aes(group = group, linetype = domain.x)) +   
-  labs(color = "Period", title = "Improvement in detection \n (after filtering)") + 
-    theme_bw() + 
-    theme(panel.grid.major=element_line(colour=NA),
-          panel.grid.minor = element_blank(),
-          plot.title = element_text(hjust = 0.5, size = 9),
+          plot.title = element_text(size = 10, hjust = 0.5), 
+          plot.subtitle = element_text(size = 8, hjust = 0.5),
           legend.text = element_text(size = 6),
           legend.title = element_text(size = 6.5),
           axis.title.x = element_text(size = 9),
           axis.title.y = element_text(size = 9),
         axis.text.x = element_text(angle = 45, hjust = 1, size = 8)
           )  +
-    ylab("Percentage ")  +
+    ylab("Percentage")  +
     xlab("WHO Region") +
-  scale_color_manual(values = c('black', 'red', 'blue', 'green'), name = 'Period', labels = c("7/2","7/3","7/4", "7/5")) +
-  scale_linetype_manual(values = c('dashed', 'dotted'), name = 'Filter', labels =c( "high-pass \n (frequency domain)", "high-pass \n (time domain)"))
+  scale_color_manual(values = c('#8E44AD', '#E67E22', '#F1C40F'), name = 'Period', labels = c("7/2","7/3","7/4")) +
+  guides(color = guide_legend(override.aes = list(linetype = "blank", shape = 21)))
+
+data_sc <- data_sc %>%
+  pivot_longer(
+    cols = c("T0_2", "T0_3", "T0_4"),  # Select the column to be converted based on the column name
+    names_to = "period",     # New column name, used to store the original column name
+    values_to = "percentage"        # The name of the new column used to store the value of the original column
+  ) %>% mutate( group = paste0(filter.x, domain.x, period))
+
+data_sc <- data_sc %>%
+  filter(domain.x == "time")
+  
+p4 <- ggplot(data_sc, aes(x = WHO_region, y = percentage*100, color = as.factor(period))) +
+  geom_line(aes(group = group), linetype = "dashed") +  
+  geom_point(shape = 20) +
+  labs(color = "Period", title = "Improvement in detection",
+       subtitle = "(after high-pass filtering in time domain)") + 
+    theme_bw() + 
+    theme(panel.grid.major=element_line(colour=NA),
+          panel.grid.minor = element_blank(),
+          plot.title = element_text(size = 10, hjust = 0.5), 
+          plot.subtitle = element_text(size = 8, hjust = 0.5),
+          legend.text = element_text(size = 6),
+          legend.title = element_text(size = 6.5),
+          axis.title.x = element_text(size = 9),
+          axis.title.y = element_text(size = 9),
+        axis.text.x = element_text(angle = 45, hjust = 1, size = 8))  +
+    ylab("Percentage")  +
+    xlab("WHO Region") +
+  scale_color_manual(values = c('#8E44AD', '#E67E22', '#F1C40F'), name = 'Period', labels = c("7/2","7/3","7/4")) +
+  guides(color = guide_legend(override.aes = list(linetype = "blank", shape = 21)))
+
 ```
 
-
-
 ```{r}
-p5<- p1+p2
-p6 <- p3+p4
+library(patchwork)
+p5<- p1+p4
+p6 <- p3+p2
 ```
 
-
 ```{r}
-## weekly data
-
-before_filter_weekly <- read.csv("before_filter_week.csv")
-# Load the data from the CSV file "before_filter_week.csv" into a dataframe before_filter_weekly
-
-before_filter_weekly$WHO_region <- trimws(before_filter_weekly$WHO_region)
-before_filter_weekly$Country <- trimws(before_filter_weekly$Country)
-# Remove leading and trailing whitespace from the "WHO_region" and "Country" columns
-
-T0 <-before_filter_weekly %>%
+before_filter_daily <- read.csv("before_filter_week.csv")
+before_filter_daily$WHO_region <- trimws(before_filter_daily$WHO_region)
+before_filter_daily$Country <- trimws(before_filter_daily$Country)
+T0 <-before_filter_daily %>%
   group_by(WHO_region, Criterion, transform) %>%
   summarise(    T0_count = sum(T0 == 1),
     T0_2_count = sum(T0.2 == 1),
     T0_3_count = sum(T0.3 == 1),
     T0_4_count = sum(T0.4 == 1),
-    T0_5_count = sum(T0.5 == 1), 
     total = n())
-# Group the data by WHO_region, Criterion, and transform, then summarize the counts for each T0 variant
-
-
 T01 <- T0 %>%
   select(WHO_region, Criterion, transform, total)
-# Select specific columns from the summarized data (T0) to create a new dataframe (T01)
-
-after_filter_weekly <- read.csv("after_filter_week.csv")
-# Load the data from the CSV file "after_filter_week.csv" into a dataframe after_filter_weekly
-
-data <- after_filter_weekly %>%
-  left_join(before_filter_weekly, by = c("Country", "transform", "WHO_region", "Criterion"))
-# Merge after_filter_weekly with before_filter_weekly based on common columns
-
+after_filter_daily <- read.csv("after_filter_week.csv")
+data <- after_filter_daily %>%
+  left_join(before_filter_daily, by = c("Country", "transform", "WHO_region", "Criterion"))
 data <- data %>%
   group_by(WHO_region, Criterion, transform, filter.x, domain.x) %>%
   summarise(
     T0_2_count = sum(T0.2.x== 1 & T0.2.y == 0),
     T0_3_count = sum(T0.3.x == 1 & T0.3.y == 0),
-    T0_4_count = sum(T0.4.x == 1 & T0.4.y == 0),
-    T0_5_count = sum(T0.5.x == 1 & T0.5.y == 0),
+    T0_4_count = sum(T0.4.x == 1 & T0.4.y == 0)
   ) 
-# Group the merged data by WHO_region, Criterion, transform, filter.x, and domain.x
-# Then, summarize the counts of T0.2, T0.3, T0.4, and T0.5 for cases that passed the filter
-
 data <- data %>%
   left_join(T01, , by = c("transform", "WHO_region", "Criterion"))
-# Merge the summarized data with T01 to include the total count for each group
 
 data_bic <- data %>%
   filter(Criterion == "BIC", transform == 0, filter.x == "high-pass") %>%
-  mutate(T0_2 = T0_2_count/total, T0_3 = T0_3_count/total, T0_4 = T0_4_count/total, T0_5 = T0_5_count/total)
-# Filter the data to include only rows where Criterion is "BIC", transform is 0, and filter.x is "high-pass"
-# Then, calculate the ratio of each T0 count to the total count
+  mutate(T0_2 = T0_2_count/total, T0_3 = T0_3_count/total, T0_4 = T0_4_count/total)
+data_sc <- data %>%
+  filter(Criterion == "SC", transform == 0, filter.x == "high-pass") %>%
+  mutate(T0_2 = T0_2_count/ total, T0_3 = T0_3_count/total, T0_4 = T0_4_count/total)
+## generate plots
+
+
+library(ggplot2)
+T0_1 <- T0 %>%
+  filter(transform == 0, Criterion == "SC") %>%
+  pivot_longer(
+    cols = c("T0_2_count", "T0_3_count", "T0_4_count"),  # Select the column to be converted based on the column name
+    names_to = "T0",     # New column name, used to store the original column name
+    values_to = "counts"        # The name of the new column used to store the value of the original column
+  )
+T0_1 <- T0_1 %>%
+  mutate(percentage = counts/total) %>%
+  filter(transform == 0, Criterion == "SC", T0 != "T0_count")
+p1 <- ggplot(T0_1, aes(x = WHO_region, y = percentage*100, color = as.factor(T0))) +
+  geom_line(aes(group = T0))  +  
+  geom_point(shape = 20) +   
+  labs(color = "Period", title = "Detection",
+    subtitle = "(before filtering)") + 
+    theme_bw() + 
+    theme(panel.grid.major=element_line(colour=NA),
+          panel.grid.minor = element_blank(),
+          plot.title = element_text(hjust = 0.5, size = 10),
+          plot.subtitle = element_text(size = 8, hjust = 0.5),
+        legend.position = "none",
+        axis.title.x = element_text(size = 9),
+          axis.title.y = element_text(size = 9),
+        axis.text.x = element_text(angle = 45, hjust = 1, size = 8))  +
+    ylab("Percentage ")  +
+    xlab("WHO Region") +
+  scale_color_manual(values = c('#8E44AD', '#E67E22', '#F1C40F'), name = 'Period', labels = c("52/2","52/3","52/4")) 
+
+
+T0_1 <- T0 %>%
+  filter(transform == 0, Criterion == "BIC") %>%
+  pivot_longer(
+    cols = c("T0_2_count", "T0_3_count", "T0_4_count"),  # Select the column to be converted based on the column name
+    names_to = "T0",     # New column name, used to store the original column name
+    values_to = "counts"        # The name of the new column used to store the value of the original column
+  )
+T0_1 <- T0_1 %>%
+  mutate(percentage = counts/total) %>%
+  filter(T0 != "T0_count")
+
+p3 <- ggplot(T0_1, aes(x = WHO_region, y = percentage*100, color = as.factor(T0))) +
+  geom_line(aes(group = T0)) +  
+  geom_point(shape = 20)+   
+  labs(color = "Period", title = "Detection",
+    subtitle = "(before filtering)") + 
+    theme_bw() + 
+    theme(panel.grid.major=element_line(colour=NA),
+          panel.grid.minor = element_blank(),
+          plot.title = element_text(hjust = 0.5, size = 10),
+          plot.subtitle = element_text(size = 8, hjust = 0.5),
+        legend.position = "none",
+        axis.title.x = element_text(size = 9),
+          axis.title.y = element_text(size = 9),
+        axis.text.x = element_text(angle = 45, hjust = 1, size = 8))  +
+    ylab("Percentage ")  +
+    xlab("WHO Region") +
+  scale_color_manual(values = c('#8E44AD', '#E67E22', '#F1C40F'), name = 'Period', labels = c("52/2","52/3","52/4")) 
 
 data_bic <- data_bic %>%
   pivot_longer(
@@ -532,11 +469,29 @@ data_bic <- data_bic %>%
     group = paste0(period, domain.x)) %>%
   filter(domain.x == "time")
 
-data_sc <- data %>%
-  filter(Criterion == "SC", transform == 0, filter.x == "high-pass") %>%
-  mutate(T0_2 = T0_2_count/ total, T0_3 = T0_3_count/total, T0_4 = T0_4_count/total,T0_5 = T0_5_count/total)
-# Filter the data to include only rows where Criterion is "SC", transform is 0, and filter.x is "high-pass"
-# Then, calculate the ratio of each T0 count to the total count
+
+
+p2 <- ggplot(data_bic, aes(x = WHO_region, y = percentage*100, color = as.factor(period))) +
+  geom_line(aes(group = group, linetype = group)) +  
+  geom_point(shape = 20) +      
+  labs(color = "Period", title = "Improvement in detection",
+       subtitle = "(after high-pass filtering in time domain)") + 
+    theme_bw() + 
+    theme(panel.grid.major=element_line(colour=NA),
+          panel.grid.minor = element_blank(),
+          plot.title = element_text(hjust = 0.5, size = 10),
+          plot.subtitle = element_text(size = 8, hjust = 0.5),
+          legend.text = element_text(size = 6),
+          legend.title = element_text(size = 6.5),
+          axis.title.x = element_text(size = 9),
+          axis.title.y = element_text(size = 9),
+        axis.text.x = element_text(angle = 45, hjust = 1, size = 8)
+          )  +
+    ylab("Percentage ")  +
+    xlab("WHO Region") +
+  scale_color_manual(values = c('#8E44AD', '#E67E22', '#F1C40F'), name = 'Period', labels = c("52/2","52/3","52/4")) + scale_linetype_manual(values= c(1,2,2))+
+  guides(color = guide_legend(override.aes = list(linetype = "blank", shape = 21)))
+
 
 data_sc <- data_sc %>%
   filter(domain.x == "time") %>%
@@ -548,30 +503,83 @@ data_sc <- data_sc %>%
     period = if_else(period == "T0", "T0_2", period),
     group = paste0(period, domain.x))
 
+p4 <- ggplot(data_sc, aes(x = WHO_region, y = percentage*100, color = as.factor(period))) +
+  geom_line(aes(group = group), linetype = "dashed") +  
+  geom_point(shape = 20) +  
+  labs(color = "Period", title = "Improvement in detection",
+       subtitle = "(after high-pass filtering in time domain)") + 
+    theme_bw() + 
+    theme(panel.grid.major=element_line(colour=NA),
+          panel.grid.minor = element_blank(),
+          plot.title = element_text(hjust = 0.5, size = 9),
+          plot.subtitle = element_text(size = 8, hjust = 0.5),
+          legend.text = element_text(size = 6),
+          legend.title = element_text(size = 6.5),
+          axis.title.x = element_text(size = 9),
+          axis.title.y = element_text(size = 9),
+          axis.text.x = element_text(angle = 45, hjust = 1, size = 8))  +
+    ylab("Percentage ")  +
+    xlab("WHO Region") +
+  scale_color_manual(values = c('#8E44AD', '#E67E22', '#F1C40F'), name = 'Period', labels = c("52/2","52/3","52/4")) +
+  guides(color = guide_legend(override.aes = list(linetype = "blank", shape = 21)))
 ```
 
-```{R}
-## weekly data, SC Critrtion, harmonics
+```{r}
+library(patchwork)
+p5 <- p1+p4
+p6 <- p3+p2
+```
 
-T0_SC <- T0 %>%
+```{r}
+before_filter_daily <- read.csv("before_filter_week.csv") %>%
+  filter(latitude_region != "group_5")
+before_filter_daily$latitude_region <- trimws(before_filter_daily$latitude_region)
+before_filter_daily$Country <- trimws(before_filter_daily$Country)
+T0 <-before_filter_daily %>%
+  group_by(latitude_region, Criterion, transform) %>%
+  summarise(    T0_count = sum(T0 == 1),
+    T0_2_count = sum(T0.2 == 1),
+    T0_3_count = sum(T0.3 == 1),
+    T0_4_count = sum(T0.4 == 1),
+    total = n())
+T01 <- T0 %>%
+  select(latitude_region, Criterion, transform, total)
+after_filter_daily <- read.csv("after_filter_week.csv") %>%
+  filter(latitude_region != "group_5")
+data <- after_filter_daily %>%
+  left_join(before_filter_daily, by = c("Country", "transform", "latitude_region", "Criterion"))
+data <- data %>%
+  group_by(latitude_region, Criterion, transform, filter.x, domain.x) %>%
+  summarise(
+    T0_2_count = sum(T0.2.x== 1 & T0.2.y == 0),
+    T0_3_count = sum(T0.3.x == 1 & T0.3.y == 0),
+    T0_4_count = sum(T0.4.x == 1 & T0.4.y == 0)
+  ) 
+data <- data %>%
+  left_join(T01, , by = c("transform", "latitude_region", "Criterion"))
+
+data_bic <- data %>%
+  filter(Criterion == "BIC", transform == 0, filter.x == "high-pass") %>%
+  mutate(T0_2 = T0_2_count/total, T0_3 = T0_3_count/total, T0_4 = T0_4_count/total)
+data_sc <- data %>%
+  filter(Criterion == "SC", transform == 0, filter.x == "high-pass") %>%
+  mutate(T0_2 = T0_2_count/ total, T0_3 = T0_3_count/total, T0_4 = T0_4_count/total)
+## generate plots
+
+T0_1 <- T0 %>%
   filter(transform == 0, Criterion == "SC") %>%
   pivot_longer(
     cols = c("T0_2_count", "T0_3_count", "T0_4_count"),  # Select the column to be converted based on the column name
     names_to = "T0",     # New column name, used to store the original column name
     values_to = "counts"        # The name of the new column used to store the value of the original column
   )
-
-# Calculate the percentage of counts relative to the total and filter the data to exclude "T0_count"
-T0_SC <- T0_SC %>%
+T0_1 <- T0_1 %>%
   mutate(percentage = counts/total) %>%
   filter(transform == 0, Criterion == "SC", T0 != "T0_count")
-```
-
-```{R}
-## SC Criterion, weekly data, before filtering
-
-p7 <- ggplot(T0_SC, aes(x = WHO_region, y = percentage*100, color = as.factor(T0))) +
-  geom_line(aes(group = T0)) +   
+T0_1 $latitude_region = factor(T0_1 $latitude_region, levels = c("group_4", "group_1", "group_2", "group_3"))
+p1 <- ggplot(T0_1, aes(x = latitude_region, y = percentage*100, color = as.factor(T0))) +
+  geom_line(aes(group = T0)) +  
+  geom_point(shape = 20) +   
   labs(color = "Period", title = "Detection \n (before filtering)") + 
     theme_bw() + 
     theme(panel.grid.major=element_line(colour=NA),
@@ -582,31 +590,26 @@ p7 <- ggplot(T0_SC, aes(x = WHO_region, y = percentage*100, color = as.factor(T0
           axis.title.y = element_text(size = 9),
         axis.text.x = element_text(angle = 45, hjust = 1, size = 8))  +
     ylab("Percentage ")  +
-    xlab("WHO Region") +
-  scale_color_manual(values = c('black', 'red', 'blue'), name = 'Period', labels = c("52/2","52/3","52/4")) 
-```
+    xlab("Latitude") +
+  scale_color_manual(values = c('#8E44AD', '#E67E22', '#F1C40F'), name = 'Period', labels = c("52/2","52/3","52/4"))+
+    scale_x_discrete(labels = c(expression(italic("L")[-45~ degree]^-{15 ~degree}),                             expression(italic("L")[-15~ degree]^{15~ degree}),                              expression(italic("L")[15~ degree]^{45~ degree}), expression(italic("L")[45~ degree]^{75~ degree}))) +
+  guides(color = guide_legend(override.aes = list(linetype = "blank", shape = 21)))
 
-```{R}
-## BIC Criterion, before filtering, weekly data
-T0_BIC <- T0 %>%
+
+T0_1 <- T0 %>%
   filter(transform == 0, Criterion == "BIC") %>%
   pivot_longer(
-    cols = c("T0_2_count", "T0_3_count", "T0_4_count"),  # Select the column to be converted based on the column name
+    cols = c("T0_count", "T0_2_count", "T0_3_count", "T0_4_count"),  # Select the column to be converted based on the column name
     names_to = "T0",     # New column name, used to store the original column name
     values_to = "counts"        # The name of the new column used to store the value of the original column
   )
-
-# Calculate the percentage of counts relative to the total and filter the data to exclude "T0_count"
-T0_BIC <- T0_BIC %>%
+T0_1 <- T0_1 %>%
   mutate(percentage = counts/total) %>%
   filter(T0 != "T0_count")
-```
-
-```{R}
-## BIC Criterion, weekly data, before filtering
-
-p8 <- ggplot(T0_BIC, aes(x = WHO_region, y = percentage*100, color = as.factor(T0))) +
-  geom_line(aes(group = T0)) +   
+T0_1 $latitude_region = factor(T0_1 $latitude_region, levels = c("group_4", "group_1", "group_2", "group_3"))
+p3 <- ggplot(T0_1, aes(x = latitude_region, y = percentage*100, color = as.factor(T0))) +
+  geom_line(aes(group = T0)) +  
+  geom_point(shape = 20) +   
   labs(color = "Period", title = "Detection \n (before filtering)") + 
     theme_bw() + 
     theme(panel.grid.major=element_line(colour=NA),
@@ -617,104 +620,9 @@ p8 <- ggplot(T0_BIC, aes(x = WHO_region, y = percentage*100, color = as.factor(T
           axis.title.y = element_text(size = 9),
         axis.text.x = element_text(angle = 45, hjust = 1, size = 8))  +
     ylab("Percentage ")  +
-    xlab("WHO Region") +
-  scale_color_manual(values = c('black', 'red', 'blue'), name = 'Period', labels = c("52/2","52/3","52/4")) 
-```
-
-```{R}
-#SC Criterion, weekly data, after filtering, harmonics
-
-p9 <- ggplot(data_sc, aes(x = WHO_region, y = percentage*100, color = as.factor(period))) +
-  geom_line(aes(group = group, linetype = domain.x))  + geom_blank(aes(linetype = "none"))+  
-  labs(color = "Period", title = "Improvement in detection \n (after filtering)") + 
-    theme_bw() + 
-    theme(panel.grid.major=element_line(colour=NA),
-          panel.grid.minor = element_blank(),
-          plot.title = element_text(hjust = 0.5, size = 9),
-          legend.text = element_text(size = 6),
-          legend.title = element_text(size = 6.5),
-          axis.title.x = element_text(size = 9),
-          axis.title.y = element_text(size = 9),
-        axis.text.x = element_text(angle = 45, hjust = 1, size = 8))  +
-    ylab("Percentage ")  +
-    xlab("WHO Region") +
-  scale_color_manual(values = c('black', 'red', 'blue', 'green'), name = 'Period', labels = c("52/2","52/3","52/4", "52/5")) +
-  scale_linetype_manual(values = c('solid', 'dashed'), name = 'Filter', labels =c( "none", "high-pass \n (time domain)"))
-```
-
-```{R}
-#BIC Criterion, weekly data, after filtering, harmonics
-
-p10 <- ggplot(data_bic, aes(x = WHO_region, y = percentage*100, color = as.factor(period))) +
-  geom_line(aes(group = group, linetype = domain.x)) + geom_blank(aes(linetype = "none"))+    
-  labs(color = "Period", title = "Improvement in detection \n (after filtering)") + 
-    theme_bw() + 
-    theme(panel.grid.major=element_line(colour=NA),
-          panel.grid.minor = element_blank(),
-          plot.title = element_text(hjust = 0.5, size = 9),
-          legend.text = element_text(size = 6),
-          legend.title = element_text(size = 6.5),
-          axis.title.x = element_text(size = 9),
-          axis.title.y = element_text(size = 9),
-        axis.text.x = element_text(angle = 45, hjust = 1, size = 8)
-          )  +
-    ylab("Percentage ")  +
-    xlab("WHO Region") +
-  scale_color_manual(values = c('black', 'red', 'blue', 'green'), name = 'Period', labels = c("52/2","52/3","52/4", "52/5")) +
-  scale_linetype_manual(values = c('solid', 'dashed'), name = 'Filter', labels =c("none", "high-pass \n (time domain)"))+
-  guides(linetype = guide_legend(override.aes = list(
-    linetype = c("solid", "dashed"),
-    color = c("black", "black"))))
-```
-
-```{r}
-p11 <- p7+p9
-p12 <- p8+p10
-```
-
-```{r}
-## Latitude group, before filtering, weekly data, harmonics
-T0 <-before_filter_weekly %>%
-  group_by(latitude_region, Criterion, transform) %>%
-  summarise(    T0_count = sum(T0 == 1),
-    T0_2_count = sum(T0.2 == 1),
-    T0_3_count = sum(T0.3 == 1),
-    T0_4_count = sum(T0.4 == 1),
-    T0_5_count = sum(T0.5 == 1), 
-    total = n()) %>%
-  filter(latitude_region != "group_5")
-
-# Group the before_filter_weekly data by latitude_region, Criterion, and transform
-# Then, summarize the counts for each T0 variant and calculate the total number of rows
-T01 <- T0 %>%
-  select(latitude_region, Criterion, transform, total)
-# Select specific columns from the summarized data (T0) to create a new dataframe (T01)
-
-data <- after_filter_weekly %>%
-  left_join(before_filter_weekly, by = c("Country", "transform", "latitude_region", "Criterion")) %>%
-  filter(latitude_region != "group_5")
-# Merge after_filter_weekly with before_filter_weekly based on common columns
-
-data <- data %>%
-  group_by(latitude_region, Criterion, transform, filter.x, domain.x) %>%
-  summarise(
-    T0_2_count = sum(T0.2.x== 1 & T0.2.y == 0),
-    T0_3_count = sum(T0.3.x == 1 & T0.3.y == 0),
-    T0_4_count = sum(T0.4.x == 1 & T0.4.y == 0),
-    T0_5_count = sum(T0.5.x == 1 & T0.5.y == 0),
-  ) 
-# Group the merged data by latitude_region, Criterion, transform, filter.x, and domain.x
-# Then, summarize the counts of T0.2, T0.3, T0.4, and T0.5 for cases that passed the filter
-
-data <- data %>%
-  left_join(T01, , by = c("transform", "latitude_region", "Criterion"))
-# Merge the summarized data with T01 to include the total count for each group
-
-data_bic <- data %>%
-  filter(Criterion == "BIC", transform == 0, filter.x == "high-pass") %>%
-  mutate(T0_2 = T0_2_count/total, T0_3 = T0_3_count/total, T0_4 = T0_4_count/total, T0_5 = T0_5_count/total)
-# Filter the data to include only rows where Criterion is "BIC", transform is 0, and filter.x is "high-pass"
-# Then, calculate the ratio of each T0 count to the total count
+    xlab("Latitude") +
+  scale_color_manual(values = c('#8E44AD', '#E67E22', '#F1C40F'), name = 'Period', labels = c("52/2","52/3","52/4")) +
+    scale_x_discrete(labels = c(expression(italic("L")[-45~ degree]^-{15 ~degree}),                             expression(italic("L")[-15~ degree]^{15~ degree}),                              expression(italic("L")[15~ degree]^{45~ degree}), expression(italic("L")[45~ degree]^{75~ degree})))
 
 data_bic <- data_bic %>%
   pivot_longer(
@@ -724,149 +632,10 @@ data_bic <- data_bic %>%
   ) %>% mutate(
     group = paste0(period, domain.x)) %>%
   filter(domain.x == "time")
-
 # data_bic $latitude_region = factor(data_bic $latitude_region, levels = c("group_4", "group_1", "group_2", "group_3"))
-# Convert the "latitude_region" column to a factor and set the order of levels to "group_4", "group_1", "group_2", and "group_3"
-
-data_sc <- data %>%
-  filter(Criterion == "SC", transform == 0, filter.x == "high-pass") %>%
-  mutate(T0_2 = T0_2_count/ total, T0_3 = T0_3_count/total, T0_4 = T0_4_count/total,T0_5 = T0_5_count/total)
-# Filter the data to include only rows where Criterion is "SC", transform is 0, and filter.x is "high-pass"
-# Then, calculate the ratio of each T0 count to the total count
-
-data_sc <- data_sc %>%
-  filter(domain.x == "time") %>%
-  pivot_longer(
-    cols = c("T0_2", "T0_3", "T0_4"),  # Select the column to be converted based on the column name
-    names_to = "period",     # New column name, used to store the original column name
-    values_to = "percentage"        # The name of the new column used to store the value of the original column
-  ) %>% mutate(
-    group = paste0(period, domain.x)) 
-
-# data_sc $latitude_region = factor(data_sc $latitude_region, levels = c("group_4", "group_1", "group_2", "group_3"))
-```
-
-```{R}
-## generate plots
-# SC Criterion, latitude group, harmonics, before filtering
-T0_SC <- T0 %>%
-  filter(transform == 0, Criterion == "SC") %>%
-  pivot_longer(
-    cols = c("T0_2_count", "T0_3_count", "T0_4_count"),  # Select the column to be converted based on the column name
-    names_to = "T0",     # New column name, used to store the original column name
-    values_to = "counts"        # The name of the new column used to store the value of the original column
-  )
-
-T0_SC <- T0_SC %>%
-  mutate(percentage = counts/total) %>%
-  filter(transform == 0, Criterion == "SC", T0 != "T0_count")
-# Calculate the percentage by dividing the 'counts' column by the 'total' column
-# Filter the data to include only rows where 'transform' equals 0, 'Criterion' equals "SC", and 'T0' is not equal to "T0_count"
-
-T0_SC $latitude_region = factor(T0_SC$latitude_region, levels = c("group_4", "group_1", "group_2", "group_3"))
-# Convert the 'latitude_region' column to a factor and set the order of levels to "group_4", "group_1", "group_2", and "group_3"
-
-
-```
-
-```{R}
-## SC Criterion, latitude group, after filtering
-p12 <- ggplot(T0_SC, aes(x = latitude_region, y = percentage*100, color = as.factor(T0))) +
-  # Create a line plot using ggplot2 with 'latitude_region' on the x-axis and 'percentage' on the y-axis (multiplied by 100 for percentage scale)
-  # The color of the lines is determined by the 'T0' factor, and lines are grouped by 'T0'
-
-  geom_line(aes(group = T0)) +   
-  labs(color = "Period", title = "Detection \n (before filtering)") + 
-  # Add labels to the plot, setting the color legend title to "Period" and the plot title to "Detection (before filtering)"
-  
-    theme_bw() + 
-    # Use a black-and-white theme for the plot
-    theme(panel.grid.major=element_line(colour=NA),
-          panel.grid.minor = element_blank(),
-          plot.title = element_text(hjust = 0.5, size = 9),
-        legend.position = "none",
-        axis.title.x = element_text(size = 9),
-          axis.title.y = element_text(size = 9),
-        axis.text.x = element_text(angle = 45, hjust = 1, size = 8))  +
-  # Customize the plot theme:
-  # - Remove major and minor grid lines
-  # - Center-align the plot title and set its font size
-  # - Hide the legend
-  # - Set font sizes for axis titles and rotate x-axis labels by 45 degrees with right alignment
-
-    ylab("Percentage ")  +
-    xlab("Latitude") +
-  scale_color_manual(values = c('black', 'red', 'blue'), name = 'Period', labels = c("52/2","52/3","52/4"))+
-    scale_x_discrete(labels = c(expression(italic("L")[-45~ degree]^-{15 ~degree}),                             expression(italic("L")[-15~ degree]^{15~ degree}),                              expression(italic("L")[15~ degree]^{45~ degree}), expression(italic("L")[45~ degree]^{75~ degree}))) 
-```
-
-```{R}
-## BIC Criterion, latitude group, before filtering
-T0_BIC <- T0 %>%
-  filter(transform == 0, Criterion == "BIC") %>%
-  pivot_longer(
-    cols = c("T0_count", "T0_2_count", "T0_3_count", "T0_4_count"),  # Select the column to be converted based on the column name
-    names_to = "T0",     # New column name, used to store the original column name
-    values_to = "counts"        # The name of the new column used to store the value of the original column
-  )
-
-T0_BIC <- T0_BIC %>%
-  mutate(percentage = counts/total) %>%
-  filter(T0 != "T0_count")
-# Calculate the percentage by dividing the 'counts' column by the 'total' column
-# Filter the data to include only rows where 'transform' equals 0, 'Criterion' equals "SC", and 'T0' is not equal to "T0_count"
-
-T0_BIC$latitude_region = factor(T0_BIC$latitude_region, levels = c("group_4", "group_1", "group_2", "group_3"))
-# Convert the 'latitude_region' column to a factor and set the order of levels to "group_4", "group_1", "group_2", and "group_3"
-```
-
-```{R}
-## BIC Criterion, latitude group, before filtering
-p13 <- ggplot(T0_BIC, aes(x = latitude_region, y = percentage*100, color = as.factor(T0))) +
-  geom_line(aes(group = T0)) +   
-  labs(color = "Period", title = "Detection \n (before filtering)") + 
-    theme_bw() + 
-    theme(panel.grid.major=element_line(colour=NA),
-          panel.grid.minor = element_blank(),
-          plot.title = element_text(hjust = 0.5, size = 9),
-        legend.position = "none",
-        axis.title.x = element_text(size = 9),
-          axis.title.y = element_text(size = 9),
-        axis.text.x = element_text(angle = 45, hjust = 1, size = 8))  +
-    ylab("Percentage ")  +
-    xlab("Latitude") +
-  scale_color_manual(values = c('black', 'red', 'blue'), name = 'Period', labels = c("52/2","52/3","52/4")) +
-    scale_x_discrete(labels = c(expression(italic("L")[-45~ degree]^-{15 ~degree}),                             expression(italic("L")[-15~ degree]^{15~ degree}),                              expression(italic("L")[15~ degree]^{45~ degree}), expression(italic("L")[45~ degree]^{75~ degree})))
-```
-
-```{R}
-## SC Criterion, latitude group, after filtering
-
-p14 <- ggplot(data_sc, aes(x = latitude_region, y = percentage*100, color = as.factor(period))) +
-  geom_line(aes(group = group, linetype = domain.x))  + geom_blank(aes(linetype = "none"))+  
-  labs(color = "Period", title = "Improvement in detection \n (after filtering)") + 
-    theme_bw() + 
-    theme(panel.grid.major=element_line(colour=NA),
-          panel.grid.minor = element_blank(),
-          plot.title = element_text(hjust = 0.5, size = 9),
-          legend.text = element_text(size = 6),
-          legend.title = element_text(size = 6.5),
-          axis.title.x = element_text(size = 9),
-          axis.title.y = element_text(size = 9),
-        axis.text.x = element_text(angle = 45, hjust = 1, size = 8))  +
-    ylab("Percentage ")  +
-    xlab("Latitude") +
-  scale_color_manual(values = c('black', 'red', 'blue'), name = 'Period', labels = c("52/2","52/3","52/4")) +
-  scale_linetype_manual(values = c('soild', 'dashed'), name = 'Filter', labels =c( "none", "high-pass \n (time domain)"))+
-    scale_x_discrete(labels = c(expression(italic("L")[-45~ degree]^-{15 ~degree}),                             expression(italic("L")[-15~ degree]^{15~ degree}),                              expression(italic("L")[15~ degree]^{45~ degree}), expression(italic("L")[45~ degree]^{75~ degree})))
-
-
-```
-
-```{R}
-## BIC Criterion, latitude group, after filtering
-p15 <- ggplot(data_bic, aes(x = latitude_region, y = percentage*100, color = as.factor(period))) +
-  geom_line(aes(group = group, linetype = domain.x)) + geom_blank(aes(linetype = "none"))+    
+p2 <- ggplot(data_bic, aes(x = latitude_region, y = percentage*100, color = as.factor(period))) +
+  geom_line(aes(group = group), linetype = "dashed") +  
+  geom_point(shape = 20)+    
   labs(color = "Period", title = "Improvement in detection \n (after filtering)") + 
     theme_bw() + 
     theme(panel.grid.major=element_line(colour=NA),
@@ -880,19 +649,52 @@ p15 <- ggplot(data_bic, aes(x = latitude_region, y = percentage*100, color = as.
           )  +
     ylab("Percentage ")  +
     xlab("Laitutde") +
-  scale_color_manual(values = c('black', 'red', 'blue'), name = 'Period', labels = c("52/2","52/3","52/4")) +
+  scale_color_manual(values = c('#8E44AD', '#E67E22', '#F1C40F'), name = 'Period', labels = c("52/2","52/3","52/4")) +
   scale_linetype_manual(values = c('solid', 'dashed'), name = 'Filter', labels =c("none", "high-pass \n (time domain)"))+
   guides(linetype = guide_legend(override.aes = list(
     linetype = c("solid", "dashed"),
     color = c("black", "black"))))+
-    scale_x_discrete(labels = c(expression(italic("L")[-45~ degree]^-{15 ~degree}),                             expression(italic("L")[-15~ degree]^{15~ degree}),                              expression(italic("L")[15~ degree]^{45~ degree}), expression(italic("L")[45~ degree]^{75~ degree})))
-```
+    scale_x_discrete(labels = c(expression(italic("L")[-45~ degree]^-{15 ~degree}),                             expression(italic("L")[-15~ degree]^{15~ degree}),                              expression(italic("L")[15~ degree]^{45~ degree}), expression(italic("L")[45~ degree]^{75~ degree})))+
+  guides(color = guide_legend(override.aes = list(linetype = "blank", shape = 21)))
 
+
+data_sc <- data_sc %>%
+  filter(domain.x == "time") %>%
+  pivot_longer(
+    cols = c("T0_2", "T0_3", "T0_4"),  # Select the column to be converted based on the column name
+    names_to = "period",     # New column name, used to store the original column name
+    values_to = "percentage"        # The name of the new column used to store the value of the original column
+  ) %>% mutate(
+    group = paste0(period, domain.x)) 
+# data_sc $latitude_region = factor(data_sc $latitude_region, levels = c("group_4", "group_1", "group_2", "group_3"))
+p4 <- ggplot(data_sc, aes(x = latitude_region, y = percentage*100, color = as.factor(period))) +
+  geom_line(aes(group = group), linetype = "dashed") +  
+  geom_point(shape = 20)+  
+  labs(color = "Period", title = "Improvement in detection \n (after filtering)") + 
+    theme_bw() + 
+    theme(panel.grid.major=element_line(colour=NA),
+          panel.grid.minor = element_blank(),
+          plot.title = element_text(hjust = 0.5, size = 9),
+          legend.text = element_text(size = 6),
+          legend.title = element_text(size = 6.5),
+          axis.title.x = element_text(size = 9),
+          axis.title.y = element_text(size = 9),
+        axis.text.x = element_text(angle = 45, hjust = 1, size = 8))  +
+    ylab("Percentage ")  +
+    xlab("Latitude") +
+  scale_color_manual(values = c('#8E44AD', '#E67E22', '#F1C40F'), name = 'Period', labels = c("52/2","52/3","52/4")) +
+  scale_linetype_manual(values = c('soild', 'dashed'), name = 'Filter', labels =c( "none", "high-pass \n (time domain)"))+
+    scale_x_discrete(labels = c(expression(italic("L")[-45~ degree]^-{15 ~degree}),                             expression(italic("L")[-15~ degree]^{15~ degree}),                              expression(italic("L")[15~ degree]^{45~ degree}), expression(italic("L")[45~ degree]^{75~ degree})))+
+  guides(color = guide_legend(override.aes = list(linetype = "blank", shape = 21)))
+
+
+```
 
 ```{r}
-p16 <- p12+p14
-p17 <- p13+p15
+p5 <- p1+p4
+p6 <- p3+p2
 ```
+
 
 
 
