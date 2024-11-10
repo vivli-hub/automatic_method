@@ -31,20 +31,20 @@ run_filt_WHO(wreg, flag_transf, flag_plot, sp, ftype, fdomain, window)
 | **Variable**   | **Description**                                                                                         |
 |----------------|---------------------------------------------------------------------------------------------------------|
 | **`%wreg`**    | WHO region for which the data is analysed                                                               |
-| **`%flag_transf`** | Flag for data transform:<br> 0 = No transform applied to the data<br> 1 = Transform from GP Nason, Scientific Reports, 2020<br> 2 = Transform usually applied to daily stock market indices at closing time<br> 3 = First order differences (computed in time domain) |
+| **`%flag_transf`** | Flag for data transform:<br> 0 = No transform applied to the data<br> 1 = Transform from GP Nason, Scientific Reports, 2020<br> 2 = Transform usually applied to daily stock market indices at closing time<br> 3 = First order differences |
 | **`%flag_plot`**   | 0 = No plots<br> 1 = Plots for each country                                                        |
-| **`%sp`**      | 'day' = Daily data<br> 'week' = Iekly data                                                             |
-| **`%ftype`**   | 'stop' = Stop band filter<br> 'high' = High pass filter                                                |
+| **`%sp`**      | 'day' = Daily data<br> 'week' = weekly data                                                             |
+| **`%ftype`**   | 'stop' = Stop-band filter<br> 'high' = High-pass filter                                                |
 | **`%fdomain`** | 'time' = Filtering in time domain<br> 'freq' = Filtering in frequency domain                           |
 | **`%window`**  | 'hann' = Hanning window<br> 'halfhann' = Half Hanning window<br> 'rect' = Rectangular window           |
 
 **Output**
 
-run_filt_WHO produces two different files. Both of them have the same name, which is given by fina = strcat('Results_', wreg, '_tr', num2str(flag_transf), '_', sp, '_', ftype, '_', fdomain, ‘_’, window); However, one file has the extension .txt and the other file has the extension .mat.
+run_filt_WHO produces two different files. Both of them have the same name, which is given by fina = strcat('Results_', wreg, '_tr', num2str(flag_transf), '_', sp, '_', ftype, '_', fdomain, ‘_’, window). However, one file has the extension .txt and the other file has the extension .mat.
 
 **`%'Results_', wreg, '_tr', num2str(flag_transf), '_', sp, '_', ftype, '_', fdomain, ‘_’, window.txt`**
 
-The .txt files record the Region each country belongs to, along with the detection results for the fundamental period and harmonics. It is important to note that the IT criterion used for detection is indicated in the results. If the result is marked with 'B,' it means that BIC was able to detect the corresponding fundamental period or harmonics; if marked with 'S,' it indicates that SC was able to detect the corresponding result.
+The .txt files record the region each country belongs to, along with the detection results for the fundamental period and harmonics. Note that the IT criterion used for detection is indicated in the results. If the result is marked with 'B,' it means that BIC was able to detect the corresponding fundamental period or harmonics; if marked with 'S,' it indicates that SC was able to detect the corresponding .
 
 **`%'Results_', wreg, '_tr', num2str(flag_transf), '_', sp, '_', ftype, '_', fdomain, ‘_’, window.mat`**
 
