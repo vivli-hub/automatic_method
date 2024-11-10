@@ -19,7 +19,7 @@ In our experiments, we use the daily counts of COVID-19 cases that are publicly 
 - [run_filt_fullsearch.m](#run_filt_fullsearch)
 
 ### read_countries_WHO
-Data can be downloaded from: [Data](https://covid19.who.int/WHO-COVID-19-global-data.csv). This file contains the data that we have used in our experiments. Function read_countries_WHO.m reads the data from WHO_data.csv and creates a Mat file for each country in the folder WHO/WHO_Data. We have already created these files for all the countries; there are 236 countries in our experiments. We have also done the following data processing steps: (i) converted all NA or negative values to 0; (ii) Padded each time series with zeros.
+Data can be downloaded from: [Data](https://covid19.who.int/WHO-COVID-19-global-data.csv). This file contains the data that we have used in our experiments. Function read_countries_WHO.m reads the data from WHO_data.csv and creates a Mat file for each country in the folder WHO/WHO_Data. We have already created these files for all the countries; there are 236 countries in our experiments. We have also done the following data processing steps: (i) converted all NA and negative values to 0; (ii) Padded each time series with zeros.
 
 ### run_filt_WHO
 Once you have these Mat files, you can run the main function run_filt_WHO.m.
@@ -31,7 +31,7 @@ run_filt_WHO(wreg, flag_transf, flag_plot, sp, ftype, fdomain, window)
 | **Variable**   | **Description**                                                                                         |
 |----------------|---------------------------------------------------------------------------------------------------------|
 | **`%wreg`**    | WHO region for which the data is analysed                                                               |
-| **`%flag_transf`** | Flag for data transformation:<br> 0 = No transformation applied to the data<br> 1 = Transformation from GP Nason, Scientific Reports, 2020<br> 2 = Transformation usually applied to daily stock market indices at closing time<br> 3 = First order differences (computed in time domain) |
+| **`%flag_transf`** | Flag for data transform:<br> 0 = No transform applied to the data<br> 1 = Transform from GP Nason, Scientific Reports, 2020<br> 2 = Transform usually applied to daily stock market indices at closing time<br> 3 = First order differences (computed in time domain) |
 | **`%flag_plot`**   | 0 = No plots<br> 1 = Plots for each country                                                        |
 | **`%sp`**      | 'day' = Daily data<br> 'week' = Iekly data                                                             |
 | **`%ftype`**   | 'stop' = Stop band filter<br> 'high' = High pass filter                                                |
