@@ -1,5 +1,5 @@
 
-# automatic_method
+# Method
 An automatic method for the identification of cycles in Covid-19 time series data
 
 # Authors
