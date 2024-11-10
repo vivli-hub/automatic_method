@@ -51,10 +51,10 @@ The .txt files record the region each country belongs to, along with the detecti
 | **Variable**   | **Description**                                                                                         |
 |----------------|---------------------------------------------------------------------------------------------------------|
 | **`seven`**    | `T0./(1:5)`                                                                                             |
-| **`BIC_o`** or **`SC_o`** | Record the number of countries within a specific WHO region where fundamental period and harmonics can be detected (before filtering) by BIC and SC, respectively.   |
-| **`BIC_f`** or **`SC_f`** | Record the number of countries within a specific WHO Region where fundamental period and harmonics can be detected (after filtering) by BIC and SC, respectively. |
-| **`noc`**      | The number of CTA’s in the specific WHO Region.                                                          |
-| **`t_before`** | A matrix of size `n*5`, where `n` represents the number of countries in a particular region that can be detected with at least one periodogram or harmonics before applying the filter. The 5 columns correspond to the detection results from `T0` to `T0/5`, where the numbers represent the periods associated with frequencies detected by BIC or SC. Note: `n` does not represent the number of countries within a particular region, as some countries cannot be detected with any periodogram or harmonics. |
+| **`BIC_o`** or **`SC_o`** | The number of CTA's within a specific WHO region where fundamental period and harmonics can be detected (before filtering) by BIC and SC, respectively   |
+| **`BIC_f`** or **`SC_f`** | The number of CTA's within a specific WHO Region where fundamental period and harmonics can be detected (after filtering) by BIC and SC, respectively |
+| **`noc`**      | The total number of CTA’s in a specific WHO region                                                          |
+| **`t_before`** | A matrix of size `n*5`, where `n` represents the number of CTA's in a particular region that can be detected with at least one periodogram or harmonics before applying the filter. The 5 columns correspond to the detection results from `T0` to `T0/5`, where the numbers represent the periods associated with frequencies detected by BIC or SC. Note: `n` does not represent the number of countries within a particular region, as some countries cannot be detected with any periodogram or harmonics. |
 | **`t_after`**  | Similar to `t_before`, but stores the data conclusions after applying the filter. Only countries that were detected with a fundamental periodogram before applying the filter will have the filter applied. |
 
 ### run_filt_fullsearch
