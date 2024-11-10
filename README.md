@@ -44,15 +44,15 @@ run_filt_WHO produces two different files. Both of them have the same name, whic
 
 **`%'Results_', wreg, '_tr', num2str(flag_transf), '_', sp, '_', ftype, '_', fdomain, ‘_’, window.txt`**
 
-The .txt files record the region each country belongs to, along with the detection results for the fundamental period and harmonics. Note that the IT criterion used for detection is indicated in the results. If the result is marked with 'B,' it means that BIC was able to detect the corresponding fundamental period or harmonics; if marked with 'S,' it indicates that SC was able to detect the corresponding .
+The .txt files record the region each country belongs to, along with the detection results for the fundamental period and harmonics. Note that the IT criterion used for detection is indicated in the results. If the result is marked with 'B', it means that BIC was able to detect the corresponding fundamental period or harmonics; if marked with 'S', it indicates that SC was employed in detection.
 
 **`%'Results_', wreg, '_tr', num2str(flag_transf), '_', sp, '_', ftype, '_', fdomain, ‘_’, window.mat`**
 
 | **Variable**   | **Description**                                                                                         |
 |----------------|---------------------------------------------------------------------------------------------------------|
 | **`seven`**    | `T0./(1:5)`                                                                                             |
-| **`BIC_o`** or **`SC_o`** | Respectively record the number of countries within a specific WHO Region where fundamental periods and harmonics can be detected before applying the filter. |
-| **`BIC_f`** or **`SC_f`** | Respectively record the number of countries within a specific WHO Region where fundamental periods and harmonics can be detected after applying the filter. |
+| **`BIC_o`** or **`SC_o`** | Record the number of countries within a specific WHO region where fundamental period and harmonics can be detected (before filtering) by BIC and SC, respectively.   |
+| **`BIC_f`** or **`SC_f`** | Record the number of countries within a specific WHO Region where fundamental period and harmonics can be detected (after filtering) by BIC and SC, respectively. |
 | **`noc`**      | The number of CTA’s in the specific WHO Region.                                                          |
 | **`t_before`** | A matrix of size `n*5`, where `n` represents the number of countries in a particular region that can be detected with at least one periodogram or harmonics before applying the filter. The 5 columns correspond to the detection results from `T0` to `T0/5`, where the numbers represent the periods associated with frequencies detected by BIC or SC. Note: `n` does not represent the number of countries within a particular region, as some countries cannot be detected with any periodogram or harmonics. |
 | **`t_after`**  | Similar to `t_before`, but stores the data conclusions after applying the filter. Only countries that were detected with a fundamental periodogram before applying the filter will have the filter applied. |
