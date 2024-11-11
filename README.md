@@ -89,7 +89,7 @@ The means and the standard deviations of the estimation errors (before and after
 | **Variable**   | **Description**                                                                                         |
 |----------------|---------------------------------------------------------------------------------------------------------|
 | **`%wreg`**    | WHO region for which the data is analyzed                                                               |
-| **`%flag_transf`** | Flag for data transform:<br> 0 = No transformat is applied to the data<br> 1 = Transform from GP Nason, Scientific Reports, 2020<br> 2 = Transform usually applied to daily stock market indices at closing time<br> 3 = First order differences |
+| **`%flag_transf`** | Flag for data transform:<br> 0 = No transform is applied to the data<br> 1 = Transform from GP Nason, Scientific Reports, 2020<br> 2 = Transform usually applied to daily stock market indices at closing time<br> 3 = First order differences |
 | **`%sp`**      | 'day' = Daily data<br> 'week' = weekly data                                                             |
 | **`%ftype`**   | 'stop' = Stop-band filter<br> 'high' = High-pass filter                                                |
 | **`%fdomain`** | 'time' = Filtering in time domain<br> 'freq' = Filtering in frequency domain                           |
