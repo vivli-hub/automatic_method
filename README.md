@@ -7,8 +7,8 @@ Miaotian Li, Ciprian Doru Giurcaneanu, Jiamou Liu
 
 ## Data
 - [WHO_data.csv](#WHO_data)
-- country_label.xlsx
-- Latitude_label.xlsx
+- [country_label.xlsx](#partition_index)
+- [Latitude_label.xlsx](#partition_index)
 
 ### WHO Data
 In our experiments, we use the daily counts of COVID-19 cases that are publicly available on the website of WHO: [Data](https://covid19.who.int/data).
@@ -40,9 +40,9 @@ run_filt_WHO(wreg, flag_transf, flag_plot, sp, ftype, fdomain, window)
 
 **Output**
 
-run_filt_WHO produces two different files. Both of them have the same name, which is given by fina = strcat('Results_', wreg, '_tr', num2str(flag_transf), '_', sp, '_', ftype, '_', fdomain, ‘_’, window). However, one file has the extension .txt and the other file has the extension .mat.
+run_filt_WHO produces two different files. Both of them have the same name, which is given by `fina = strcat(Results_', wreg, '_tr', num2str(flag_transf), '_', sp, '_', ftype, '_', fdomain, '_', window)`. However, one file has the extension .txt and the other file has the extension .mat.
 
-**`%'Results_', wreg, '_tr', num2str(flag_transf), '_', sp, '_', ftype, '_', fdomain, ‘_’, window.txt`**
+**`%'Results_', wreg, '_tr', num2str(flag_transf), '_', sp, '_', ftype, '_', fdomain, '_', window.txt`**
 
 The .txt files record the region each country belongs to, along with the detection results for the fundamental period and harmonics. Note that the IT criterion used for detection is indicated in the results. If the result is marked with 'B', it means that BIC was able to detect the corresponding fundamental period or harmonics; if marked with 'S', it indicates that SC was employed in detection.
 
