@@ -98,30 +98,29 @@ The means and the standard deviations of the estimation errors (before and after
 
 **`%results_mean_before`** 
 
-A 5x1 matrix, with the first column through the fifth column corresponding to T0, ..., T0/5. Compute the mean of the estimated error before filtering.
+A vector of size `5x1`; the `j`-th entry (`j=1,...,5`) is the mean of the estimation errors for the oscillation with period `T0/j` (before filtering)
 
 **`%results_sd_before`** 
 
-A 5x1 matrix, with the first column through the fifth column corresponding to T0, ..., T0/5. Compute the standard deviation of the estimated error before filtering.
+A vector of size `5x1`; the `j`-th entry (`j=1,...,5`) is the standard deviation of the estimation errors for the oscillation with period `T0/j` (before filtering)
 
 **`%results_mean_after`** 
 
-A 5x1 matrix, with the first column through the fifth column corresponding to T0, ..., T0/5. Compute the mean of the estimated error after filtering.
+A vector of size `5x1`; the `j`-th entry (`j=1,...,5`) is the mean of the estimation errors for the oscillation with period `T0/j` (after filtering)
 
 **`%results_sd_after`** 
 
-A 5x1 matrix, with the first column through the fifth column corresponding to T0, ..., T0/5. Compute the standard deviation of the estimated error after filtering.
+A vector of size `5x1`; the `j`-th entry (`j=1,...,5`) is the standard deviation of the estimation errors for the oscillation with period `T0/j` (after filtering)
 
 ### data_tidy
-We will have daily data and weekly data, and the fundamental period and harmonics detected for each type of data are different. Therefore, we will have four functions in this Rmd file. 
 
-`process_lines_daily(lines)`：Extract the data related to 'before filtering' from the TXT file and convert it into wide format. If this CTA corresponds to the relevant fundamental period or harmonics, mark it as 1; otherwise, mark it as 0. This function applies only to daily data. In this function, the input is coming from TXT files.
+`process_lines_daily(lines)`：For daily data - extracts the results obtained before filtering from the TXT files and convert them into wide format. The significance of the binary value written down for each CTA and each fundamental frequency/harmonic: 1 - detected; 0 - not detected 
 
-`process_lines_weekly(lines)`: This function is as same as the function `process_lines_daily`. The only difference is that this function is for weekly data.
+`process_lines_weekly(lines)`: Similar to the function `process_lines_daily`, except that it is designed for weekly data. 
 
-`process_lines_daily_after(lines)` : This function is as same as the function `process_lines_daily`. The only difference is that this function analyzes the results after filtering.
+`process_lines_daily_after(lines)`: Similar to the function `process_lines_daily`, except that it extracts the results obtained after filtering.
 
-`process_lines_week_after(lines)`: This function is as same as the function `process_lines_daily_after`. The only difference is that this function is for weekly data.
+`process_lines_week_after(lines)`: Similar to the function `process_lines_daily`, except that it extracts the results obtained after filtering, for weekly data.
 
 **Input**
 
@@ -149,18 +148,18 @@ We will have daily data and weekly data, and the fundamental period and harmonic
 
 **`before_filter_week.csv`**: 
 
-It is exactly the same as before_filter_daily.csv, with the only difference being that it focuses on confirming the annual cycle (52-week cycle). In addition, there is a new column called `latitude_region`.
+It is exactly the same as before_filter_daily.csv, with the only difference being that it focuses on confirming the annual cycle (52-week cycle). In addition, there is a column called `latitude_region`.
 
 **`after_filter_daily.csv`**: 
 
-It is exactly the same as before_filter_daily.csv. But the levels of filter and domain are different. There are two kinds of filters: high-pass and stop-band, and also two domains: time and frequency.
+It is exactly the same as before_filter_daily.csv. There are two kinds of filters: high-pass and stop-band, and also two domains: time and frequency.
 
 **`after_filter_daily.csv`**: 
 
 It is exactly the same as before_filter_week.csv.
 
 ### generate_plot
-Represent the results of the above experiments. Use ggplot to aggregate and summarize the daily data and weekly data by WHO Region group; summarize the weekly data by Latitude group.
+Represent the results of the experiments. Use ggplot to aggregate and summarize the daily data and weekly data by WHO region; summarize the weekly data by Latitude group.
 
 | **Type**   | **Files**                                                                                             |
 |------------|-------------------------------------------------------------------------------------------------------|
