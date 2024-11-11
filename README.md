@@ -30,7 +30,7 @@ run_filt_WHO(wreg, flag_transf, flag_plot, sp, ftype, fdomain, window)
 
 | **Variable**   | **Description**                                                                                         |
 |----------------|---------------------------------------------------------------------------------------------------------|
-| **`%wreg`**    | WHO region for which the data is analysed                                                               |
+| **`%wreg`**    | WHO region for which the data is analyzed                                                               |
 | **`%flag_transf`** | Flag for data transform:<br> 0 = No transform applied to the data<br> 1 = Transform from GP Nason, Scientific Reports, 2020<br> 2 = Transform usually applied to daily stock market indices at closing time<br> 3 = First order differences |
 | **`%flag_plot`**   | 0 = No plots<br> 1 = Plots for each country                                                        |
 | **`%sp`**      | 'day' = Daily data<br> 'week' = weekly data                                                             |
@@ -54,21 +54,21 @@ The .txt files record the region each country belongs to, along with the detecti
 | **`BIC_o`** or **`SC_o`** | The number of CTA's within a specific WHO region where fundamental period and harmonics have been detected (before filtering) by BIC and SC, respectively   |
 | **`BIC_f`** or **`SC_f`** | The number of CTA's within a specific WHO Region where fundamental period and harmonics have been be detected (after filtering) by BIC and SC, respectively |
 | **`noc`**      | The total number of CTA’s in a specific WHO region                                                          |
-| **`t_before`** | An array of size `nx6`, where `n` represents the number of CTA's in a particular region for which at least one oscillation with period `T0,...,T0/5` was detected (before filtering). Note that `n` is not always equal with the total number of CTA's in that region because it is possible that no oscilattions are detected for some CTA's. In the first column, it is saved the name of the CTA. In the `j`-th column (`j=2,..,6`) are saved the estimated periods that correspond to the oscillation with period `T0/(j-1)`. The estimated periods are computed based on the frequencies detected by BIC or SC.  |
-| **`t_after`**  | Similar to `t_before`, but stores the data conclusions after applying the filter. Only countries that were detected with a fundamental periodogram before applying the filter will have the filter applied. |
+| **`t_before`** | An array of size `nx6`, where `n` represents the number of CTA's in a particular region for which at least one oscillation with period `T0,...,T0/5` was detected (before filtering). Note that `n` is not necessarily equal to the total number of CTA's in that region because it is possible that no oscilattions are detected for some of the CTA's. In the first column, it is saved the name of the CTA. In the `j`-th column (`j=2,..,6`) are saved the estimated periods that correspond to the oscillation with period `T0/(j-1)`. The estimated periods are computed based on the frequencies detected by BIC and SC. |
+| **`t_after`**  | Similar to `t_before`, except that it stores the results obtained after filtering. Note that the filter is applied only to the time series data from the CTA's where the fundamental period was detected. |
 
 ### run_filt_fullsearch
 
-Once you have these Mat files, you can run the main function run_filt_fullsearch.m. You need to give as input a flag which indicates how the data are transformed (have a look at the comments in the function to understand how to select this flag)
+For the Full-Search method, you should run the function run_filt_fullsearch.m. The input arguments are explained below.
 
 **Input**
 
 | **Variable**   | **Description**                                                                                         |
 |----------------|---------------------------------------------------------------------------------------------------------|
 | **`%wreg`**    | WHO region for which the data is analyzed                                                               |
-| **`%flag_transf`** | Flag for data transformation:<br> 0 = No transformation applied to the data<br> 1 = Transformation from GP Nason, Scientific Reports, 2020<br> 2 = Transformation usually applied to daily stock market indices at closing time<br> 3 = First order differences (computed in time domain) |
-| **`%sp`**      | 'day' = Daily data<br> 'week' = Iekly data                                                             |
-| **`%ftype`**   | 'stop' = Stop band filter<br> 'high' = High pass filter                                                |
+| **`%flag_transf`** | Flag for data transformation:<br> 0 = No transform applied to the data<br> 1 = Transform from GP Nason, Scientific Reports, 2020<br> 2 = Transform usually applied to daily stock market indices at closing time<br> 3 = First order differences  |
+| **`%sp`**      | 'day' = Daily data<br> 'week' = weekly data                                                             |
+| **`%ftype`**   | 'stop' = Stop-band filter<br> 'high' = High-pass filter                                                |
 | **`%fdomain`** | 'time' = Filtering in time domain<br> 'freq' = Filtering in frequency domain                           |
 
 
