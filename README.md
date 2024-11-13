@@ -164,7 +164,7 @@ Represent the results of the experiments. Use ggplot to aggregate and summarize 
 | **Type**   | **Files**                                                                                             |
 |------------|-------------------------------------------------------------------------------------------------------|
 | **Input**  | `before_filter_daily.csv`<br>`after_filter_daily.csv`<br>`before_filter_week.csv`<br>`after_filter_week.csv` |
-| **Output** | `figure_2.pdf`<br>`figure_3.pdf`<br>`figure_4.pdf`<br>`figure_5.pdf`<br>`figure_6.pdf`<br>`figure_7.pdf`<br>`figure_B1.pdf`<br>`figure_B2.pdf`<br>`figure_B3.pdf`<br>`figure_B4.pdf` |
+| **Output** | `figure_3.pdf`<br>`figure_4.pdf`<br>`figure_5.pdf`<br>`figure_6.pdf`<br>`figure_7.pdf`<br>`figure_8.pdf`<br>`figure_B1.pdf`<br>`figure_B2.pdf`<br>`figure_B3.pdf`<br>`figure_B4.pdf` |
 
 
 ### partition_index
