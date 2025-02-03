@@ -1,6 +1,6 @@
 
 # Method
-An automatic method for the identification of cycles in Covid-19 time series data
+Automatic method for the identification of cycles in Covid-19 time-series data
 
 # Authors
 Miaotian Li, Ciprian Doru Giurcaneanu, Jiamou Liu
