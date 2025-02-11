@@ -159,7 +159,7 @@ It is exactly the same as before_filter_daily.csv. There are two kinds of filter
 It is exactly the same as before_filter_week.csv.
 
 ### generate_plot
-Represent the results of the experiments. Use ggplot to aggregate and summarize the daily data and weekly data by WHO region; summarize the weekly data by Latitude group.
+Plot the results of the experiments. Use ggplot to aggregate and summarize the daily data and weekly data by WHO region; summarize the weekly data by Latitude group.
 
 | **Type**   | **Files**                                                                                             |
 |------------|-------------------------------------------------------------------------------------------------------|
